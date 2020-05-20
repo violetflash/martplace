@@ -1,7 +1,13 @@
 $text: #555;
 $text2: #333;
 $blue: #0674ec;
-$title-black: #000;
+$black: #000;
 $gray: #898f96;
 $white: #fff;
 $almost-white: #f3f3f3;
+
+@mixin bg-properties {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
