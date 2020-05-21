@@ -348,27 +348,145 @@
     margin-bottom: 50px;
   }
 
+  &__product {
+    max-width: 100%;
+    height: 450px;
+    background-color: $white;
+    display: flex;
+    border-radius: 4px;
+
+
+    &-card {
+      padding: 50px 50px 0;
+    }
+
+
+    &-title {
+      font-size: 24px;
+      color: $black;
+      margin-bottom: 20px;
+    }
+  }
+
   &__product-img {
     @include bg-properties;
+    border-radius: 4px 0 0 4px;
     width: 555px;
     height: 450px;
     display: inline-block;
   }
+}
 
-  &__product {
+.product__author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product__company {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+
+
+  &-img {
     display: inline-block;
-    max-width: 100%;
-    width: 100%;
-    height: 450px;
-    background-color: $white;
+    width: 30px;
+    height: 30px;
+    @include bg-properties;
+  }
 
-    &-title {
-      display: inline-block;
-    }
+  span {
+    margin-left: 9px;
+    color: $black;
+  }
+
+}
+
+.product__category {
+  display: flex;
+  align-items: center;
+  color: $violet;
+
+  &-img {
+    width: 16px;
+    height: 16px;
+    fill: $violet;
+
+  }
+
+  span {
+    margin-left: 9px;
   }
 }
 
+.product__description {
+  font-size: 16px;
+  line-height: 30px;
+  max-width: 472px;
+  margin-bottom: 20px;
+}
 
+.product__tag-btn {
+  padding: 8px 15px 8px 17px;
+  border-radius: 14px;
+  background-color: #f1f3f6;
+  color: #868c96;
+  margin-bottom: 40px;
+}
+
+.product__stats {
+  max-width: 485px;
+  border-top: 1px solid #ececec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 0;
+}
+
+.product__price {
+  padding: 9px 18px;
+  background-color: $blue;
+  color: $white;
+  border: none;
+  border-radius: 16px;
+  margin-right: 20px;
+  cursor: pointer
+}
+
+.product__likes {
+  font-size: 15px;
+  display: inline-block;
+  margin-right: 20px;
+
+  svg {
+    fill: $violet;
+  }
+
+  span {
+    margin-left: 10px;
+  }
+
+}
+
+.product__orders {
+  font-size: 15px;
+  display: inline-block;
+  color: $blue;
+
+  svg {
+    fill: $blue;
+  }
+
+  span {
+    margin-left: 10px;
+  }
+
+}
+
+.slick-arrow {
+
+}
 
 
 
