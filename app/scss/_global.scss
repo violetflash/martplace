@@ -33,11 +33,19 @@ body {
   margin: 0 auto;
 }
 
-.title {
+.title,
+.title-box {
   max-width: 100%;
-  padding: 40px 30px;
-  font-size: 30px;
   background-color: $white;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+}
+
+.title {
+  font-size: 30px;
+  padding: 40px 30px;
+}
+
+.title-box {
+  padding: 30px;
 }

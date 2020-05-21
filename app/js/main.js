@@ -1,11 +1,19 @@
 $(function () {
 
-    $('.rate-star').rateYo({
+    $('.featured-stars').rateYo({
         rating: 4.5,
         readOnly: true,
         starWidth: "15px",
         normalFill: "#ccc"
     });
+
+    $('.product-stars').rateYo({
+        rating: 4.5,
+        readOnly: true,
+        starWidth: "13px",
+        normalFill: "#ccc"
+    });
+
 
     $('.featured__slider').slick({
         prevArrow: '<button class="slick-arrow slick-prev"><img src="images/icons/slider-left-arrow.svg" alt=""></button>',

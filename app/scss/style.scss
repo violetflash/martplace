@@ -32,18 +32,18 @@
   margin-left: auto;
   margin-right: 50px;
   padding: 13px 18px;
-  border: 1px solid transparent;
-  background-color: $blue;
-  color: #fff;
+  border: 1px solid $blue;
+  background-color: $white;
+  color: $blue;
   border-radius: 28px;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all .2s;
 
   &:hover {
-    background-color: $white;
+    background-color: $blue;
     border: 1px solid $blue;
-    color: $blue;
+    color: $white;
   }
 }
 
@@ -338,6 +338,7 @@
 }
 /* ----- ADVANTAGES END ----- */
 
+
 /* ----- FEATURED START ----- */
 .featured {
   background-color: #eff1f5;
@@ -397,7 +398,7 @@
 }
 
 .featured__btn,
-.product__img-btn {
+.product__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -471,7 +472,7 @@
   font-size: 16px;
   line-height: 30px;
   max-width: 475px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .featured__tag-btn,
@@ -480,28 +481,41 @@
   border-radius: 14px;
   background-color: #f1f3f6;
   color: #868c96;
-  margin-bottom: 40px;
+  border: none;
+  cursor: pointer;
+  transition: all .2s;
 
   &:hover {
-    color: $black;
+    color: $white;
+    background-color: $blue;
   }
+}
+
+.featured__tag-btn {
+  margin-bottom: 40px;
 }
 
 .featured__stats,
 .product__stats {
-  max-width: 485px;
   border-top: 1px solid #ececec;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 0;
 }
+
+.featured__stats {
+  max-width: 485px;
+  padding: 18px 0;
+}
+
 
 .featured__price,
 .product__price {
   padding: 9px 18px;
-  background-color: $blue;
-  color: $white;
+  background-color: rgba(6, 116, 236, .1);
+  color: $blue;
+  font-size: 15px;
+  font-weight: 500;
   border: none;
   border-radius: 16px;
   margin-right: 20px;
@@ -509,7 +523,8 @@
   transition: all .2s;
 
   &:hover {
-    background-color: $violet;
+    background-color: $blue;
+    color: $white;
   }
 }
 
@@ -550,7 +565,8 @@
   }
 }
 
-.rate-star {
+.featured-stars,
+.product-stars {
   padding: 0;
 }
 
@@ -578,6 +594,75 @@
 .slick-next {
   border-radius: 0 23px 23px 0;
 }
+/* ----- FEATURED END ----- */
+
+
+
+/* ----- PRODUCTS START ----- */
+.products {
+  padding: 120px 0;
+  background-color: #f6f7fb;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__filter {
+    color: #747b86;
+    font-size: 16px;
+    padding-right: 25px;
+  }
+
+  &__tags {
+    margin-bottom: 50px;
+  }
+}
+
+.product {
+  max-width: 361px;
+  height: 530px;
+  background-color: $white;
+  border-radius: 4px;
+
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+    color: $black;
+    margin: 20px 0 17px;
+  }
+
+  &__img {
+    @include bg-properties;
+    border-radius: 4px 0 0 4px;
+    width: 361px;
+    height: 230px;
+  }
+
+  &__card {
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+
+.product__stats {
+  max-width: 361px;
+  padding: 15px 30px;
+}
+
+.product__img-box:hover .product__links {
+  height: 230px;
+}
+
+
+
+.products__new-btn {
+  margin-top: 500px;
+}
+
+
 
 
 
