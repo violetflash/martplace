@@ -442,6 +442,7 @@
     width: 30px;
     height: 30px;
     @include bg-properties;
+    border-radius: 50%;
   }
 
   span {
@@ -452,19 +453,10 @@
 
 .featured__category,
 .product__category {
-  display: flex;
-  align-items: center;
-  color: $violet;
-
-  svg {
-    width: 16px;
-    height: 16px;
-    fill: $violet;
-  }
-
-  span {
-    margin-left: 9px;
-  }
+  padding-left: 25px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 2px 1px;
 }
 
 .featured__description,
@@ -530,40 +522,41 @@
 
 .featured__likes,
 .product__likes {
-  font-size: 15px;
+  position: relative;
+  padding-left: 20px;
   display: inline-block;
-  margin-right: 20px;
 
-  svg {
-    fill: $violet;
+  &::before {
+    position: absolute;
+    content: "\f08a";
+    font-family: 'icomoon' !important;
+    font-size: 15px;
+    color: $violet;
+    left: 0;
     cursor: pointer;
-
-    &:hover {
-      stroke: $violet;
-      stroke-width: 15%;
-    }
   }
 
-  span {
-    margin-left: 10px;
+  &:active::before {
+    content: "\f004";
   }
+}
 
+.featured__likes {
+  margin-right: 20px;
 }
 
 .featured__orders,
 .product__orders {
+  padding-left: 25px;
   font-size: 15px;
   display: inline-block;
   color: $blue;
-
-  svg {
-    fill: $blue;
-  }
-
-  span {
-    margin-left: 10px;
-  }
+  background-image: url('../images/icons/lnr-cart-blue.svg');
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 1px -1px;
 }
+
 
 .featured-stars,
 .product-stars {
@@ -603,6 +596,10 @@
   padding: 120px 0;
   background-color: #f6f7fb;
 
+  &__inner {
+    margin-bottom: 60px;
+  }
+
   &__title {
     display: flex;
     justify-content: space-between;
@@ -611,9 +608,10 @@
   }
 
   &__filter {
+    position: relative;
     color: #747b86;
     font-size: 16px;
-    padding-right: 25px;
+    padding-right: 30px;
   }
 
   &__tags {
@@ -626,17 +624,18 @@
   height: 530px;
   background-color: $white;
   border-radius: 4px;
+  margin-bottom: 30px;
 
   &__title {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
     color: $black;
-    margin: 20px 0 17px;
+    margin: 25px 0 14px;
   }
 
   &__img {
     @include bg-properties;
-    border-radius: 4px 0 0 4px;
+    border-radius: 4px 4px 0 0;
     width: 361px;
     height: 230px;
   }
@@ -645,6 +644,12 @@
     width: 100%;
     padding: 0 30px;
   }
+}
+
+.products__inner-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .product__stats {
@@ -657,12 +662,98 @@
 }
 
 .product__description {
-  margin-bottom: 20px;
+  margin-bottom: 34px;
+
+}
+
+.product__likes {
+  margin-right: 15px;
+}
+
+.product__price {
+  margin-right: 13px;
+}
+
+.product-stars {
+  display: inline-block;
+}
+
+.products__bottom {
+  text-align: center;
+}
+
+.products__new-btn {
+  padding: 21px 33px;
+  background-color: $blue;
+  color: $white;
+  border-radius: 28px;
+  border: none;
+  outline: transparent;
+  cursor: pointer;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 
-.products__new-btn {
-  margin-top: 500px;
+.products__filter-btn {
+  position: absolute;
+  right: 0;
+  width: 30px;
+  border: none;
+  background-color: transparent;
+  height: 20px;
+  background-image: url('../images/icons/dots-icon.svg');
+  background-repeat: no-repeat;
+  background-position: 15px 0;
+  cursor: pointer;
+  outline: transparent;
+}
+
+.products__menu-box {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: -25px;
+  min-width: 183px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
+  padding: 27px 28px;
+  z-index: 1;
+  
+  li + li {
+    margin-top: 15px;
+  }
+  
+  button {
+    display: block;
+    color: #747b86;
+    font-size: 15px;
+    border: none;
+    outline: transparent;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.products__menu-box::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 28px solid #fff;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  top: -25px;
+  right: 22px;
+}
+
+.products__menu-link {
+
 }
 
 

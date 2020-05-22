@@ -1,10 +1,46 @@
 @font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Light.woff2") format("woff2"),
+  url("../fonts/Quicksand-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Regular.woff") format("woff"),
+  url("../fonts/Quicksand-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Medium.woff2") format("woff2"),
+       url("../fonts/Quicksand-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Bold.woff2") format("woff2"),
+       url("../fonts/Quicksand-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?i77jzc');
-  src:  url('../fonts/icomoon.eot?i77jzc#iefix') format('embedded-opentype'),
-  url('../fonts/icomoon.ttf?i77jzc') format('truetype'),
-  url('../fonts/icomoon.woff?i77jzc') format('woff'),
-  url('../fonts/icomoon.svg?i77jzc#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?a2c62');
+  src:  url('../fonts/icomoon.eot?a2c62#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?a2c62') format('truetype'),
+  url('../fonts/icomoon.woff?a2c62') format('woff'),
+  url('../fonts/icomoon.svg?a2c62#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +61,31 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-document-file-psd:before {
+  content: "\e901";
+}
+.icon-wordpress:before {
+  content: "\e900";
+  color: #21759b;
+}
+.icon-heart:before {
+  content: "\f004";
+}
 .icon-heart-o:before {
   content: "\f08a";
+}
+.icon-bars:before {
+  content: "\f0c9";
+}
+.icon-navicon:before {
+  content: "\f0c9";
+}
+.icon-reorder:before {
+  content: "\f0c9";
+}
+.icon-html5:before {
+  content: "\f13b";
+}
+.icon-angle-down:before {
+  content: "\f107";
 }
