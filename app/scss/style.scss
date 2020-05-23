@@ -24,7 +24,7 @@
   &:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
-   }
+  }
 
 }
 
@@ -152,7 +152,7 @@
     font-weight: 500;
     max-width: 150px;
     transition: all 0.3s ease;
-    
+
     &:hover {
       text-decoration: underline;
       text-decoration-color: $blue;
@@ -237,7 +237,7 @@
 
 .header__search-btn {
   position: absolute;
-  top:0;
+  top: 0;
   right: 0;
   background-color: $blue;
   width: 70px;
@@ -251,7 +251,7 @@
     outline: transparent;
     box-shadow: 0 0 0 3px rgba(6, 103, 205, 0.4);
   }
-  
+
   &:hover {
     background-color: #3965bc;
   }
@@ -261,6 +261,7 @@
   font-size: 15px;
   color: #fff;
 }
+
 /* ----- HEADER END ----- */
 
 
@@ -386,7 +387,7 @@
       outline: transparent;
       box-shadow: 0 0 0 3px rgba(6, 103, 205, 0.4);
     }
-    
+
     &:hover {
       background-color: #0c32bc;
 
@@ -398,6 +399,7 @@
   position: relative;
   display: inline-block;
   margin-left: -5px;
+
   &::after {
     display: inline-block;
     position: absolute;
@@ -483,6 +485,7 @@
   line-height: 30px;
   color: $text;
 }
+
 /* ----- INTRO END ----- */
 
 
@@ -794,8 +797,8 @@
 .slick-next {
   border-radius: 0 23px 23px 0;
 }
-/* ----- FEATURED END ----- */
 
+/* ----- FEATURED END ----- */
 
 
 /* ----- PRODUCTS START ----- */
@@ -948,11 +951,11 @@
   box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
   padding: 27px 28px;
   z-index: 1;
-  
+
   li + li {
     margin-top: 15px;
   }
-  
+
   button {
     display: block;
     color: #747b86;
@@ -984,6 +987,7 @@
 .products__tag-btn {
   margin-right: 10px;
 }
+
 /* ----- PRODUCTS END ----- */
 
 
