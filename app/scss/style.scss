@@ -458,11 +458,6 @@
   text-align: center;
   transition: all .2s;
 
-  &:hover {
-    border-radius: 4px;
-    box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
-  }
-
   &-image {
     margin: 0 auto;
     background-repeat: no-repeat;
@@ -470,6 +465,12 @@
     width: 112px;
     height: 120px;
     margin-bottom: 35px;
+  }
+
+  &--shadowed {
+    border-radius: 4px;
+    box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+
   }
 }
 
@@ -631,13 +632,15 @@
   background-position: 2px 1px;
   transition: all 0.3s ease;
 
-  &:focus {
-    outline: transparent;
-    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
-  }
+  span {
+    &:focus {
+      outline: transparent;
+      box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+    }
 
-  &:hover {
-    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -700,10 +703,8 @@
   color: $blue;
   font-size: 15px;
   font-weight: 500;
-  border: none;
   border-radius: 16px;
   margin-right: 20px;
-  cursor: pointer;
   transition: all 0.3s ease;
 
   &:focus {
@@ -719,30 +720,10 @@
 
 .featured__likes,
 .product__likes {
-  position: relative;
-  padding-left: 20px;
   display: inline-block;
-  background-color: transparent;
-  border: none;
-  transition: all 0.3s ease;
-
-  &:focus {
-    outline: transparent;
-    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
-  }
-
-  &::before {
-    position: absolute;
-    content: "\f08a";
-    font-family: 'icomoon' !important;
-    font-size: 15px;
-    color: $violet;
-    left: 0;
-    cursor: pointer;
-  }
-
-  &:active::before {
-    content: "\f004";
+  color: $violet;
+  span {
+    color: #7e7e7e;
   }
 }
 
@@ -839,8 +820,9 @@
   margin-bottom: 30px;
 
   &__title {
+    font-family: 'Quicksand', sans-serif;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
     color: $black;
     margin: 25px 0 14px;
   }
