@@ -27,24 +27,24 @@ $(function () {
     //dropdown-menu
 
 
-    $('.featured-stars').rateYo({
-        rating: 4.5,
-        readOnly: true,
-        starWidth: "15px",
-        normalFill: "#ccc"
-    });
-
-    $('.product-stars').rateYo({
+    $('.product__stars--w13').rateYo({
         rating: 4.5,
         readOnly: true,
         starWidth: "13px",
         normalFill: "#ccc"
     });
 
+    $('.product__stars').rateYo({
+        rating: 4.5,
+        readOnly: true,
+        starWidth: "15px",
+        normalFill: "#ccc"
+    });
+
 
     $('.featured__slider').slick({
-        prevArrow: '<button class="slick-arrow slick-prev"><img src="images/icons/slider-left-arrow.svg" alt=""></button>',
-        nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/slider-right-arrow.svg" alt=""></button>',
+        prevArrow: '<button class="slick-arrow slick-prev lnr lnr-chevron-left"></button>',
+        nextArrow: '<button class="slick-arrow slick-next lnr lnr-chevron-right"></button>',
         autoplay: true,
         autoplaySpeed: 3000,
     });
