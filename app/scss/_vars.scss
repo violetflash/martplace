@@ -7,9 +7,18 @@ $gray: #898f96;
 $white: #fff;
 $almost-white: #f3f3f3;
 $violet: #7347c1;
+$red: #ff6a6c;
 
 @mixin bg-properties {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@mixin focus {
+  transition: all 0.3s ease;
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+  }
 }
