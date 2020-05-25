@@ -1,10 +1,10 @@
 $(function () {
 
     // dropdown-menu
-    $('button.products__filter-btn').click(function(){
-        if ( $('.products__menu-box').css('visibility') == 'hidden' )
-            $('.products__menu-box').css('visibility','visible');
-        myDropDown = $(this).next('.products__menu-box');
+    $('.newest__filter').click(function(){
+        if ( $('.newest__menu-box').css('visibility') == 'hidden' )
+            $('.newest__menu-box').css('visibility','visible');
+        myDropDown = $(this).next('.newest__menu-box');
 
         if( myDropDown.is(':visible') ) {
             $(this).removeClass('drop-down-open');
@@ -18,10 +18,10 @@ $(function () {
     });
 
     $('html').click(function(e) {
-        $('.products__menu-box').hide();
+        $('.newest__menu-box').hide();
     });
 
-    $('.products__menu-box').click(function(e){
+    $('.newest__menu-box').click(function(e){
         e.stopPropagation();
     });
     //dropdown-menu

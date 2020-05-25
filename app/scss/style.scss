@@ -676,8 +676,8 @@
 /* ----- FEATURED END ----- */
 
 
-/* ----- PRODUCTS START ----- */
-.products {
+/* ----- NEWEST START ----- */
+.newest {
   padding: 120px 0;
   background-color: #f6f7fb;
 
@@ -699,11 +699,104 @@
     color: #747b86;
     font-size: 16px;
     line-height: 32px;
+    cursor: pointer;
+  }
+
+  &__filter-btn {
+    padding-left: 30px;
+    right: -3px;
+    width: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:focus {
+      outline: transparent;
+      box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+    }
+
+    svg {
+      fill: #a3b1c4;
+    }
+
+    &:hover svg {
+      fill: $blue;
+    }
+  }
+
+  &__menu-box {
+    visibility: hidden;
+    position: absolute;
+    top: 50px;
+    right: -20px;
+    min-width: 183px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
+    padding: 27px 28px;
+    z-index: 1;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 28px solid #fff;
+      border-left: 16px solid transparent;
+      border-right: 16px solid transparent;
+      top: -25px;
+      right: 8px;
+    }
+
+    li + li {
+      margin-top: 15px;
+    }
+
+    button {
+      display: block;
+      color: #747b86;
+      font-size: 15px;
+      border: none;
+      outline: transparent;
+      background-color: transparent;
+      cursor: pointer;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+
+  &__tag-btn {
+    margin-right: 10px;
   }
 
   &__tags {
     margin-bottom: 50px;
   }
+
+  &__inner-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__new-btn {
+    background-color: $blue;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #3965bc;
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+  }
+
 }
 
 .n__product {
@@ -734,11 +827,7 @@
   }
 }
 
-.products__inner-box {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+
 
 .n__product__stats {
   max-width: 361px;
@@ -768,91 +857,7 @@
   display: inline-block;
 }
 
-.products__bottom {
-  text-align: center;
-}
 
-.products__new-btn {
-  background-color: $blue;
-  border: none;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #3965bc;
-  }
-}
-
-
-.products__filter-btn {
-  padding-left: 30px;
-  right: -3px;
-  width: 30px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  &:focus {
-    outline: transparent;
-    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
-  }
-
-  svg {
-    fill: #a3b1c4;
-  }
-
-  &:hover svg {
-    fill: $blue;
-  }
-}
-
-.products__menu-box {
-  visibility: hidden;
-  position: absolute;
-  top: 50px;
-  right: -20px;
-  min-width: 183px;
-  background-color: #fff;
-  border-radius: 3px;
-  box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
-  padding: 27px 28px;
-  z-index: 1;
-
-  li + li {
-    margin-top: 15px;
-  }
-
-  button {
-    display: block;
-    color: #747b86;
-    font-size: 15px;
-    border: none;
-    outline: transparent;
-    background-color: transparent;
-    cursor: pointer;
-
-    &:hover {
-      color: $blue;
-    }
-  }
-}
-
-.products__menu-box::after {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 28px solid #fff;
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
-  top: -25px;
-  right: 8px;
-}
-
-.products__tag-btn {
-  margin-right: 10px;
-}
 
 /* ----- PRODUCTS END ----- */
 
