@@ -1,33 +1,18 @@
 $(function () {
 
     // dropdown-menu
-    $('.newest__filter').click(function(){
-        if ( $('.newest__menu-box').css('visibility') == 'hidden' )
-            $('.newest__menu-box').css('visibility','visible');
-        myDropDown = $(this).next('.newest__menu-box');
+    $('.newest__filter').on('mouseover', function () {
+        $('.newest__menu-box').css('visibility','visible');
+    });
+    $('.newest__menu-box').on('mouseleave', function () {
+        $('.newest__menu-box').css('visibility', 'hidden' );
 
-        if( myDropDown.is(':visible') ) {
-            $(this).removeClass('drop-down-open');
-            myDropDown.hide();
-        } else {
-            myDropDown.fadeIn();
-            $(this).addClass('drop-down-open');
-        }
-
-        return false;
     });
 
-    $('html').click(function(e) {
-        $('.newest__menu-box').hide();
-    });
-
-    $('.newest__menu-box').click(function(e){
-        e.stopPropagation();
-    });
     //dropdown-menu
 
 
-    $('.product__stars--w13').rateYo({
+    $('.product__stars--newest').rateYo({
         rating: 4.5,
         readOnly: true,
         starWidth: "13px",
@@ -49,7 +34,7 @@ $(function () {
         autoplaySpeed: 3000,
     });
 
-    var mixer = mixitup('.products__inner-box');
+    var mixer = mixitup('.newest__inner-box');
 
 
 });

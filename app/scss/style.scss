@@ -258,6 +258,7 @@
 }
 
 .button {
+  display: inline-block;
   border-radius: 28px;
   padding: 0 32px;
   height: 55px;
@@ -512,10 +513,16 @@
   }
 
   &__title {
+    display: inline-block;
     font-size: 24px;
     font-weight: 500;
     color: $black;
     margin: 45px 0 15px;
+    @include focus;
+    
+    &:hover {
+      color: $blue;
+    }
   }
 
   &__about {
@@ -540,7 +547,7 @@
   }
 
   &__name {
-    display: inline-block;
+    font-size: 15px;
     max-width: 195px;
     margin-left: 9px;
     color: $black;
@@ -551,13 +558,15 @@
   }
 
   &__tag {
-    padding-left: 25px;
+    margin-left: 20px;
     @include focus;
     color: $violet;
   }
 
   &__tag-name {
-
+    font-size: 15px;
+    max-width: 195px;
+    margin-left: 9px;
     &:hover {
       text-decoration: underline;
     }
@@ -572,6 +581,7 @@
   }
 
   &__tag-link {
+    display: inline-block;
     height: 28px;
     padding: 0 15px;
     line-height: 28px;
@@ -598,6 +608,7 @@
   }
 
   &__price {
+    display: inline-block;
     padding: 0 18px;
     height: 32px;
     line-height: 32px;
@@ -698,30 +709,29 @@
     align-items: center;
     color: #747b86;
     font-size: 16px;
+    border-radius: 4px;
     line-height: 32px;
     cursor: pointer;
+    transition: all .3s;
+    
+    &:hover {
+      background-color: #f6f7fb;
+    }
+
+    &:hover .newest__filter-btn {
+      color: $blue;
+    }
   }
 
   &__filter-btn {
     padding-left: 30px;
-    right: -3px;
-    width: 30px;
-    border: none;
-    background-color: transparent;
+    font-size: 20px;
+    color: #a3b1c4;
     cursor: pointer;
-    transition: all 0.3s ease;
+    @include focus;
 
-    &:focus {
-      outline: transparent;
-      box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
-    }
-
-    svg {
-      fill: #a3b1c4;
-    }
-
-    &:hover svg {
-      fill: $blue;
+    &:hover {
+      color: $blue;
     }
   }
 
@@ -749,23 +759,29 @@
       top: -25px;
       right: 8px;
     }
+  }
 
-    li + li {
-      margin-top: 15px;
-    }
+  &__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 
-    button {
-      display: block;
-      color: #747b86;
-      font-size: 15px;
-      border: none;
-      outline: transparent;
-      background-color: transparent;
-      cursor: pointer;
+  &__item {
+    margin-top: 15px;
+  }
 
-      &:hover {
-        color: $blue;
-      }
+  &__menu-link {
+    display: block;
+    color: #747b86;
+    font-size: 15px;
+    border: none;
+    outline: transparent;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      color: $blue;
     }
   }
 
@@ -789,7 +805,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: #3965bc;
+      background-color: $violet;
     }
   }
 
@@ -799,14 +815,40 @@
 
 }
 
-.n__product {
-  max-width: 361px;
-  height: 530px;
-  background-color: $white;
-  border-radius: 4px;
-  margin-bottom: 30px;
+.product {
 
-  &__title {
+  &--newest {
+    display: block;
+    max-width: 361px;
+    background-color: $white;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+  &__tag-link--newest {
+    height: 32px;
+    padding: 0 20px;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+
+  &__img-box--newest:hover .product__links {
+    height: 230px;
+  }
+
+  &__img--newest {
+    @include bg-properties;
+    border-radius: 4px 4px 0 0;
+    width: 361px;
+    height: 230px;
+  }
+
+  &__card--newest {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  &__title--newest {
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -814,50 +856,47 @@
     margin: 25px 0 14px;
   }
 
-  &__img {
-    @include bg-properties;
-    border-radius: 4px 4px 0 0;
-    width: 361px;
-    height: 230px;
+  &__name--newest {
+    max-width: 150px;
   }
 
-  &__card {
-    width: 100%;
-    padding: 0 30px;
+  &__tag--newest {
+    max-width: 300px;
+  }
+
+  &__tag-icon--newest {
+    font-size: 17px;
+  }
+
+
+  &__tag-name--newest {
+    max-width: 150px;
+  }
+
+  &__description--newest {
+    margin-top: 28px;
+    margin-bottom: 3px;
+  }
+
+  &__stats--newest {
+    max-width: 361px;
+    padding: 15px 30px;
+  }
+
+  &__price--newest {
+    margin-right: 13px;
+  }
+
+  &__likes--newest {
+    margin-right: 10px;
+  }
+
+  &__stars--newest {
+    display: inline-block;
+    padding: 0;
+
   }
 }
-
-
-
-.n__product__stats {
-  max-width: 361px;
-  padding: 15px 30px;
-}
-
-.n__product__img-box:hover .product__links {
-  height: 230px;
-}
-
-.n__product__description {
-  height: 85px;
-  overflow: hidden;
-  margin-bottom: 34px;
-
-}
-
-.n__product__likes {
-  margin-right: 15px;
-}
-
-.n__product__price {
-  margin-right: 13px;
-}
-
-.n__product-stars {
-  display: inline-block;
-}
-
-
 
 /* ----- PRODUCTS END ----- */
 
