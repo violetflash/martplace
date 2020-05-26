@@ -389,8 +389,8 @@
 /* ----- SEARCH END ----- */
 
 
-/* ----- PRE-ADVANTAGES START ----- */
-.pre-advantages {
+/* ----- BENEFITS START ----- */
+.benefits {
   padding: 186px 0 121px;
 
   &__inner {
@@ -403,7 +403,7 @@
   }
 }
 
-.adv-item {
+.benefit-item {
   max-width: 361px;
   padding: 41px 35px 49px;
   text-align: center;
@@ -436,8 +436,7 @@
     color: $text;
   }
 }
-
-/* ----- PRE-ADVANTAGES END ----- */
+/* ----- BENEFITS END ----- */
 
 
 /* ----- FEATURED START ----- */
@@ -447,6 +446,32 @@
 
   &__title {
     margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__slick-arrow {
+    width: 55px;
+    height: 45px;
+    font-size: 14px;
+    color: $white;
+    background-color: #7347c1;
+    border: none;
+    cursor: pointer;
+    @include focus;
+
+    &:hover {
+      background-color: #6641ad;
+    }
+
+    &--prev {
+      border-radius: 23px 0 0 23px;
+    }
+
+    &--next {
+      border-radius: 0 23px 23px 0;
+    }
   }
 }
 
@@ -653,41 +678,7 @@
     padding: 0;
   }
 }
-
-.slick-arrow {
-  position: absolute;
-  top: -127px;
-  right: 30px;
-  width: 55px;
-  height: 45px;
-  font-size: 14px;
-  color: $white;
-  background-color: #7347c1;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  &:focus {
-    outline: transparent;
-    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
-  }
-
-  &:hover {
-    background-color: #6641ad;
-  }
-}
-
-.slick-prev {
-  border-radius: 23px 0 0 23px;
-  right: 85px;
-}
-
-.slick-next {
-  border-radius: 0 23px 23px 0;
-}
-
 /* ----- FEATURED END ----- */
-
 
 /* ----- NEWEST START ----- */
 .newest {
@@ -896,7 +887,6 @@
   &__stars--newest {
     display: inline-block;
     padding: 0;
-
   }
 }
 

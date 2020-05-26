@@ -28,8 +28,9 @@ $(function () {
 
 
     $('.featured__slider').slick({
-        prevArrow: '<button class="slick-arrow slick-prev lnr lnr-chevron-left"></button>',
-        nextArrow: '<button class="slick-arrow slick-next lnr lnr-chevron-right"></button>',
+        prevArrow: '<button class="featured__slick-arrow featured__slick-arrow--prev"><span class="lnr lnr-chevron-left"></span></button>',
+        nextArrow: '<button class="featured__slick-arrow featured__slick-arrow--next"><span class="lnr lnr-chevron-right"></span></button>',
+        appendArrows: '.featured__slider-nav',
         autoplay: true,
         autoplaySpeed: 3000,
     });
