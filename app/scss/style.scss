@@ -401,27 +401,22 @@
   &__link {
     @include focus;
   }
-}
 
-.benefit-item {
-  max-width: 361px;
-  padding: 41px 35px 49px;
-  text-align: center;
-  transition: all .2s;
+  &__item {
+    max-width: 361px;
+    padding: 40px 35px 50px;
+    text-align: center;
+    @include focus;
 
-  &:hover {
-    border-radius: 4px;
-    box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+    &:hover {
+      border-radius: 4px;
+      box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+    }
   }
-
-  &__top {
-    margin: 0 auto;
-    margin-bottom: 35px;
-  }
-
   &__image {
     width: 112px;
     height: 120px;
+    margin-bottom: 35px;
   }
 
   &__title {
@@ -972,8 +967,48 @@
     color: #fff;
   }
 }
-
 /* ----- STATS END ----- */
+
+/* ----- ADVANTAGES START ----- */
+.advantages {
+  padding: 120px 0;
+
+  &__top {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: 16px;
+    color: #555;
+    max-width: 671px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  &__highlight {
+    color: $blue;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 361px;
+    padding: 40px 35px 50px;
+    text-align: center;
+  }
+
+
+}
+
+
+/* ----- ADVANTAGES END ----- */
+
+
 
 
 
