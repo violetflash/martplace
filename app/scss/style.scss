@@ -995,11 +995,70 @@
     color: $blue;
   }
 
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   &__item {
     position: relative;
     max-width: 361px;
-    padding: 40px 35px 50px;
+    padding: 40px 34px 50px;
     text-align: center;
+    box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    background-color: #fff;
+    margin-bottom: 30px;
+
+  }
+
+  &__num {
+    position: absolute;
+    font-weight: 300;
+    color: rgba(92, 135, 248, .2);
+    font-size: 48px;
+    top: 20px;
+    left: 20px;
+  }
+
+  &__img {
+    font-size: 60px;
+    color: $blue;
+    margin-bottom: 53px;
+
+    &--violet {
+      color: $violet;
+    }
+
+    &--green {
+      color: $green;
+    }
+
+    &--yellow {
+      color: $yellow;
+    }
+
+    &--light-blue {
+      color: #58c9e9;
+    }
+
+    &--red {
+      color: $red;
+    }
+
+  }
+
+  &__item-title {
+    font-size: 24px;
+    color: $black;
+    margin-bottom: 30px;
+  }
+
+  &__item-text {
+    font-size: 16px;
+    line-height: 30px;
+    color: $text;
   }
 
 
