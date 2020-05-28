@@ -26,19 +26,18 @@ body {
   margin: 0 auto;
 }
 
-.title,
+
 .title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 100%;
   background-color: $white;
+  font-size: 30px;
+  color: $black;
   border-radius: 4px;
+  padding: 40px 30px;
+  margin-bottom: 50px;
   box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
 }
 
-.title {
-  font-size: 30px;
-  padding: 40px 30px;
-}
-
-.title-box {
-  padding: 30px;
-}
