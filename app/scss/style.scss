@@ -695,15 +695,15 @@
     transition: all .3s;
     
     &:hover {
-      background-color: #f6f7fb;
+      color: $blue;
+
+      .newest__filter-btn {
+        color: $blue;
+      }
 
       .newest__menu-box {
         visibility: visible;
       }
-    }
-
-    &:hover .newest__filter-btn {
-      color: $blue;
     }
   }
 
@@ -1066,7 +1066,63 @@
 
 /* ----- SELL&BUY START ----- */
 .sellbuy {
-  background-image: url('../images/sell-bg-left.svg');
+  position: relative;
+
+  &__part {
+    position: absolute;
+    width: 50%;
+    height: 561px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    //text-align: center;
+    color: #fff;
+    @include bg-properties;
+  }
+
+  &__left {
+    left: 0;
+    background-image: url('../images/sell-bg-left.svg');
+  }
+
+  &__right {
+    right: 0;
+    background-image: url('../images/sell-bg-right.svg');
+  }
+
+  &__image {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 27px;
+    font-size: 36px;
+  }
+
+  &__text {
+    max-width: 576px;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  &__btn {
+    padding: 0 15px;
+    width: 190px;
+    color: transparent;
+    background-color: #fff;
+    text-align: center;
+
+    &--blue {
+      color: $blue;
+    }
+
+    &--violet {
+      color: $violet;
+    }
+  }
 }
 
 
