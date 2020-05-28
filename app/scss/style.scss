@@ -1288,7 +1288,7 @@
     padding: 30px;
     width: 100%;
     height: 186px;
-    overflow: hidden;
+    overflow: hidden;   /* ??? не работает */
   }
 
   &__title {
@@ -1345,13 +1345,115 @@
     }
   }
 }
-
-
 /* ----- NEWS END ----- */
 
+/* ----- SUPPORT START ----- */
+.support {
+  position: relative;
+  padding-bottom: 297px;
+
+  &__part {
+    position: absolute;
+    width: 50%;
+    height: 297px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    color: #000;
+  }
+
+  &__left {
+    left: 0;
+    border-right: 1px solid #e8eaf3;
+  }
+
+  &__right {
+    right: 0;
+  }
+
+  &__image {
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    font-size: 24px;
+  }
+
+  &__highlight {
+    color: $blue;
+    &--violet {
+      color: $violet;
+    }
+  }
+}
+/* ----- SUPPORT END ----- */
 
 
+/* ----- JOIN START ----- */
+.join {
+  padding: 110px 0;
+  background-image: linear-gradient(to left, #0d3ef2 0%, #7221a0 100%);
+  //opacity: 0.9;
+  text-align: center;
 
+  &__title {
+    font-size: 36px;
+    margin-bottom: 23px;
+    color: #fff;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    color: #e7e7e7;
+    margin-bottom: 50px;
+  }
+
+  &__btn {
+    background-color: #fff;
+    color: $blue;
+
+    &:hover {
+      box-shadow: 1px 1px 9px 2px $white;
+    }
+  }
+}
+/* ----- JOIN END ----- */
+
+
+/* ----- FOOTER START ----- */
+.footer {
+
+  &__top {
+    background-color: #262b30;
+    padding: 115px 0 120px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #ababab;
+  }
+
+  &__column {
+    max-width: 140px;
+
+    &--big {
+      max-width: 265px;
+    }
+
+    &--bigger {
+      max-width: 360px;
+    }
+  }
+
+
+}
+
+/* ----- FOOTER END ----- */
 
 
 
