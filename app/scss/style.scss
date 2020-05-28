@@ -928,9 +928,51 @@
     }
   }
 }
-
-
 /* ----- FEED END ----- */
+
+/* ----- STATS START ----- */
+.stats {
+  padding: 100px 0;
+  background-color: #0d0f13;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  &__item--yellow {
+    color: #feb71d;
+  }
+
+  &__item--blue {
+    color: #feb71d;
+  }
+
+  &__item--green {
+    color: #feb71d;
+  }
+
+  &__item--yellow {
+    color: #feb71d;
+  }
+
+  &__img {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+
+  &__count {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 18px;
+  }
+}
+
+/* ----- STATS END ----- */
 
 
 
