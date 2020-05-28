@@ -45,6 +45,17 @@ $(function () {
         autoplaySpeed: 3000,
     });
 
+    $('.feedback__slider').slick({
+        prevArrow: '<button class="feedback__slick-arrow feedback__slick-arrow--prev"><span class="lnr lnr-chevron-left"></span></button>',
+        nextArrow: '<button class="feedback__slick-arrow feedback__slick-arrow--next"><span class="lnr lnr-chevron-right"></span></button>',
+        // appendArrows: '.feedback__slider-nav',
+
+
+
+        // autoplay: true,
+        // autoplaySpeed: 3000,
+    });
+
 
     var mixer = mixitup('.newest__inner-box');
 

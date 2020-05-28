@@ -260,19 +260,16 @@
 .button {
   display: inline-block;
   border-radius: 28px;
-  padding: 0 32px;
+  width: 190px;
   height: 55px;
   line-height: 55px;
   color: $white;
-  //text-align: center;
+  text-align: center;
+  background-color: $blue;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-
-  &:focus {
-    outline: transparent;
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.6);
-  }
+  @include focus;
 }
+
 
 /* ----- INTRO END ----- */
 
@@ -532,7 +529,7 @@
     color: $black;
     margin: 45px 0 15px;
     @include focus;
-    
+
     &:hover {
       color: $blue;
     }
@@ -693,7 +690,7 @@
     height: 50px;
     cursor: pointer;
     transition: all .3s;
-    
+
     &:hover {
       color: $blue;
 
@@ -891,11 +888,6 @@
   padding: 120px 0;
   background-color: #eff1f5;
 
-  //&__slider {
-  //  display: flex;
-  //  justify-content: space-between;
-  //}
-
   &__slider-wrapper {
     margin-right: calc((1140px - (3 * 361px)) / 2);
   }
@@ -973,28 +965,6 @@
 .advantages {
   padding: 120px 0;
 
-  &__top {
-    text-align: center;
-  }
-
-  &__title {
-    font-size: 36px;
-    color: #000;
-    margin-bottom: 30px;
-  }
-
-  &__text {
-    font-size: 16px;
-    color: #555;
-    max-width: 671px;
-    margin: 0 auto;
-    margin-bottom: 60px;
-  }
-
-  &__highlight {
-    color: $blue;
-  }
-
   &__box {
     display: flex;
     justify-content: space-between;
@@ -1046,7 +1016,6 @@
     &--red {
       color: $red;
     }
-
   }
 
   &__item-title {
@@ -1060,13 +1029,36 @@
     line-height: 30px;
     color: $text;
   }
-  
+}
+
+.title {
+  text-align: center;
+
+  &__text {
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 30px;
+    color: #555;
+    max-width: 675px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  &__highlight {
+    color: $blue;
+  }
 }
 /* ----- ADVANTAGES END ----- */
 
 /* ----- SELL&BUY START ----- */
 .sellbuy {
   position: relative;
+  padding-bottom: 561px;
 
   &__part {
     position: absolute;
@@ -1077,7 +1069,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    //text-align: center;
     color: #fff;
     @include bg-properties;
   }
@@ -1102,10 +1093,12 @@
   }
 
   &__text {
-    max-width: 576px;
+    max-width: 580px;
     font-size: 16px;
+    line-height: 30px;
     margin: 0 auto;
     margin-bottom: 50px;
+    text-align: center;
   }
 
   &__btn {
@@ -1114,6 +1107,7 @@
     color: transparent;
     background-color: #fff;
     text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
     &--blue {
       color: $blue;
@@ -1122,8 +1116,146 @@
     &--violet {
       color: $violet;
     }
+
+    &:hover {
+      box-shadow: 1px 1px 9px 2px $white;
+    }
   }
 }
+/* ----- SELL&BUY END ----- */
+
+/* ----- FEEDBACK START ----- */
+.feedback {
+  padding: 120px 0;
+
+  &__subtitle {
+    margin-bottom: 10px;
+  }
+
+  &__link {
+
+    & + & {
+      margin-left: 30px
+    }
+
+    &:hover {
+      box-shadow: 1px 1px 9px 0 $blue;
+    }
+  }
+
+  &__item {
+    padding: 50px 40px;
+    max-width: 555px;
+    background-color: #fff;
+    border-radius: 0 4px 4px 0;
+    border-left: 2px solid $blue;
+    box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+
+  }
+
+  &__top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    &::after {
+      position: absolute;
+      content: "\e83f";
+      font-family: 'Linearicons-Free';
+      font-size: 60px;
+      color: #e8e8e8;
+      right: 0;
+    }
+  }
+
+  &__photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  &__name {
+    display: inline-block;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 15px;
+  }
+
+  &__job {
+    color: $text;
+  }
+
+  &__text {
+    line-height: 30px;
+    color: $text;
+    margin: 0;
+  }
+
+  &__slider {
+    margin-bottom: 10px;
+
+    &:hover {
+      .feedback__slick-arrow {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__slider-wrapper {
+    padding: 50px 0;
+  }
+
+  &__slick-arrow {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #7347c1;
+    background-color: $white;
+    box-shadow: 0 4px 15px rgba(67, 67, 67, 0.15);
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+    @include focus;
+
+    &:hover {
+      box-shadow: 1px 1px 9px 0 $blue;
+    }
+
+    &--prev {
+      left: 15px
+    }
+
+    &--next {
+      right: 15px;
+
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+  }
+
+  &__btn {
+    &:hover {
+      background-color: $violet;
+    }
+  }
+}
+/* ----- FEEDBACK END ----- */
+
 
 
 
