@@ -1,15 +1,5 @@
 $(function () {
 
-    // // dropdown-menu for newest section
-    // $('.newest__filter').on('mouseover', function () {
-    //     $('.newest__menu-box').css('visibility','visible');
-    // });
-    // $('.newest__menu-box').on('mouseleave', function () {
-    //     $('.newest__menu-box').css('visibility', 'hidden' );
-    //
-    // });
-    // //dropdown-menu
-
 
     $('.product__stars--newest').rateYo({
         rating: 4.5,
@@ -48,14 +38,18 @@ $(function () {
     $('.feedback__slider').slick({
         prevArrow: '<button class="feedback__slick-arrow feedback__slick-arrow--prev"><span class="lnr lnr-chevron-left"></span></button>',
         nextArrow: '<button class="feedback__slick-arrow feedback__slick-arrow--next"><span class="lnr lnr-chevron-right"></span></button>',
-        // appendArrows: '.feedback__slider-nav',
 
-
-
-        // autoplay: true,
-        // autoplaySpeed: 3000,
     });
 
+    $('.filter__list').on('click', function () {
+        $('.filter__list').addClass('active');
+        $('.filter__grid').removeClass('active')
+    });
+
+    $('.filter__grid').on('click', function () {
+        $('.filter__grid').addClass('active');
+        $('.filter__list').removeClass('active')
+    });
 
     var mixer = mixitup('.newest__inner-box');
 

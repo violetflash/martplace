@@ -61,19 +61,29 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-filter-grid:before {
+  content: "\e904";
+}
+.icon-filter-list:before {
+  content: "\e905";
+}
 .icon-dots:before {
   content: "\e900";
+  color: #a3b1c4;
 }
 .icon-html:before {
   content: "\e901";
+  color: #7347c1;
 }
 .icon-psd:before {
   content: "\e902";
+  color: #7347c1;
 }
 .icon-wordpress:before {
   content: "\e903";
+  color: #7347c1;
 }
-.icon-heart:before {
+.icon-heart-o:before {
   content: "\f08a";
 }
 .icon-twitter:before {
@@ -112,6 +122,7 @@
 .icon-google:before {
   content: "\f1a0";
 }
+
 
 
 @font-face {
