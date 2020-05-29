@@ -1478,7 +1478,8 @@
   }
 
   &__contacts,
-  &__menu {
+  &__menu,
+  &__social {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -1535,6 +1536,48 @@
 
   &__input {
     height: 50px;
+  }
+
+  &__form {
+    margin-bottom: 50px;
+  }
+
+  &__social-item {
+    display: inline-block;
+    & + & {
+      margin-left: 13px;
+    }
+  }
+
+  &__social-link {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background-image: url('../images/css_sprites.png');
+  }
+
+  &__facebook {
+    background-position:  -57px -5px;
+  }
+
+  &__twitter {
+    background-position: -265px -5px;
+  }
+
+  &__google {
+    background-position: -109px -5px;
+  }
+
+  &__pinterest {
+    background-position: -213px -5px;
+  }
+
+  &__linkedin {
+    background-position: -161px -5px;
+  }
+
+  &__dribble {
+    background-position:  -5px -5px;
   }
 
 }
