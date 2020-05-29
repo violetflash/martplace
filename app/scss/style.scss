@@ -1709,7 +1709,17 @@
       margin-left: 15px;
     }
     &.active {
+      position: relative;
       color: $blue;
+      &::after {
+        position: absolute;
+        content: '';
+        width: 22px;
+        height: 2px;
+        background-color: $blue;
+        bottom: -7px;
+        left: 0;
+      }
     }
   }
 
