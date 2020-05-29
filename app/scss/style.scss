@@ -1471,6 +1471,7 @@
 
   &__link {
     color: #ababab;
+    @include focus;
 
     &:hover {
       color: $blue;
@@ -1553,7 +1554,13 @@
     display: inline-block;
     width: 42px;
     height: 42px;
+    border-radius: 50%;
     background-image: url('../images/css_sprites.png');
+    @include focus;
+
+    &:hover {
+      box-shadow: 1px 1px 9px 2px $yellow;
+    }
   }
 
   &__facebook {
@@ -1580,6 +1587,25 @@
     background-position:  -5px -5px;
   }
 
+  &__copyright {
+    background-color: #192027;
+  }
+  
+  &__copyright-text {
+    text-align: center;
+    font-size: 15px;
+    color: #999;
+    padding: 40px;
+  }
+
+  &__copyright-link {
+    color: #fff;
+    @include focus;
+
+    &:hover {
+      color: $blue;
+    }
+  }
 }
 
 /* ----- FOOTER END ----- */
