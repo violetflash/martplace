@@ -1450,11 +1450,87 @@
     }
   }
 
+  &__logo {
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 0.9px;
+    line-height: 42px;
+    padding-top: 4px;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    color: #ababab;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__contacts,
+  &__menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__contact {
+    position: relative;
+    padding-left: 30px;
+
+    & + & {
+      margin-top: 22px;
+    }
+
+    &::before {
+      position: absolute;
+      font-family: 'Linearicons-Free';
+      font-size: 16px;
+      color: #fff;
+      left: 0;
+    }
+  }
+
+  &__phone {
+    &::before {
+      content: "\e830";
+    }
+  }
+
+  &__email {
+    &::before {
+      content: "\e818";
+    }
+  }
+
+  &__address {
+    line-height: 26px;
+    &::before {
+      content: "\e833";
+      top: 25%;
+    }
+  }
+
+  &__item {
+    line-height: 28px;
+    & + & {
+      margin-top: 5px;
+    }
+  }
 
 }
 
 /* ----- FOOTER END ----- */
-
 
 
 
