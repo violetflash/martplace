@@ -44,13 +44,13 @@ $(function () {
     $('.filter__list').on('click', function () {
         $('.filter__list').addClass('active');
         $('.filter__grid').removeClass('active');
-        $('.sort__product').addClass('list')
+        $('.product').addClass('list')
     });
 
     $('.filter__grid').on('click', function () {
         $('.filter__grid').addClass('active');
         $('.filter__list').removeClass('active');
-        $('.sort__product').removeClass('list')
+        $('.product').removeClass('list')
     });
 
     $(".js-range-slider").ionRangeSlider({

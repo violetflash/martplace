@@ -605,6 +605,7 @@
     color: #868c96;
     border: none;
     margin-bottom: 45px;
+    cursor: pointer;
     @include focus;
 
     &:hover {
@@ -1890,12 +1891,12 @@
   }
 
   &__content {
-    max-width: 100%;
     width: 100%;
     text-align: right;
   }
 
   &__content-box {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -1949,18 +1950,37 @@
     }
   }
 
-  &__product {
+}
+
+.product {
+
+  &--sort {
     display: block;
-    max-width: 262px;
     background-color: $white;
     border-radius: 4px;
     margin-bottom: 30px;
     box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
   }
 
-}
+  &.list {
+    width: 100%;
+    display: flex;
 
-.product {
+    .product__img--sort {
+      width: 230px;
+      height: 210px;
+      border-radius: 4px 0 0 4px;
+    }
+
+    .product__img-box {
+      height: 210px;
+    }
+
+    .product__img-box:hover .product__links {
+      height: 210px;
+    }
+  }
+
 
   &__img-box--sort:hover .product__links {
     height: 160px;
@@ -1974,6 +1994,7 @@
   }
 
   &__card--sort {
+    max-width: 262px;
     width: 100%;
     padding: 0 20px;
   }
@@ -1986,11 +2007,15 @@
     margin: 15px 0 15px;
   }
 
+  .product__description--sort {
+
+  }
+
   &__seller--sort {
     margin-bottom: 20px;
   }
 
-  &__box {
+  &__box--sort {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
@@ -2094,8 +2119,6 @@
   }
 
 }
-
-
 
 /* ---------- SORT END ---------- */
 
