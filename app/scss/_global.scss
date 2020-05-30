@@ -91,13 +91,26 @@ body {
       a,
       span {
         color: #bfcad7;
-        cursor: unset;
+        cursor: default;
       }
     }
   }
   
   &__link {
     color: #ffffff;
+    @include focus;
+
+    &:hover {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        bottom: -5px;
+      }
+    }
   }
 }
 

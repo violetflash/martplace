@@ -855,6 +855,11 @@
     max-width: 150px;
   }
 
+  &__tag-link--small {
+    margin-bottom: 0;
+    height: 32px;
+  }
+
   &__description--small {
     margin-top: 28px;
     margin-bottom: 3px;
