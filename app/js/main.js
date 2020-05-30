@@ -1,7 +1,7 @@
 $(function () {
 
 
-    $('.product__stars--newest').rateYo({
+    $('.product__stars--small').rateYo({
         rating: 4.5,
         readOnly: true,
         starWidth: "13px",
@@ -43,16 +43,36 @@ $(function () {
 
     $('.filter__list').on('click', function () {
         $('.filter__list').addClass('active');
-        $('.filter__grid').removeClass('active')
+        $('.filter__grid').removeClass('active');
+        $('.sort__product').addClass('list')
     });
 
     $('.filter__grid').on('click', function () {
         $('.filter__grid').addClass('active');
-        $('.filter__list').removeClass('active')
+        $('.filter__list').removeClass('active');
+        $('.sort__product').removeClass('list')
     });
 
-    var mixer = mixitup('.newest__inner-box');
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        skin: "round",
+        min: 0,
+        max: 330,
+        from: 30,
+        to: 300,
+        prefix: "$"
+        // grid: true
+    });
 
+    try {
+        var mixer = mixitup('.newest__inner-box');
+    }
+    catch {}
+
+    try {
+        var mixer2 = mixitup('.sort__content-box');
+    }
+    catch {}
 
 });
 
