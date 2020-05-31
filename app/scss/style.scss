@@ -111,7 +111,6 @@
     }
   }
 
-  &__
 
 
   &__user {
@@ -121,28 +120,43 @@
     line-height: 22px;
     height: 100px;
 
+
     &:hover {
       .header__user-menu {
-        opacity: 1;
+        height: auto;
+        overflow: visible;
+        border-width: 1px;
+        padding: 20px 20px 30px;
+
+
+
       }
     }
   }
 
+  .header__cart-box {
+    display: inline-block;
+    margin-left: 32px;
+    margin-right: 48px;
+  }
+
   &__user-menu {
-    opacity: 0;
     background-color: $white;
     list-style: none;
     width: 270px;
     margin: 0;
-    padding: 20px 20px 30px;
-    border-top: 1px solid $blue;
+    padding: 0 20px;
+    border-top: 0 solid $blue;
     box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
     border-radius: 0 0 3px 3px;
     position: absolute;
     top: 100px;
     right: 0;
     z-index: 1;
-    transition: all .4s;
+    height: 0;
+    overflow: hidden;
+    transition: all .2s;
+
 
 
     &::after {
@@ -161,7 +175,6 @@
 
   &__user-link {
     margin-right: 22px;
-    margin-left: 40px;
     @include focus;
   }
 
