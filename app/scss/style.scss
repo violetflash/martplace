@@ -367,7 +367,6 @@
   }
 
   &__price {
-    display: block;
     height: 30px;
     line-height: 30px;
     padding: 0 12px;
@@ -377,20 +376,10 @@
     font-weight: 500;
     border-radius: 15px;
     text-align: center;
-    @include focus;
-
-    &:hover {
-      background-color: $blue;
-      color: $white;
-    }
   }
   
   &__tag-name {
     color: $violet;
-    
-    &:hover {
-      text-decoration: underline;
-    }
   }
 
   &__total {
