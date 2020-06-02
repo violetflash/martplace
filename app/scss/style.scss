@@ -41,7 +41,7 @@
 
   &__btn {
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: 34px;
     padding: 0 18px;
     height: 36px;
     line-height: 36px;
@@ -130,10 +130,12 @@
     position: relative;
     line-height: 100px;
     height: 100px;
+    padding: 0 16px;
   }
 
   &__cart-menu,
-  &__user-menu {
+  &__user-menu,
+  &__notify-menu {
     background-color: $white;
     border-top: 0 solid $blue;
     box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
@@ -159,6 +161,135 @@
       top: -25px;
       right: 19px;
     }
+  }
+
+  &__alarm-box,
+  &__msg-box {
+
+    &:hover {
+
+      .header__notify-menu {
+        height: auto;
+        opacity: 1;
+        overflow: visible;
+        border-width: 1px;
+        padding: 26px 25px 0;
+      }
+
+      .header__link,
+      .header__informer {
+        color: $black;
+      }
+    }
+  }
+
+  &__notify-menu {
+    width: 370px;
+    padding: 0 25px;
+    line-height: normal;
+    left: 0;
+
+    &::after {
+      left: 17px;
+    }
+  }
+
+  &__notify-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__notify-title {
+    font-size: 18px;
+    color: $black;
+  }
+
+  &__view {
+    display: inline-block;
+    font-size: 15px;
+    color: $blue;
+    @include focus;
+    
+    &:hover {
+      background-color: $blue;
+      color: #fff;
+      padding: 0 10px;
+      border-radius: 8px;
+    }
+  }
+
+  &__notify-item {
+    padding: 20px 0;
+    border-top: 1px solid #e8ebf0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__notify-info {
+    display: flex;
+  }
+
+  &__notify-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 14px;
+  }
+
+  &__event-box {
+    max-width: 220px;
+  }
+
+  &__event {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: -5px;
+  }
+
+  &__from {
+    font-weight: 500;
+    color: #333;
+    @include focus;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__action {
+    color: #747a86;
+    font-size: 15px;
+  }
+
+  &__target {
+    color: $blue;
+    @include focus;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__when {
+    font-size: 14px;
+    color: #747a86;
+    margin-top: 5px;
+  }
+  
+
+
+  &__notify-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    font-size: 15px;
+    color: $blue;
+    margin-top: 13px;
+    margin-left: 5px;
   }
 
   &__user-menu {
@@ -276,8 +407,7 @@
   }
 
   &__cart-box {
-    padding-right: 48px;
-    padding-left: 16px;
+    margin-right: 32px;
 
     &:hover {
       .header__cart-menu {
@@ -303,9 +433,10 @@
     background-color: $white;
     line-height: normal;
     padding-top: 0;
+    right: -27px;
 
     &::after {
-      right: 46px;
+      right: 43px;
     }
   }
 
