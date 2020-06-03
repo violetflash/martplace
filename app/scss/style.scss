@@ -373,7 +373,7 @@
   }
 
   &__msg-text {
-   max-width: 250px;
+    max-width: 250px;
     font-size: 15px;
     color: #555;
   }
@@ -383,10 +383,24 @@
     width: 270px;
     margin: 0;
     padding: 0 20px;
+
+    &--global {
+      max-width: 270px;
+      padding: 0 20px;
+      top: 80px;
+      left: 0;
+      &::after {
+        display: none;
+      }
+    }
+
   }
 
   &__user-item {
+    font-size: 15px;
+    font-weight: 500;
     padding-left: 10px;
+    color: #54667a;
     &:hover {
       background-color: $blue;
       border-radius: 2px;
@@ -409,8 +423,14 @@
       font-family: 'Linearicons-Free';
       content: "\e82a";
       font-size: 15px;
-      //color: #54667a;
       left: 0;
+    }
+
+    &--global {
+      padding-left: 0;
+      &::before {
+        display: none;
+      }
     }
 
     &--dashboard {
@@ -474,7 +494,8 @@
     }
   }
 
-  &__user {
+  &__user,
+  &__item {
     position: relative;
     display: flex;
     align-items: center;
@@ -654,6 +675,42 @@
       background-color: $blue;
     }
   }
+
+  /*  GLOBAL MENU  */
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+    &:hover {
+      .header__user-menu--global {
+        //padding-bottom: 36px;
+      }
+    }
+  }
+
+  &__menu-link {
+    color: $text2;
+    font-size: 15px;
+    font-weight: 500;
+    @include focus;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__item {
+    padding-right: 15px;
+    & + & {
+      padding-left: 15px;
+    }
+  }
 /*  /drop-down   */
 
 
@@ -675,29 +732,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 80px;
   }
 
-  &__item {
-    display: inline-block;
-  }
-
-  &__menu-link {
-    color: $text2;
-    font-size: 15px;
-    font-weight: 500;
-    @include focus;
-
-    &:hover {
-      color: $blue;
-    }
-  }
-
-  &__item {
-    & + & {
-      margin-left: 30px;
-    }
-  }
 }
 
 .search-form {
