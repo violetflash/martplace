@@ -131,6 +131,7 @@
     line-height: 100px;
     height: 100px;
     padding: 0 16px;
+    cursor: pointer;
   }
 
   &__cart-menu,
@@ -148,6 +149,7 @@
     opacity: 0;
     overflow: hidden;
     transition: all .3s;
+    cursor: auto;
 
     &::after {
       position: absolute;
@@ -191,6 +193,15 @@
 
     &::after {
       left: 17px;
+    }
+
+    &--msg {
+      left: auto;
+      right: 0;
+
+      &::after {
+        left: auto;
+      }
     }
   }
 
@@ -394,6 +405,7 @@
     align-items: center;
     line-height: 22px;
     height: 100px;
+    cursor: pointer;;
 
     &:hover {
       .header__user-menu {
