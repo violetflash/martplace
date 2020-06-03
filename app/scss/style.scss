@@ -381,7 +381,7 @@
     list-style: none;
     width: 270px;
     margin: 0;
-    padding: 0 20px 20px;
+    padding: 0;
 
     &--global {
       top: 80px;
@@ -399,7 +399,7 @@
         opacity: 1;
         overflow: visible;
         border-width: 1px;
-        padding-top: 30px;
+        padding: 30px 0 20px 0;
       }
     }
   }
@@ -410,7 +410,7 @@
     box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
     border-radius: 0 0 3px 3px;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     height: 0;
     opacity: 0;
     overflow: hidden;
@@ -423,14 +423,15 @@
     display: flex;
     justify-content: space-between;
     line-height: 42px;
-    padding-left: 30px;
   }
 
   &__user-item {
     font-size: 15px;
     font-weight: 500;
-    padding-left: 10px;
+    padding: 0 10px;
+    margin: 0 20px;
     color: #54667a;
+    max-width: 210px;
     &:hover {
       background-color: $blue;
       border-radius: 2px;
@@ -544,7 +545,7 @@
         opacity: 1;
         overflow: visible;
         border-width: 1px;
-        padding: 20px;
+        padding: 20px 0;
       }
     }
   }
@@ -734,7 +735,7 @@
         opacity: 1;
         overflow: visible;
         border-width: 1px;
-        padding-top: 20px;
+        padding: 20px 0;
       }
     }
   }
@@ -757,20 +758,31 @@
     }
   }
 
+  &__column {
+    &:first-child {
+      padding-left: 30px;
+    }
+    &:last-child {
+      padding-right: 19px;
+    }
+  }
+
   &__column-title {
     color: $black;
     line-height: 1;
     font-weight: 700;
     padding-bottom: 17px;
     border-bottom: 1px solid #e8ebf0;
+
   }
 
   &__column-menu {
     display: flex;
     justify-content: space-between;
-    padding-right: 25px;
+    padding-right: 20px;
     margin-top: 20px;
     font-size: 15px;
+
   }
 
   &__column-list {
@@ -779,7 +791,7 @@
     list-style: none;
 
     & + & {
-      margin-left: 80px;
+      margin-left: 65px;
     }
   }
 
@@ -798,6 +810,7 @@
     display: inline-block;
     color: #54667a;
     @include focus;
+    max-width: 175px;
   }
   /*  end drop-down   */
 
@@ -828,6 +841,16 @@
   max-width: 360px;
   width: 100%;
 
+  &--footer {
+    margin-bottom: 50px;
+  }
+
+  &--searcher {
+    max-width: 555px;
+    margin: 0 auto 37px;
+    font-size: 15px;
+  }
+
   &__input {
     display: block;
     width: 100%;
@@ -836,6 +859,17 @@
     border-radius: 23px;
     border: 1px solid #d9dfe5;
     @include focus;
+
+    &--footer {
+      height: 50px;
+      border-radius: 25px;
+    }
+
+    &--searcher {
+      padding-right: 120px;
+      height: 55px;
+      border-radius: 28px;
+    }
   }
 
   &__btn {
@@ -849,6 +883,19 @@
     border: 1px solid transparent;
     cursor: pointer;
     @include focus;
+
+    &--footer {
+      width: 110px;
+      height: 50px;
+      border-radius: 25px;
+    }
+
+    &--searcher {
+      border-radius: 28px;
+      height: 55px;
+      color: $white;
+      width: 110px;
+    }
 
     &:hover {
       background-color: $violet;
@@ -1358,6 +1405,8 @@
     padding-left: 30px;
     font-size: 20px;
     color: #a3b1c4;
+    background-color: transparent;
+    border:none;
     cursor: pointer;
     @include focus;
 
@@ -1388,7 +1437,7 @@
       border-left: 16px solid transparent;
       border-right: 16px solid transparent;
       top: -25px;
-      right: 8px;
+      right: 13px;
     }
   }
 
@@ -1704,7 +1753,7 @@
 /* ----- ADVANTAGES END ----- */
 
 /* ----- SELL&BUY START ----- */
-.sellbuy {
+.sell-buy {
   position: relative;
   padding-bottom: 561px;
 
@@ -2189,21 +2238,6 @@
     }
   }
 
-  &__btn {
-    width: 110px;
-    height: 50px;
-    border-radius: 25px;
-  }
-
-  &__input {
-    height: 50px;
-    border-radius: 25px;
-  }
-
-  &__form {
-    margin-bottom: 50px;
-  }
-
   &__social-item {
     display: inline-block;
     & + & {
@@ -2293,23 +2327,6 @@
     }
   }
 
-  &__form {
-    max-width: 555px;
-    margin: 0 auto 37px;
-    font-size: 15px;
-  }
-
-  &__input {
-    height: 55px;
-    border-radius: 28px;
-  }
-
-  &__btn {
-    border-radius: 28px;
-    height: 55px;
-    color: $white;
-    width: 110px;
-  }
 }
 /* ---------- SEARCHER END ---------- */
 
