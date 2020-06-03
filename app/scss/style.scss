@@ -236,6 +236,7 @@
     border-top: 1px solid #e8ebf0;
     display: flex;
     justify-content: space-between;
+
   }
 
   &__notify-info {
@@ -288,8 +289,6 @@
     color: #747a86;
     margin-top: 5px;
   }
-  
-
 
   &__notify-icon {
     width: 32px;
@@ -302,6 +301,11 @@
     margin-top: 13px;
     margin-left: 5px;
   }
+
+  //&__msg-link {
+  //  display: block;
+  //  cursor: pointer;
+  //}
 
   &__user-menu {
     list-style: none;
