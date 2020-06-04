@@ -74,5 +74,9 @@ $(function () {
     }
     catch {}
 
+    $('.header__mobile-menu').on('click', function () {
+        $('.header__menu').slideToggle()
+    })
+
 });
 

@@ -724,10 +724,13 @@
     line-height: 80px;
     position: relative;
     cursor: pointer;
+    padding-right: 15px;
+    & + & {
+      padding-left: 15px;
+    }
 
     &--position {
       position: static;
-
     }
 
     &:hover {
@@ -749,13 +752,6 @@
 
     &:hover {
       color: $blue;
-    }
-  }
-
-  &__item {
-    padding-right: 15px;
-    & + & {
-      padding-left: 15px;
     }
   }
 
@@ -829,10 +825,24 @@
   }
 
   &__bottom {
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+  }
+  
+  &__mobile-menu {
+    display: none;
+    font-size: 40px;
+    color: #000;
+  }
+
+  &__menu {
+    display: none;
+    &--off {
+      display: none;
+    }
   }
 
 }
@@ -1474,6 +1484,8 @@
     font-size: 15px;
     padding: 30px;
     margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &__inner-box {
@@ -2907,6 +2919,12 @@
 
 
 
+
+
+
+
+@import "media";
+/* --------------------------STYLE.SCSS END ------------------------------*/
 
 
 
