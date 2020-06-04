@@ -458,26 +458,26 @@
           <div class="container">
             <div class="filter__inner">
               <div class="filter__links">
-                <button class="filter__link filter__new" type="button" data-filter=".cat-new">New Products</button>
-                <button class="filter__link filter__popular" type="button" data-filter=".cat-popular">Popular
+                <button class="filter__link filter__link--margin40" type="button" data-filter=".cat-new">New Products</button>
+                <button class="filter__link filter__link--margin40" type="button" data-filter=".cat-popular">Popular
                   Products
                 </button>
                 <button class="filter__link filter__all" type="button" data-filter="all">All Products</button>
               </div>
               <div class="filter__filters">
-                <form class="filter__price-form">
+                <div class="filter__price-form">
                   <select name="" class="filter__price">
                     <option>Price : Low to High</option>
                     <option>Price : High to Low</option>
                   </select>
-                </form>
-                <form class="filter__qt-form">
+                </div>
+                <div class="filter__qt-form">
                   <select name="" class="filter__qt">
                     <option>12 Items Per Page</option>
                     <option>9 Items Per Page</option>
                     <option>6 Items Per Page</option>
                   </select>
-                </form>
+                </div>
                 <div class="filter__btn-box">
                   <div class="filter__sort filter__grid icon-filter-grid active"></div>
                   <div class="filter__sort filter__list icon-filter-list"></div>
@@ -582,13 +582,12 @@
                   <div class="sort__aside-title">
                     Pricing Range
                   </div>
-                  <form class="sort__slider">
-                    <input type="text" class="js-range-slider" name="my_range" value=""/>
-                    <button class="sort__btn" type="button">Search Update</button>
-                  </form>
+                  <input type="text" class="js-range-slider" name="my_range" value=""/>
+                  <button class="sort__btn" type="button">Search Update</button>
                 </div>
               </aside>
-              <div class="sort__content">
+
+              <section class="sort__content">
                 <div class="sort__content-box">
                   <div class="product product--sort mix cat-low-price cat-html ct-landing cat-joomla cat-new cat-best">
                     <div class="product__img-box product__img-box--sort">
@@ -601,8 +600,8 @@
                     <div class="product__card product__card--sort">
                       <div class="product__section-left">
                         <a class="product__title product__title--sort" href="#">
-                        Finance and Consulting Business Theme
-                      </a>
+                          Finance and Consulting Business Theme
+                        </a>
                         <p class="product__description product__description--sort">
                           Nunc placerat mi id nisi inter dum mollis. Praesent phare...
                         </p>
@@ -646,7 +645,6 @@
                         </div>
                       </div>
                     </div>
-
                     <div class="product__stats product__stats--sort product__visible">
                       <a class="product__price product__price--sort" href="#">$10</a>
                       <a class="product__tag product__tag--sort" href="#">
@@ -1225,7 +1223,6 @@
                         </div>
                       </div>
                     </div>
-
                     <div class="product__stats product__stats--sort product__visible">
                       <a class="product__price product__price--sort" href="#">$10</a>
                       <a class="product__tag product__tag--sort" href="#">
@@ -1369,9 +1366,9 @@
                   <li class="sort__page"><a class="sort__pag-link" href="#">2</a></li>
                   <li class="sort__page"><a class="sort__pag-link" href="#">...</a></li>
                   <li class="sort__page"><a class="sort__pag-link" href="#">8</a></li>
-                  <li class="sort__page"><a class="sort__arrow sort__arrow--active lnr lnr-arrow-right" href="#"></a></li>
+                  <li class="sort__page"><a class="sort__arrow sort__arrow--clickable lnr lnr-arrow-right" href="#"></a></li>
                 </ul>
-              </div>
+              </section>
             </div>
           </div>
         </section>  <!-- SORT END -->
