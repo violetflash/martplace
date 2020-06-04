@@ -1,17 +1,66 @@
 @media (max-width: 992px) {
-
   .header {
     &__item {
       padding-right: 0;
     }
 
+    &__alarm-box,
+    &__msg-box,
+    &__cart-box {
+      padding-left: 0;
+      margin-right: 0;
+    }
+
+    &__alarm-box {
+      .header__notify-menu {
+        left: unset;
+        &::after {
+          left:unset;
+          right: 18px;
+        }
+      }
+    }
+
     &__menu {
       display: none;
+      position: absolute;
+      top: 80px;
+      background-color: #eef1f3;
+      border-left: 10px solid $blue;
+
+      z-index: 5;
+      max-width: 100%;
+      width: 100%;
+
+    }
+
+    &__item {
+      display: block;
+      height: auto;
+      line-height: 45px;
+      border-top: 2px solid #262b30;
+      padding-left: 20px;
+      margin: 0;
+      & + & {
+        padding-left: 15px;
+      }
     }
 
     &__mobile-menu {
       display: block;
+      padding-right: 20px;
     }
+
+    &__user-menu {
+      &--global {
+        display: none;
+      }
+    }
+
+    &__pages-menu {
+      display: none;
+    }
+
   }
 
   .footer {
@@ -20,7 +69,7 @@
     }
 
     &__inner {
-    flex-wrap: wrap;
+      flex-wrap: wrap;
     }
 
     &__column--big {
@@ -28,8 +77,102 @@
       width: 100%;
       margin-bottom: 30px;
     }
+
+    &__logo {
+      margin-bottom: 10px;
+    }
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    &__alarm-box,
+    &__msg-box {
+      display: none;
+    }
+
+    &__btn {
+      margin-right: 10px;
+      display: none;
+    }
+  }
+
+  .footer {
+    &__inner{
+      justify-content: flex-start;
+    }
+
+    &__column {
+      &--bigger {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 30px;
+      }
+      &--margin {
+        margin-right: 80px;
+      }
+    }
+
+    &__title {
+      margin-bottom: 5px;
+    }
+
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    &__name,
+    &__money {
+      display: none;
+    }
+
+    &__user-link {
+      margin-right: 0;
+    }
+
+    &__cart-menu {
+      right: -50px;
+      max-width: 300px;
+
+      &::after {
+        right: 65px;
+      }
+    }
+
+    &__manager {
+      display: flex;
+      justify-content: space-between;
+      min-height: unset;
+      padding: 0 20px;
+      margin: 10px 0;
+    }
+
+    &__delete {
+      margin-bottom: 0;
+    }
+
+    &__product {
+      display: block;
+      padding: 0 5px;
+    }
+
+    &__price {
+      display: inline-block;
+    }
+
+  }
+
+  .footer {
+
+
+
+  }
+
+
+}
+
+
 
 
 @media (min-width: 992px) {
