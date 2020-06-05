@@ -1175,10 +1175,23 @@
 
   &__img-box {
     position: relative;
+    width: 100%;
+    height: 450px;
 
     &:hover .product__links {
       height: 450px;
     }
+
+    &--small {
+      height: auto;
+    }
+  }
+
+  &__img {
+    border-radius: 4px 0 0 4px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   &__links {
@@ -1217,16 +1230,17 @@
     }
   }
 
-  &__img {
-    border-radius: 4px 0 0 4px;
-    width: 555px;
-    height: 450px;
-  }
-
   &__card {
     max-width: 585px;
     width: 100%;
     padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    //min-height: 100%;
+  }
+
+  &__card-inner {
+    flex: 1 0 auto;
   }
 
   &__title {
@@ -1317,6 +1331,7 @@
   }
 
   &__stats {
+    flex: 0 0 auto;
     border-top: 1px solid #ececec;
     display: flex;
     justify-content: space-between;
@@ -1490,8 +1505,9 @@
 
   &__inner-box {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    margin-left: -28px;
   }
 
   &__new-btn {
@@ -1514,16 +1530,18 @@
 
   &--small {
     display: block;
-    max-width: 361px;
+    flex-basis: calc(33.333% - 28px);
     background-color: $white;
     box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
     border-radius: 4px;
     margin-bottom: 30px;
+    margin-left: 28px;
   }
 
   &__img-box--small:hover .product__links {
     height: 230px;
   }
+
 
   &__img--small {
     @include bg-properties;

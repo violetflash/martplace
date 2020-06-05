@@ -23,6 +23,14 @@ $(function () {
         // autoplay: true,
         autoplaySpeed: 3000,
         adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 993,
+                settings: {
+                    arrows: false,
+                }
+            },
+        ]
     });
 
     $('.feed__slider').slick({
