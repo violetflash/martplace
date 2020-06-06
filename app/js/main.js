@@ -20,7 +20,9 @@ $(function () {
         prevArrow: '<button class="featured__slick-arrow featured__slick-arrow--prev"><span class="lnr lnr-chevron-left"></span></button>',
         nextArrow: '<button class="featured__slick-arrow featured__slick-arrow--next"><span class="lnr lnr-chevron-right"></span></button>',
         appendArrows: '.featured__slider-nav',
-        // autoplay: true,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        autoplay: true,
         autoplaySpeed: 3000,
         adaptiveHeight: true,
         responsive: [
@@ -92,7 +94,6 @@ $(function () {
         from: 30,
         to: 300,
         prefix: "$"
-        // grid: true
     });
 
     try {
