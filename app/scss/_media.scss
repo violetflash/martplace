@@ -1,4 +1,22 @@
 @media (max-width: 1200px) {
+  .intro {
+    min-height: unset;
+    padding-bottom: 130px;
+
+    &__title {
+      padding-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    &__subtitle {
+      margin-bottom: 30px;
+    }
+
+    .button {
+      margin-bottom: 20px;
+    }
+  }
+
   .search {
     &__form {
       max-width: 100%;
@@ -198,8 +216,79 @@
 
     }
   }
-}
 
+  .stats {
+    padding: 40px 0;
+  }
+
+  .advantages {
+    padding: 40px 0;
+
+    .title__subtitle {
+      margin-bottom: 30px;
+      max-width: 100%;
+    }
+
+    &__box {
+      justify-content: space-evenly;
+    }
+  }
+
+  .feedback {
+    padding: 50px 0;
+
+    .title {
+      &__text {
+        margin-bottom: 20px;
+      }
+
+      &__subtitle {
+        max-width: 100%;
+      }
+    }
+
+  }
+
+  .news {
+    padding: 40px 0;
+
+    .title {
+      &__text {
+        margin-bottom: 20px;
+      }
+
+      &__subtitle {
+        max-width: 100%;
+      }
+    }
+
+    &__title {
+      margin-bottom: 15px;
+    }
+
+    &__inner {
+      padding: 10px 30px;
+    }
+    &__item {
+      max-width: calc((100vw - 30px - 40px)/2);
+    }
+
+    &__date-box,
+    &__stats {
+      padding: 5px;
+    }
+  }
+
+  .join {
+    padding: 40px 0;
+  }
+
+  .footer {
+    &__top {
+      padding: 30px 0;
+    }
+  }
+}
 
   @media (max-width: 992px) {
   .header {
@@ -229,7 +318,7 @@
       position: absolute;
       top: 80px;
       background-color: #eef1f3;
-      border-left: 10px solid $violet;
+      border-left: 10px solid $blue;
       text-align: center;
       z-index: 5;
       max-width: 100%;
@@ -240,7 +329,7 @@
       display: block;
       height: auto;
       line-height: 45px;
-      border-top: 2px solid #262b30;
+      border-top: 2px solid $blue;
       padding-left: 20px;
       margin: 0;
       & + & {
@@ -261,23 +350,6 @@
 
     &__pages-menu {
       display: none;
-    }
-  }
-
-  .intro {
-    min-height: unset;
-    padding-bottom: 130px;
-    &__title {
-      padding-top: 20px;
-      margin-bottom: 20px;
-    }
-
-    &__subtitle {
-      margin-bottom: 30px;
-    }
-
-    .button {
-      margin-bottom: 20px;
     }
   }
 
@@ -374,11 +446,46 @@
     }
   }
 
-
-  .footer {
-    &__top {
+  .sell-buy {
+    padding-bottom: 0;
+    &__part {
+      display: block;
+      text-align: center;
+      position: static;
+      width: 100%;
+      height: auto;
       padding: 30px 0;
     }
+
+    &__image {
+      margin-bottom: 20px;
+    }
+    &__title {
+      margin-bottom: 15px;
+    }
+    &__text {
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+  .feedback {
+    &__box {
+      display: block;
+
+    }
+    &__item {
+      max-width: 100%;
+      padding: 20px;
+    }
+
+    &__slider-wrapper {
+      padding: 30px 0;
+    }
+
+  }
+
+  .footer {
 
     &__inner {
       flex-wrap: wrap;
@@ -390,7 +497,13 @@
       margin-bottom: 30px;
     }
 
-    &__logo {
+    .footer__address {
+      &::before {
+        top: 0;
+      }
+    }
+
+      &__logo {
       margin-bottom: 10px;
     }
   }
@@ -472,6 +585,32 @@
       }
     }
   }
+
+  .stats {
+    &__inner {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 50%;
+      margin-bottom: 40px;
+    }
+
+    &__img {
+      margin-bottom: 10px;
+    }
+  }
+
+  .news {
+    &__item {
+      max-width: 100%;
+    }
+    
+    &__inner {
+      text-align: center;
+    }
+  }
+
 
   .footer {
     &__inner{
@@ -582,6 +721,25 @@
     }
 
 
+  }
+
+  .feedback {
+    &__top {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .support {
+    padding-bottom: 0;
+    &__part {
+      position: static;
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      padding: 30px 0;
+    }
   }
 
 }  /* / 576px */

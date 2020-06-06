@@ -40,10 +40,9 @@ $(function () {
         infinite: true,
         pauseOnFocus: true,
         pauseOnHover: true,
-        // slidesToShow: 3,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         variableWidth: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 3000,
         responsive: [
             {
@@ -58,7 +57,19 @@ $(function () {
     $('.feedback__slider').slick({
         prevArrow: '<button class="feedback__slick-arrow feedback__slick-arrow--prev"><span class="lnr lnr-chevron-left"></span></button>',
         nextArrow: '<button class="feedback__slick-arrow feedback__slick-arrow--next"><span class="lnr lnr-chevron-right"></span></button>',
-
+        infinite: true,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    arrows: false,
+                }
+            },
+        ]
     });
 
     $('.filter__list').on('click', function () {

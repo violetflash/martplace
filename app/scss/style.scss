@@ -548,6 +548,7 @@
         overflow: visible;
         border-width: 1px;
         padding: 20px 0;
+        z-index: 2;
       }
     }
   }
@@ -562,6 +563,7 @@
         opacity: 1;
         border-width: 1px;
         padding-top: 25px;
+        z-index: 2;
       }
 
       .header__informer--cart {
@@ -1882,20 +1884,19 @@
     text-align: center;
   }
 
-  &__item--yellow {
-    color: #feb71d;
-  }
-
-  &__item--blue {
-    color: $blue;
-  }
-
-  &__item--green {
-    color: $green;
-  }
-
-  &__item--red {
-    color: $red;
+  &__item {
+    &--yellow {
+      color: #feb71d;
+    }
+    &--blue {
+      color: $blue;
+    }
+    &--green {
+      color: $green;
+    }
+    &--red {
+      color: $red;
+    }
   }
 
   &__img {
@@ -2044,6 +2045,8 @@
   &__title {
     margin-bottom: 27px;
     font-size: 36px;
+    padding: 0 20px;
+    text-align: center;
   }
 
   &__text {
@@ -2051,6 +2054,7 @@
     font-size: 16px;
     line-height: 30px;
     margin: 0 auto;
+    padding: 0 20px;
     margin-bottom: 50px;
     text-align: center;
   }
@@ -2076,7 +2080,7 @@
     }
   }
 }
-/* ----- SELL&BUY END ----- */
+/* ----- SELL-BUY END ----- */
 
 /* ----- FEEDBACK START ----- */
 .feedback {
@@ -2104,7 +2108,6 @@
     border-radius: 0 4px 4px 0;
     border-left: 2px solid $blue;
     box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
-
   }
 
   &__top {
@@ -2112,7 +2115,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 30px;
-
+    z-index: 1;
     &::after {
       position: absolute;
       content: "\e83f";
@@ -2120,6 +2123,8 @@
       font-size: 60px;
       color: #e8e8e8;
       right: 0;
+      top: 0;
+      z-index: -1;
     }
   }
 
@@ -2135,10 +2140,12 @@
     font-size: 20px;
     color: #000;
     margin-bottom: 15px;
+    z-index: 2;
   }
 
   &__job {
     color: $text;
+    z-index: 1;
   }
 
   &__text {
@@ -2228,6 +2235,7 @@
     border-radius: 4px;
     box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
     background-color: #fff;
+    margin-bottom: 30px;
   }
 
   &__link {
@@ -2237,9 +2245,11 @@
   }
 
   &__img {
-    width: 361px;
+    width: 100%;
     height: 230px;
     border-radius: 4px 4px 0 0;
+    object-fit: cover;
+    object-position: center;
   }
 
   &__inner {
@@ -2345,12 +2355,17 @@
 
   &__title {
     font-size: 24px;
+    padding: 0 10px;
+    text-align: center;
   }
 
   &__highlight {
     color: $blue;
     &--violet {
       color: $violet;
+    }
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
