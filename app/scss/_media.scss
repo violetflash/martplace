@@ -23,8 +23,12 @@
     padding-bottom: 0;
   }
 
+  .title-box {
+    padding: 15px 30px;
+  }
+
   .featured {
-    padding: 40px 0;
+    padding: 60px 0;
     &__title {
       margin-bottom: 15px;
     }
@@ -59,7 +63,12 @@
   }
 
   .newest {
-    padding: 0;
+    padding: 0 0 50px;
+
+    &__inner {
+      margin-bottom: 0;
+    }
+
     &__inner-box {
       margin-left: 0;
       justify-content: space-between;
@@ -117,10 +126,78 @@
           padding: 15px 0;
         }
       }
+
+      &__box {
+        margin-right: 20px;
+      }
     }
   }
 
+  .feed {
+    padding: 0;
 
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__slider-wrapper {
+    }
+
+    .product {
+      &--single {
+        max-width: calc((100vw - 30px - calc((1140px - (3 * 361px)) / 2))/2);
+        text-align: center;
+      }
+      &__img {
+        &--small {
+          border-radius: 0;
+          width: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      &__stats {
+        &--small {
+          justify-content: center;
+          max-width: 100%;
+          padding: 15px 0;
+        }
+      }
+      &__card {
+        &--small {
+          padding: 0;
+        }
+      }
+
+      &__title {
+        &--small {
+          margin-top: 5px;
+          padding: 0 10px;
+        }
+      }
+
+      &__description {
+        &--small {
+          max-width: 100%;
+          margin: 0;
+          min-height: unset;
+          padding: 0 10px;
+        }
+      }
+
+      &__about {
+        &--small {
+          justify-content: center;
+        }
+      }
+
+      &__box {
+        margin-right: 20px;
+      }
+
+    }
+  }
 }
 
 
@@ -230,9 +307,6 @@
     }
   }
 
-  .title-box {
-    padding: 15px 30px;
-  }
 
   .featured {
     .product {
@@ -288,6 +362,12 @@
       &__card {
         &--small {
           max-width: 100%;
+        }
+      }
+
+      &__tag-link {
+        &--small {
+          margin: 5px 0;
         }
       }
 
@@ -379,6 +459,16 @@
         &--small {
           padding-top: 0;
         }
+      }
+    }
+  }
+
+  .feed {
+    .product {
+      max-width: calc(100vw - 30px);
+
+      &__card--small {
+        max-width: 100%;
       }
     }
   }

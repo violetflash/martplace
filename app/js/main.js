@@ -25,7 +25,7 @@ $(function () {
         adaptiveHeight: true,
         responsive: [
             {
-                breakpoint: 993,
+                breakpoint: 1200,
                 settings: {
                     arrows: false,
                 }
@@ -37,11 +37,22 @@ $(function () {
         prevArrow: '<button class="feed__slick-arrow feed__slick-arrow--prev"><span class="lnr lnr-chevron-left"></span></button>',
         nextArrow: '<button class="feed__slick-arrow feed__slick-arrow--next"><span class="lnr lnr-chevron-right"></span></button>',
         appendArrows: '.feed__slider-nav',
-        slidesToShow: 3,
-        slidesToScroll: 1,
+        infinite: true,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        // slidesToShow: 3,
+        slidesToScroll: 2,
         variableWidth: true,
         // autoplay: true,
         autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    arrows: false,
+                }
+            },
+        ]
     });
 
     $('.feedback__slider').slick({
