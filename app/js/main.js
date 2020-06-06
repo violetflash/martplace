@@ -40,7 +40,7 @@ $(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         variableWidth: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 3000,
     });
 

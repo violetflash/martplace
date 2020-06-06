@@ -28,77 +28,99 @@
     &__title {
       margin-bottom: 15px;
     }
+
+    .product {
+      &__card {
+        padding: 0 10px 0 10px;
+      }
+
+      &__description {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+
+
+      &__tag-link {
+        margin-bottom: 10px;
+      }
+
+      &__stats {
+        max-width: 100%;
+      }
+
+      &__box {
+        margin-right: 10px;
+      }
+
+      &__stars {
+        padding: 0 30px;
+      }
+    }
   }
 
   .newest {
+    padding: 0;
     &__inner-box {
       margin-left: 0;
       justify-content: space-between;
     }
+    .product {
+
+      &--small {
+        flex-basis: 100%;
+        max-width: calc((100vw - 30px - 60px)/2);
+        text-align: center;
+        margin-left: 0;
+      }
+
+      &__img {
+        &--small {
+          border-radius: 0;
+          width: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      &__card {
+        &--small {
+          padding: 0;
+        }
+      }
+
+      &__title {
+        &--small {
+          margin-top: 0;
+          padding: 0 10px;
+        }
+      }
+
+      &__description {
+        &--small {
+          max-width: 100%;
+          margin: 0;
+          min-height: unset;
+          padding: 0 10px;
+        }
+      }
+
+      &__about {
+        &--small {
+          justify-content: center;
+        }
+      }
+
+      &__stats {
+        &--small {
+          justify-content: center;
+          max-width: 100%;
+          padding: 15px 0;
+        }
+      }
+    }
   }
 
-  .product {
 
-    &--small {
-      flex-basis: 100%;
-      max-width: calc((100vw - 30px - 60px)/2);
-      text-align: center;
-      margin-left: 0;
-    }
-
-    &__img {
-      &--small {
-        border-radius: 0;
-        width: 100%;
-        object-fit: cover;
-      }
-    }
-
-    &__title {
-      &--small {
-        margin-top: 0;
-      }
-    }
-
-    &__card {
-      padding: 0 10px 0 10px;
-    }
-
-    &__description {
-      max-width: 100%;
-      margin-bottom: 20px;
-      &--small {
-        margin: 0;
-        min-height: unset;
-      }
-    }
-
-    &__about {
-      &--small {
-        justify-content: center;
-      }
-    }
-
-    &__tag-link {
-      margin-bottom: 10px;
-    }
-
-    &__stats {
-      max-width: 100%;
-      &--small {
-        justify-content: center;
-      }
-    }
-
-    &__box {
-      margin-right: 10px;
-    }
-
-    &__stars {
-      padding: 0 30px;
-    }
-
-  }
 }
 
 
@@ -212,46 +234,63 @@
     padding: 15px 30px;
   }
 
+  .featured {
+    .product {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      &__img {
+        border-radius: 4px 4px 0 0 ;
+      }
+
+      &__card {
+        max-width: 100%;
+      }
+
+      &__title {
+        margin-top: 10px;
+      }
+
+      &__about {
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+
+      &__description {
+        min-height: unset;
+        margin-bottom: 10px;
+      }
+
+      &__stats {
+        justify-content: center;
+        padding: 10px 0;
+      }
+    }
+  }
+
   .newest {
     &__tags {
       margin-bottom: 30px;
     }
-  }
 
-  .product {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    .product {
+      &--small {
+        max-width: calc((100vw - 30px - 20px)/2);
+      }
 
-    &--small {
-      max-width: calc((100vw - 30px - 20px)/2);
-    }
+      &__img {
+        &--small {
+          border-radius: 4px 4px 0 0 ;
+        }
+      }
 
+      &__card {
+        &--small {
+          max-width: 100%;
+        }
+      }
 
-    &__img {
-     border-radius: 0;
-    }
-
-    &__card {
-      max-width: 100%;
-    }
-
-    &__title {
-      margin-top: 10px;
-    }
-
-    &__description {
-      min-height: unset;
-    }
-
-    &__stats {
-      justify-content: center;
-      padding: 10px 0;
-      //flex: 0 0 auto;
-    }
-    
-    &__about {
-      justify-content: center;
     }
   }
 
@@ -329,14 +368,17 @@
     padding-top: 140px;
   }
 
-  .product {
-    &--small {
-      max-width: 100%;
-    }
+  .newest {
 
-    &__title {
+    .product {
       &--small {
-        padding-top: 0;
+        max-width: 100%;
+      }
+
+      &__title {
+        &--small {
+          padding-top: 0;
+        }
       }
     }
   }
