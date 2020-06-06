@@ -1,26 +1,11 @@
 @media (max-width: 1200px) {
-  .intro {
-    min-height: unset;
-    padding-bottom: 130px;
 
-    &__title {
-      padding-top: 20px;
-      margin-bottom: 20px;
-    }
-
-    &__subtitle {
-      margin-bottom: 30px;
-    }
-
-    .button {
-      margin-bottom: 20px;
-    }
-  }
 
   .search {
     &__form {
-      max-width: 100%;
+      max-width: 1140px;
       width: 100%;
+      margin: 0 auto;
       left: 0;
       right: 0;
       display: flex;
@@ -320,9 +305,10 @@
       background-color: #eef1f3;
       border-left: 10px solid $blue;
       text-align: center;
-      z-index: 5;
+      z-index: 2;
       max-width: 100%;
       width: 100%;
+
     }
 
     &__item {
@@ -330,11 +316,26 @@
       height: auto;
       line-height: 45px;
       border-top: 2px solid $blue;
-      padding-left: 20px;
       margin: 0;
+
       & + & {
-        padding-left: 15px;
+        padding-left: 0;
       }
+    }
+
+    &__user-menu--global {
+      width: 100%;
+      top: 45px;
+    }
+
+
+    &__user-item {
+      max-width: 100%;
+    }
+
+
+    &__menu-link {
+      display: block;
     }
 
     &__mobile-menu {
@@ -342,14 +343,33 @@
       padding-right: 20px;
     }
 
-    &__user-menu {
-      &--global {
-        display: none;
-      }
-    }
 
     &__pages-menu {
-      display: none;
+      top: 235px;
+      flex-wrap: wrap;
+      //justify-content: center;
+    }
+
+    &__column {
+      margin-bottom: 20px;
+    }
+  }
+
+  .intro {
+    min-height: unset;
+    padding-bottom: 130px;
+
+    &__title {
+      padding-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    &__subtitle {
+      margin-bottom: 30px;
+    }
+
+    .button {
+      margin-bottom: 20px;
     }
   }
 
@@ -511,14 +531,66 @@
 
 @media (max-width: 780px) {
   .header {
-    &__alarm-box,
-    &__msg-box {
-      display: none;
+
+    &__top-inner {
+      padding: 20px 0 0;
+      flex-direction: column;
+      justify-content: left;
     }
 
     &__btn {
-      margin-right: 10px;
-      display: none;
+      margin: 0;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    &__notify {
+      margin-right: 15px;
+    }
+
+    &__cart-box,
+    &__alarm-box,
+    &__msg-box {
+      line-height: 3;
+      height: auto;
+      margin-left: 20px;
+    }
+
+    &__notify-menu {
+      &--msg {
+        left: -135px;
+        z-index: 3;
+      }
+      &::after {
+        left: 136px;
+      }
+    }
+
+    &__alarm-box {
+      .header__notify-menu {
+        right: -150px;
+        z-index: 3;
+        &::after {
+          right: 168px;
+        }
+      }
+    }
+
+    &__logo {
+      margin-bottom: 10px;
+    }
+
+    &__case {
+      margin-top: 20px;
+      margin-left: auto;
+      align-items: center;
+      justify-content: flex-end;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &__user {
+      height: auto;
     }
   }
 
@@ -601,6 +673,19 @@
     }
   }
 
+  .advantages {
+    &__item {
+      max-width: 100%;
+      padding: 20px;
+    }
+    &__img {
+      margin-bottom: 15px;
+    }
+    &__item-title {
+      margin-bottom: 15px;
+    }
+  }
+
   .news {
     &__item {
       max-width: 100%;
@@ -637,22 +722,55 @@
 
 @media (max-width: 576px) {
   .header {
-    &__name,
-    &__money {
-      display: none;
+    &__top-inner {
+
     }
 
     &__user-link {
-      margin-right: 0;
+      margin-right: 5px ;
     }
 
+
     &__cart-menu {
-      right: -50px;
+      left: -90px;
       max-width: 300px;
 
       &::after {
-        right: 65px;
+        left: 90px;
       }
+    }
+
+    &__notify-menu {
+      &--msg {
+        max-width: 300px;
+        left: -50px;
+
+        &::after {
+          left: 50px;
+        }
+      }
+    }
+
+    &__cart-box,
+    &__alarm-box,
+    &__msg-box {
+      margin-left: 0;
+    }
+
+
+    &__alarm-box {
+      .header__notify-menu {
+        max-width: 300px;
+        left: -10px;
+        &::after {
+          left: 10px;
+        }
+      }
+    }
+
+    &__notify-item {
+      padding: 20px 10px;
+
     }
 
     &__manager {
@@ -674,6 +792,10 @@
 
     &__price {
       display: inline-block;
+    }
+
+    &__pages-menu {
+      justify-content: center;
     }
   }
 
