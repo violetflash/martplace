@@ -21,6 +21,13 @@
     }
   }
 
+  .filter {
+    &__links {
+      //max-width: 100%;
+      //width: 100%;
+    }
+  }
+
   .benefits {
     padding-top: 140px;
     padding-bottom: 0;
@@ -646,6 +653,12 @@
       height: auto;
     }
   }
+
+  .searcher {
+    padding: 30px 0;
+  }
+
+
 
   .intro {
     padding-bottom: 140px;
