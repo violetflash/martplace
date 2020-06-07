@@ -86,6 +86,10 @@ $(function () {
         $('.product').removeClass('list')
     });
 
+    // $('.header__close-btn').on('click', function(event) {
+    //     $(this).parent().slideToggle()
+    // });
+
     $(".js-range-slider").ionRangeSlider({
         type: "double",
         skin: "round",

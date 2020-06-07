@@ -38,7 +38,7 @@
 
     .product {
       &__card {
-        padding: 0 10px 0 10px;
+        padding: 0 15px;
       }
 
       &__description {
@@ -100,6 +100,12 @@
         }
       }
 
+      &__card-inner {
+        &--small {
+          padding: 0 15px;
+        }
+      }
+
       &__title {
         &--small {
           margin-top: 0;
@@ -112,7 +118,7 @@
           max-width: 100%;
           margin: 0;
           min-height: unset;
-          padding: 0 10px;
+
         }
       }
 
@@ -153,7 +159,7 @@
       }
       &__img {
         &--small {
-          border-radius: 0;
+          border-radius: 4px 4px 0 0;
           width: 100%;
           object-fit: cover;
           object-position: center;
@@ -173,6 +179,12 @@
         }
       }
 
+      &__card-inner {
+        &--small {
+          padding: 0 15px;
+        }
+      }
+
       &__title {
         &--small {
           margin-top: 5px;
@@ -185,7 +197,7 @@
           max-width: 100%;
           margin: 0;
           min-height: unset;
-          padding: 0 10px;
+          padding: 0;
         }
       }
 
@@ -321,6 +333,11 @@
       & + & {
         padding-left: 0;
       }
+      &:hover {
+        .header__user-menu--global {
+          display: block;
+        }
+      }
     }
 
     &__user-menu--global {
@@ -343,15 +360,44 @@
       padding-right: 20px;
     }
 
+    &__close-btn {
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      font-size: 30px;
+    }
+
+    &__pages {
+      &:hover {
+        .header__pages-menu {
+          display: block !important;
+        }
+      }
+    }
 
     &__pages-menu {
       top: 235px;
       flex-wrap: wrap;
-      //justify-content: center;
+      justify-content: flex-start;
     }
 
     &__column {
       margin-bottom: 20px;
+      padding: 10px;
+      max-width: 100%;
+      width: 100%;
+      &:first-child {
+        padding: 10px;
+      }
+    }
+
+    &__column-title {
+
+    }
+
+    &__column-menu {
+      justify-content: space-around;
     }
   }
 
@@ -527,6 +573,13 @@
       margin-bottom: 10px;
     }
   }
+
+  .news {
+    &__inner {
+      padding: 15px;
+      text-align: center;
+    }
+  }
 }
 
 @media (max-width: 780px) {
@@ -617,6 +670,11 @@
     &__input {
       max-width: 100%;
       margin-bottom: 20px;
+      border-radius: 4px;
+    }
+
+    &__select {
+      border-radius: 4px;
     }
 
     &__select-wrapper {
@@ -796,6 +854,21 @@
 
     &__pages-menu {
       justify-content: center;
+    }
+
+    &__column-menu {
+      flex-wrap: wrap;
+    }
+
+    &__column-list {
+      & + & {
+        margin-left: 0;
+      }
+    }
+
+    &__column-item {
+      max-width: 100%;
+      width: 100%;
     }
   }
 
