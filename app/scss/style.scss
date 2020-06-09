@@ -200,6 +200,21 @@
         }
       }
     }
+
+    &--message {
+      .dropdown {
+        &__sender {
+          padding-right: 30px;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        &__time {
+          margin-top: 0;
+        }
+      }
+    }
   }
 
   &__user-box {
@@ -524,21 +539,6 @@
     max-width: 250px;
     font-size: 15px;
     color: #555;
-  }
-
-  &__user-menu {
-    list-style: none;
-    width: 270px;
-    margin: 0;
-    padding: 0;
-
-    &--global {
-      top: 80px;
-      left: 0;
-      &::after {
-        display: none;
-      }
-    }
   }
 
   &__pages {
