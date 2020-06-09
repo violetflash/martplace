@@ -237,6 +237,7 @@
   box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
   border-radius: 0 0 3px 3px;
   position: absolute;
+  line-height: normal;
   top: 110%;
   right: 0;
   opacity: 0;
@@ -244,6 +245,7 @@
   transition: all .3s;
   cursor: auto;
   z-index: 3;
+
 
   &::after {
     position: absolute;
@@ -357,7 +359,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    padding: 0 25px;
+    padding: 20px 25px 0;
   }
 
   &__title {
@@ -379,11 +381,11 @@
     }
   }
 
-  &__notify-item {
-    padding: 20px 25px;
+  &__item {
     border-top: 1px solid #e8ebf0;
     display: flex;
     justify-content: space-between;
+    padding: 20px 25px;
     @include focus;
 
     &:hover {
@@ -391,11 +393,11 @@
     }
 
     &--new {
-      .header__when {
+      .dropdown__time {
         color: $blue;
       }
 
-      .header__from {
+      .dropdown__sender {
         &::after {
           display: block;
         }
@@ -403,7 +405,7 @@
     }
 
     &--reply {
-      .header__from {
+      .dropdown__sender {
         &::after {
           display: block;
           content: url('../images/icons/reply.svg');
@@ -414,11 +416,11 @@
 
   }
 
-  &__notify-info {
+  &__info {
     display: flex;
   }
 
-  &__notify-avatar {
+  &__avatar {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -448,15 +450,11 @@
     }
   }
 
-  &__from {
+  &__sender {
     font-weight: 500;
     color: #333;
     @include focus;
     position: relative;
-
-    &--msg {
-      padding-right: 30px;
-    }
 
     &::after {
       position: absolute;
@@ -471,12 +469,6 @@
 
     &:hover {
       text-decoration: underline;
-    }
-
-    &--msg {
-      &:hover {
-        text-decoration: none;
-      }
     }
   }
 
@@ -494,17 +486,13 @@
     }
   }
 
-  &__when {
+  &__time {
     font-size: 14px;
     color: #747a86;
     margin-top: 5px;
-
-    &--msg {
-      margin-top: 0;
-    }
   }
 
-  &__notify-icon {
+  &__icon {
     background-color: rgba(6, 116, 236, .1);
     width: 32px;
     height: 32px;
@@ -661,7 +649,7 @@
     }
   }
 
-  &__title {
+  &__product-title {
     font-size: 16px;
     font-weight: 500;
     color: $black;
@@ -794,7 +782,7 @@
     padding: 0;
   }
 
-  &__item {
+  &__MENU-item {
     display: inline-block;
     height: 80px;
     line-height: 80px;
