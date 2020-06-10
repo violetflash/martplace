@@ -336,6 +336,7 @@
       line-height: 45px;
       border-top: 2px solid $blue;
       margin: 0;
+      position: relative;
 
       & + & {
         padding-left: 0;
@@ -360,6 +361,14 @@
 
     &__menu-link {
       display: block;
+      text-align: left;
+      padding-left: 20px;
+
+    }
+
+    &__close-btn {
+      position: absolute;
+      right: 0;
     }
 
     &__mobile-menu {
@@ -367,13 +376,6 @@
       padding-right: 20px;
     }
 
-    &__close-btn {
-      display: block;
-      position: absolute;
-      right: 20px;
-      top: 10px;
-      font-size: 30px;
-    }
 
     &__pages {
       &:hover {
