@@ -84,7 +84,9 @@
                               <span class="dropdown__action">Purchased</span>
                               <a class="dropdown__target" href="#">Bryson-Responsive Template </a>
                             </div>
-                            <div class="dropdown__time">6 hours ago</div>
+                            <div class="dropdown__time">
+                              <time datetime="2020-06-09T18:18">6 hours ago</time>
+                            </div>
                           </div>
                         </div>
                         <div class="dropdown__icon dropdown__icon--red lnr lnr-cart"></div>
@@ -154,7 +156,7 @@
                           <div class="dropdown__event-box">
                             <div class="dropdown__event">
                               <div class="dropdown__sender">EchoTheme</div>
-                              <div class="dropdown__time">Jul 16</div>
+                              <div class="dropdown__time"><time datetime="2020-06-09T18:18">Jul 16</time></div>
                             </div>
                             <div class="dropdown__text">Hello John Smith! Nunc placerat id...</div>
                           </div>
@@ -423,11 +425,8 @@
               </ul>
             </nav>
             <form class="search-form">
-              <label for="search-input">
-                <input class="search-form__input" id="search-input" type="search" placeholder="Search product here...">
-              </label>
-              <button type="submit"
-                      class="search-form__btn"><span class="search-form__icon lnr lnr-magnifier"></span></button>
+              <input class="search-form__input" type="search" placeholder="Search product here...">
+              <button type="submit" class="search-form__btn lnr lnr-magnifier"></button>
             </form>
           </div>
         </div>
@@ -507,11 +506,11 @@
         <section class="featured">
           <div class="container">
             <div class="featured__title title-box">
-              <span class="featured__title-text">Weekly Featured Products</span>
+              <div class="featured__title-text">Weekly Featured Products</div>
               <div class="featured__slider-nav"></div>
             </div>
             <div class="featured__slider">
-              <div class="featured__slider-wrapper">
+              <div class="featured__slider-item">
                 <div class="product">
                   <div class="product__img-box">
                     <div class="product__links">
@@ -559,7 +558,7 @@
                   </div>
                 </div>
               </div>
-              <div class="featured__slider-wrapper">
+              <div class="featured__slider-item">
                 <div class="product">
                   <div class="product__img-box">
                     <div class="product__links">
@@ -607,7 +606,7 @@
                   </div>
                 </div>
               </div>
-              <div class="featured__slider-wrapper">
+              <div class="featured__slider-item">
                 <div class="product">
                   <div class="product__img-box">
                     <div class="product__links">
@@ -959,7 +958,7 @@
               <div class="feed__slider-nav"></div>
             </div>
             <div class="feed__slider">
-              <div class="feed__slider-wrapper">
+              <div class="feed__slider-item">
                 <div class="product product--small">
                   <div class="product__img-box">
                     <div class="product__links">
@@ -1003,7 +1002,7 @@
                   </div>
                 </div>
               </div>
-              <div class="feed__slider-wrapper">
+              <div class="feed__slider-item">
                 <div class="product product--small">
                   <div class="product__img-box">
                     <div class="product__links">
@@ -1047,7 +1046,7 @@
                   </div>
                 </div>
               </div>
-              <div class="feed__slider-wrapper">
+              <div class="feed__slider-item">
                 <div class="product product--small">
                   <div class="product__img-box">
                     <div class="product__links">
@@ -1092,7 +1091,7 @@
                   </div>
                 </div>
               </div>
-              <div class="feed__slider-wrapper">
+              <div class="feed__slider-item">
                 <div class="product product--small">
                   <div class="product__img-box">
                     <div class="product__links">
@@ -1136,7 +1135,7 @@
                   </div>
                 </div>
               </div>
-              <div class="feed__slider-wrapper">
+              <div class="feed__slider-item">
                 <div class="product product--small">
                   <div class="product__img-box">
                     <div class="product__links">
@@ -1180,7 +1179,7 @@
                   </div>
                 </div>
               </div>
-              <div class="feed__slider-wrapper">
+              <div class="feed__slider-item">
                 <div class="product product--small">
                   <div class="product__img-box">
                     <div class="product__links">
@@ -1232,7 +1231,7 @@
         <section class="stats">
           <div class="container">
             <div class="stats__inner">
-              <div class="stats__item stats__item--yellow">
+              <div class="stats__item">
                 <div class="stats__img lnr lnr-briefcase"></div>
                 <div class="stats__count">38,436</div>
                 <div class="stats__text">items for sale</div>
@@ -1364,7 +1363,7 @@
               </div>
             </div>
             <div class="feedback__slider">
-              <div class="feedback__slider-wrapper">
+              <div class="feedback__slider-item">
                 <div class="feedback__box">
                   <a class="feedback__link" href="#">
                     <div class="feedback__item">
@@ -1406,7 +1405,7 @@
                   </a>
                 </div>
               </div>
-              <div class="feedback__slider-wrapper">
+              <div class="feedback__slider-item">
                 <div class="feedback__box">
                   <a class="feedback__link" href="#">
                     <div class="feedback__item">
@@ -1606,7 +1605,7 @@
                 <li class="footer__contact footer__contact--email"><a class="footer__link" href="mailto:support@aazztech.com">support@aazztech.com</a></li>
                 <li class="footer__contact footer__contact--address">
                   <a class="footer__link" href="#">
-                    <address>202 New Hampshire Avenue Northwest #100, New York-2573</address>
+                    <address class="footer__address">202 New Hampshire Avenue Northwest #100, New York-2573</address>
                   </a>
                 </li>
               </ul>

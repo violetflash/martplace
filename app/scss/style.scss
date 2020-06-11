@@ -133,7 +133,7 @@
   
   &__mobile-menu {
     display: none;
-    font-size: 40px;
+    font-size: 44px;
     color: #000;
   }
 
@@ -301,6 +301,7 @@
 
 .close-btn {
   display: none;
+  padding: 15px 0;
 }
 
 .dropdown-wrapper {
@@ -811,6 +812,8 @@
     height: 46px;
     border-radius: 23px;
     background-color: $blue;
+    color: #fff;
+    font-size: 15px;
     border: 1px solid transparent;
     cursor: pointer;
     @include focus;
@@ -831,11 +834,6 @@
     &:hover {
       background-color: $violet;
     }
-  }
-
-  &__icon {
-    font-size: 15px;
-    color: #fff;
   }
 }
 
@@ -887,7 +885,7 @@
 .button {
   display: inline-block;
   border-radius: 28px;
-  width: 190px;
+  padding: 0 32px;
   height: 55px;
   line-height: 55px;
   color: $white;
@@ -1784,7 +1782,7 @@
   padding: 120px 0;
   background-color: #eff1f5;
 
-  &__slider-wrapper {
+  &__slider-item {
     margin-right: calc((1140px - (3 * 361px)) / 2);
   }
 
@@ -1831,9 +1829,8 @@
   }
 
   &__item {
-    &--yellow {
-      color: #feb71d;
-    }
+    color: #feb71d;
+
     &--blue {
       color: $blue;
     }
@@ -2107,7 +2104,7 @@
     justify-content: center;
   }
 
-  &__slider-wrapper {
+  &__slider-item {
     padding: 50px 0;
   }
 

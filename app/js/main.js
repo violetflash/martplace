@@ -22,7 +22,7 @@ $(function () {
         appendArrows: '.featured__slider-nav',
         pauseOnFocus: true,
         pauseOnHover: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 3000,
         adaptiveHeight: true,
         responsive: [
