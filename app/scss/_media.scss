@@ -755,6 +755,7 @@
           &__column-menu {
             flex-wrap: wrap;
           }
+
           &__column-list {
             max-width: 100%;
             width: 100%;
@@ -770,6 +771,7 @@
 
     &__notify {
       margin-right: 7px;
+
       .dropdown {
         max-width: 315px;
       }
@@ -777,6 +779,7 @@
       &--cart {
         .dropdown {
           right: -116px;
+
           &::after {
             right: 132px;
           }
@@ -808,6 +811,7 @@
       &--message {
         .dropdown {
           right: -180px;
+
           &::after {
             left: 100px;
             right: unset;
@@ -818,6 +822,7 @@
       &--bell {
         .dropdown {
           left: -20px;
+
           &::after {
             left: 36px;
           }
@@ -827,6 +832,7 @@
 
     &__user-box {
       display: block;
+
       .dropdown {
         top: 94px !important;
       }
@@ -834,35 +840,6 @@
 
     &__user-link {
       margin-right: 5px;
-    }
-
-
-
-    &__product {
-      display: block;
-    }
-
-    &__price {
-      display: inline-block;
-    }
-
-    &__pages-menu {
-      justify-content: center;
-    }
-
-    &__column-menu {
-      flex-wrap: wrap;
-    }
-
-    &__column-list {
-      & + & {
-        margin-left: 0;
-      }
-    }
-
-    &__column-item {
-      max-width: 100%;
-      width: 100%;
     }
   }
 
