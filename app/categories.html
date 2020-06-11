@@ -24,7 +24,7 @@
               <a class="header__btn" href="#">
                 Become a Seller
               </a>
-              <div class="header__case">
+              <div class="header__user">
                 <div class="header__notify-box">
                   <div class="header__notify header__notify--bell dropdown-wrapper">
                     <a class="header__link lnr lnr-alarm" href="#">
@@ -48,7 +48,9 @@
                               <span class="dropdown__action">added to Favourite </span>
                               <a class="dropdown__target" href="#">Marketify CoffeeShop</a>
                             </div>
-                            <div class="dropdown__time"><time datetime="2020-06-09T18:18">Just now</time></div>
+                            <div class="dropdown__time">
+                              <time datetime="2020-06-09T18:18">Just now</time>
+                            </div>
                           </div>
                         </div>
                         <div class="dropdown__icon lnr lnr-heart"></div>
@@ -64,7 +66,9 @@
                               <span class="dropdown__action"> commented on </span>
                               <a class="dropdown__target" href="#">MartPlace Extension Bundle</a>
                             </div>
-                            <div class="dropdown__time"><time datetime="2020-06-09T16:18">2 hours ago</time></div>
+                            <div class="dropdown__time">
+                              <time datetime="2020-06-09T16:18">2 hours ago</time>
+                            </div>
                           </div>
                         </div>
                         <div class="dropdown__icon dropdown__icon--violet lnr lnr-bubble"></div>
@@ -96,7 +100,9 @@
                               <span class="dropdown__action">wrote a review on</span>
                               <a class="dropdown__target" href="#">Rida-Responsive vCard Temp...</a>
                             </div>
-                            <div class="dropdown__time"><time datetime="2020-06-07T18:18">2 days ago</time></div>
+                            <div class="dropdown__time">
+                              <time datetime="2020-06-07T18:18">2 days ago</time>
+                            </div>
                           </div>
                         </div>
                         <div class="dropdown__icon dropdown__icon--green lnr lnr-star"></div>
@@ -120,7 +126,9 @@
                           <div class="dropdown__event-box">
                             <div class="dropdown__event">
                               <div class="dropdown__sender">Anderson</div>
-                              <div class="dropdown__time"><time datetime="2020-06-09T18:18">Just now</time></div>
+                              <div class="dropdown__time">
+                                <time datetime="2020-06-09T18:18">Just now</time>
+                              </div>
                             </div>
                             <div class="dropdown__text">Hello John Smith! Nunc placerat id...</div>
                           </div>
@@ -132,7 +140,9 @@
                           <div class="dropdown__event-box">
                             <div class="dropdown__event">
                               <div class="dropdown__sender">Bulbul Ahmed</div>
-                              <div class="dropdown__time"><time datetime="2020-06-09T16:18">2 hours ago</time></div>
+                              <div class="dropdown__time">
+                                <time datetime="2020-06-09T16:18">2 hours ago</time>
+                              </div>
                             </div>
                             <div class="dropdown__text">Hello John Smith! Nunc placerat id...</div>
                           </div>
@@ -156,7 +166,9 @@
                           <div class="dropdown__event-box">
                             <div class="dropdown__event">
                               <div class="dropdown__sender">Themeluva</div>
-                              <div class="dropdown__time"><time datetime="2020-05-23">May 23</time></div>
+                              <div class="dropdown__time">
+                                <time datetime="2020-05-23">May 23</time>
+                              </div>
                             </div>
                             <div class="dropdown__text">Hello John Smith! Nunc placerat id...</div>
                           </div>
@@ -168,7 +180,9 @@
                           <div class="dropdown__event-box">
                             <div class="dropdown__event">
                               <div class="dropdown__sender">Adnan</div>
-                              <div class="dropdown__time"><time datetime="2020-03-26">Mar 26</time></div>
+                              <div class="dropdown__time">
+                                <time datetime="2020-03-26">Mar 26</time>
+                              </div>
                             </div>
                             <div class="dropdown__text">Hello John Smith! Nunc placerat id...</div>
                           </div>
@@ -262,7 +276,11 @@
             <div class="header__mobile-menu lnr lnr-menu"></div>
             <nav class="header__menu">
               <ul class="header__list">
-                <li class="header__item dropdown-wrapper"><a class="header__menu-link" href="#">HOME</a>
+                <li class="header__item dropdown-wrapper">
+                  <a class="header__menu-link" href="#">
+                    HOME
+                  </a>
+                  <div class="close-btn lnr lnr-chevron-down-circle"></div>
                   <div class="dropdown">
                     <ul class="dropdown__menu">
                       <li class="dropdown__menu-item"><a class="dropdown__link" href="#">Home One Multi User</a></li>
@@ -272,6 +290,7 @@
                   </div>
                 </li>
                 <li class="header__item dropdown-wrapper"><a class="header__menu-link" href="#">ALL PRODUCTS</a>
+                  <div class="close-btn lnr lnr-chevron-down-circle"></div>
                   <div class="dropdown">
                     <ul class="dropdown__menu">
                       <li class="dropdown__menu-item"><a class="dropdown__link" href="#">Recent Items</a></li>
@@ -284,6 +303,7 @@
                   </div>
                 </li>
                 <li class="header__item dropdown-wrapper"><a class="header__menu-link" href="#">WORDPRESS</a>
+                  <div class="close-btn lnr lnr-chevron-down-circle"></div>
                   <div class="dropdown">
                     <ul class="dropdown__menu">
                       <li class="dropdown__menu-item"><a class="dropdown__link" href="#">Popular Items</a></li>
@@ -299,6 +319,7 @@
                   </div>
                 </li>
                 <li class="header__item dropdown-wrapper"><a class="header__menu-link" href="#">FESTURES</a>
+                  <div class="close-btn lnr lnr-chevron-down-circle"></div>
                   <div class="dropdown">
                     <ul class="dropdown__menu">
                       <li class="dropdown__menu-item"><a class="dropdown__link" href="#">Home One Multi User</a></li>
@@ -308,8 +329,8 @@
                   </div>
                 </li>
                 <li class="header__item header__item--pages dropdown-wrapper dropdown-wrapper--static"><a class="header__menu-link" href="#">PAGES</a>
+                  <div class="close-btn lnr lnr-chevron-down-circle"></div>
                   <div class="dropdown">
-                    <!--                    <button class="header__close-btn lnr lnr-cross-circle" type="button"></button>-->
                     <div class="dropdown__column">
                       <div class="dropdown__column-title">
                         MartPlace Pages
@@ -414,6 +435,7 @@
 
 
 
+
       <main>
         <section class="searcher">
           <div class="container">
@@ -461,7 +483,7 @@
                   </select>
                 </div>
                 <div class="filter__btn-box">
-                  <div class="filter__sort filter__grid icon-filter-grid active"></div>
+                  <div class="filter__sort filter__grid icon-filter-grid filter__sort--active"></div>
                   <div class="filter__sort filter__list icon-filter-list"></div>
                 </div>
               </div>
@@ -478,44 +500,13 @@
                     Categories
                   </div>
                   <ul class="sort__list">
-                    <li class="sort__cat">
-                      <button class="sort__link" type="button" data-filter=".cat-wordpress">Wordpress</button>
-                      <span
-                          class="sort__cat-num">35</span>
-                    </li>
-                    <li class="sort__cat">
-                      <button class="sort__link" type="button" data-filter=".cat-landing">Landing Page</button>
-                      <span
-                          class="sort__cat-num">45</span>
-                    </li>
-                    <li class="sort__cat">
-                      <button class="sort__link" type="button" data-filter=".cat-psd">Psd Template</button>
-                      <span
-                          class="sort__cat-num">13
-                      </span>
-                    </li>
-                    <li class="sort__cat">
-                      <button class="sort__link" type="button" data-filter=".cat-plugins">Plugins</button>
-                      <span
-                          class="sort__cat-num">08
-                      </span>
-                    </li>
-                    <li class="sort__cat">
-                      <button class="sort__link" type="button" data-filter=".cat-html">HTML Template</button>
-                      <span
-                          class="sort__cat-num">
-                        34</span>
-                    </li>
-                    <li class="sort__cat">
-                      <button class="sort__link" type="button" data-filter=".cat-components">Components</button>
-                      <span
-                          class="sort__cat-num">78</span>
-                    </li>
-                    <li class="sort__cat">
-                      <button class="sort__link" type="button" data-filter=".cat-joomla">Joomla Template</button>
-                      <span
-                          class="sort__cat-num">26</span>
-                    </li>
+                    <li class="sort__cat"><button class="sort__link" type="button" data-filter=".cat-wordpress">Wordpress</button><span class="sort__cat-num">35</span></li>
+                    <li class="sort__cat"><button class="sort__link" type="button" data-filter=".cat-landing">Landing Page</button><span class="sort__cat-num">45</span></li>
+                    <li class="sort__cat"><button class="sort__link" type="button" data-filter=".cat-psd">Psd Template</button><span class="sort__cat-num">13</span></li>
+                    <li class="sort__cat"><button class="sort__link" type="button" data-filter=".cat-plugins">Plugins</button><span class="sort__cat-num">08</span></li>
+                    <li class="sort__cat"><button class="sort__link" type="button" data-filter=".cat-html">HTML Template</button><span class="sort__cat-num">34</span></li>
+                    <li class="sort__cat"><button class="sort__link" type="button" data-filter=".cat-components">Components</button><span class="sort__cat-num">78</span></li>
+                    <li class="sort__cat"><button class="sort__link" type="button" data-filter=".cat-joomla">Joomla Template</button><span class="sort__cat-num">26</span></li>
                   </ul>
                 </div>
                 <div class="sort__aside-item">
@@ -524,27 +515,13 @@
                   </div>
                   <form class="sort__form">
                     <ul class="sort__filter-list">
-                      <li class="sort__filter-item">
-                        <button class="sort__filter-link" type="button">Trending Products</button>
-                      </li>
-                      <li class="sort__filter-item">
-                        <button class="sort__filter-link" type="button">Popular Products</button>
-                      </li>
-                      <li class="sort__filter-item">
-                        <button class="sort__filter-link" type="button">New Products</button>
-                      </li>
-                      <li class="sort__filter-item">
-                        <button class="sort__filter-link" type="button">Best Seller</button>
-                      </li>
-                      <li class="sort__filter-item">
-                        <button class="sort__filter-link" type="button">Best Rating</button>
-                      </li>
-                      <li class="sort__filter-item">
-                        <button class="sort__filter-link" type="button">Low Price</button>
-                      </li>
-                      <li class="sort__filter-item">
-                        <button class="sort__filter-link" type="button">High Price</button>
-                      </li>
+                      <li class="sort__filter-item"><button class="sort__filter-link" type="button">Trending Products</button></li>
+                      <li class="sort__filter-item"><button class="sort__filter-link" type="button">Popular Products</button></li>
+                      <li class="sort__filter-item"><button class="sort__filter-link" type="button">New Products</button></li>
+                      <li class="sort__filter-item"><button class="sort__filter-link" type="button">Best Seller</button></li>
+                      <li class="sort__filter-item"><button class="sort__filter-link" type="button">Best Rating</button></li>
+                      <li class="sort__filter-item"><button class="sort__filter-link" type="button">Low Price</button></li>
+                      <li class="sort__filter-item"><button class="sort__filter-link" type="button">High Price</button></li>
                     </ul>
                   </form>
                 </div>
@@ -553,7 +530,7 @@
                     Pricing Range
                   </div>
                   <form class="sort__form">
-                    <input type="text" class="js-range-slider" name="my_range" value=""/>
+                    <input class="js-range-slider" type="text" value=""/>
                     <button class="sort__btn" type="button">Search Update</button>
                   </form>
                 </div>
@@ -1023,7 +1000,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="product product--sort mix cat-low-price cat-psd cat-components cat-rating cat-trend cat-low">
+                  <div class="product product--sort mix cat-low-price cat-psd cat-rating cat-trend cat-low">
                     <div class="product__img-box">
                       <div class="product__links">
                         <a class="product__btn" href="#">More Info</a>
@@ -1221,7 +1198,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="product product--sort mix cat-low-price cat-psd cat-components cat-rating cat-trend cat-low">
+                  <div class="product product--sort mix cat-low-price cat-psd cat-rating cat-trend cat-low">
                     <div class="product__img-box">
                       <div class="product__links">
                         <a class="product__btn" href="#">More Info</a>

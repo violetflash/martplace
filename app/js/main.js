@@ -75,14 +75,14 @@ $(function () {
     });
 
     $('.filter__list').on('click', function () {
-        $('.filter__list').addClass('active');
-        $('.filter__grid').removeClass('active');
+        $('.filter__list').addClass('filter__sort--active');
+        $('.filter__grid').removeClass('filter__sort--active');
         $('.product').addClass('list')
     });
 
     $('.filter__grid').on('click', function () {
-        $('.filter__grid').addClass('active');
-        $('.filter__list').removeClass('active');
+        $('.filter__grid').addClass('filter__sort--active');
+        $('.filter__list').removeClass('filter__sort--active');
         $('.product').removeClass('list')
     });
 
