@@ -86,9 +86,9 @@ $(function () {
         $('.product').removeClass('list')
     });
 
-    // $('.header__close-btn').on('click', function(event) {
-    //     $(this).parent().slideToggle()
-    // });
+    $('.close-btn').on('click', function(event) {
+        $('.dropdown').slideToggle()
+    });
 
     $(".js-range-slider").ionRangeSlider({
         type: "double",
