@@ -87,7 +87,7 @@ $(function () {
     });
 
     $('.close-btn').on('click', function(event) {
-        $('.dropdown').slideToggle()
+        $('.dropdown').toggle()
     });
 
     $(".js-range-slider").ionRangeSlider({

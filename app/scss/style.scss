@@ -230,7 +230,6 @@
       &::after {
         right: 30px;
       }
-
     }
   }
 
@@ -272,7 +271,8 @@
       .dropdown {
         display: flex;
         justify-content: space-between;
-        width: 1140px;
+        max-width: 1140px;
+        width: 100%;
         right: 0;
         margin: 0 auto;
 
@@ -283,7 +283,6 @@
         &__menu-item {
           padding-right: 0;
         }
-
       }
     }
   }
@@ -297,6 +296,13 @@
     &:hover {
       color: $blue;
     }
+  }
+}
+
+.close-btn {
+  display: none;
+  &::before {
+    font-size: 33px;
   }
 }
 
@@ -716,14 +722,6 @@
     &--checkout {
       background-color: $blue;
     }
-  }
-
-  &__close-btn {
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    border: none;
-    display: none;
   }
 
   &__column-title {

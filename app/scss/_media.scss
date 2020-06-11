@@ -1,5 +1,40 @@
 @media (max-width: 1200px) {
+  .header {
+    &__item {
+      &--pages {
+        .dropdown {
+          flex-wrap: wrap;
+          justify-content: space-around;
+          height: 400px;
+          overflow-y: scroll;
 
+          &__column {
+            margin-bottom: 20px;
+            padding: 10px;
+            //max-width: 100%;
+            //width: 100%;
+
+            &:first-child {
+              padding: 10px;
+            }
+          }
+          
+          &__column-title {
+            text-align: center;
+          }
+
+          &__column-menu {
+            margin: 0;
+            justify-content: space-evenly;
+          }
+
+          &__link {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
 
   .search {
     &__form {
@@ -268,23 +303,20 @@
 }
 
 @media (max-width: 992px) {
+
   .header {
-    //&__alarm-box,
-    //&__msg-box,
-    //&__cart-box {
-    //  padding-left: 0;
-    //  margin-right: 0;
-    //}
-    //
-    //&__alarm-box {
-    //  .header__notify-menu {
-    //    left: unset;
-    //    &::after {
-    //      left:unset;
-    //      right: 18px;
-    //    }
-    //  }
-    //}
+    &__notify-box {
+      margin-right: 0;
+    }
+
+    &__notify--bell {
+      .dropdown {
+        left: -50px;
+        &::after {
+          left: 67px;
+        }
+      }
+    }
 
     &__menu {
       display: none;
@@ -315,7 +347,13 @@
       }
 
       .dropdown {
+        display: none;
+        border: 2px solid $blue;
         width: 100%;
+
+        &__menu {
+          padding: 0;
+        }
       }
 
       &:hover {
@@ -323,70 +361,33 @@
           display: block;
         }
       }
+
+      &--pages {
+        .dropdown {
+          &__column-title {
+            margin: 0 20px;
+            padding: 10px 0;
+          }
+        }
+      }
     }
-
-    &__user-menu--global {
-      width: 100%;
-      top: 45px;
-    }
-
-
-    &__user-item {
-      max-width: 100%;
-    }
-
 
     &__menu-link {
       display: block;
       text-align: left;
       padding-left: 20px;
       width: 100%;
-
     }
-
 
     &__mobile-menu {
       display: block;
       padding-right: 20px;
     }
-
-
-    &__pages {
-      &:hover {
-        .header__pages-menu {
-          display: block !important;
-        }
-      }
-    }
-
-    &__pages-menu {
-      top: 235px;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-    }
-
-    &__column {
-      margin-bottom: 20px;
-      padding: 10px;
-      max-width: 100%;
-      width: 100%;
-
-      &:first-child {
-        padding: 10px;
-      }
-    }
-
-    &__column-title {
-
-    }
-
-    &__column-menu {
-      justify-content: space-around;
-    }
   }
 
 
   .close-btn {
+    display: block;
     width: 50px;
     height: 100%;
 
@@ -575,6 +576,12 @@
 @media (max-width: 780px) {
   .header {
 
+    &__user-box {
+      .dropdown {
+        top: 76px !important;
+      }
+    }
+
     &__top-inner {
       padding: 20px 0 0;
       flex-direction: column;
@@ -591,36 +598,6 @@
       margin-right: 15px;
     }
 
-    &__cart-box,
-    &__alarm-box,
-    &__msg-box {
-      line-height: 3;
-      height: auto;
-      margin-left: 20px;
-    }
-
-    &__notify-menu {
-      &--msg {
-        left: -135px;
-        z-index: 3;
-      }
-
-      &::after {
-        left: 136px;
-      }
-    }
-
-    &__alarm-box {
-      .header__notify-menu {
-        right: -150px;
-        z-index: 3;
-
-        &::after {
-          right: 168px;
-        }
-      }
-    }
-
     &__logo {
       margin-bottom: 10px;
     }
@@ -634,9 +611,7 @@
       width: 100%;
     }
 
-    &__user {
-      //height: auto;
-    }
+
   }
 
   .searcher {
@@ -776,8 +751,84 @@
 
 @media (max-width: 576px) {
   .header {
-    &__top-inner {
+    &__item {
+      &--pages {
+        .dropdown {
+          &__column-menu {
+            flex-wrap: wrap;
+          }
+          &__column-list {
+            max-width: 100%;
+            width: 100%;
+            margin-left: 0;
+          }
 
+          &__link {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+    &__notify {
+      margin-right: 7px;
+      .dropdown {
+        max-width: 315px;
+      }
+
+      &--cart {
+        .dropdown {
+          right: -116px;
+          &::after {
+            right: 132px;
+          }
+
+          &__item {
+            display: block;
+            padding: 15px 10px;
+          }
+
+          &__manager {
+            display: flex;
+            justify-content: space-between;
+            min-height: unset;
+            //margin: 10px 0;
+            margin-top: 20px;
+          }
+
+          &__delete {
+            margin-bottom: 0;
+          }
+
+          &__price {
+            display: inline-block;
+            margin-left: 50px;
+          }
+        }
+      }
+
+      &--message {
+        .dropdown {
+          right: -180px;
+          &::after {
+            left: 100px;
+            right: unset;
+          }
+        }
+      }
+
+      &--bell {
+        .dropdown {
+          left: -20px;
+          &::after {
+            left: 36px;
+          }
+        }
+      }
+    }
+
+    &__user-box {
+      display: block;
     }
 
     &__user-link {
@@ -785,64 +836,9 @@
     }
 
 
-    &__cart-menu {
-      left: -90px;
-      max-width: 300px;
-
-      &::after {
-        left: 90px;
-      }
-    }
-
-    &__notify-menu {
-      &--msg {
-        max-width: 300px;
-        left: -50px;
-
-        &::after {
-          left: 50px;
-        }
-      }
-    }
-
-    &__cart-box,
-    &__alarm-box,
-    &__msg-box {
-      margin-left: 0;
-    }
-
-
-    &__alarm-box {
-      .header__notify-menu {
-        max-width: 300px;
-        left: -10px;
-
-        &::after {
-          left: 10px;
-        }
-      }
-    }
-
-    &__notify-item {
-      padding: 20px 10px;
-
-    }
-
-    &__manager {
-      display: flex;
-      justify-content: space-between;
-      min-height: unset;
-      padding: 0 20px;
-      margin: 10px 0;
-    }
-
-    &__delete {
-      margin-bottom: 0;
-    }
 
     &__product {
       display: block;
-      padding: 0 5px;
     }
 
     &__price {
@@ -933,10 +929,10 @@
 
 }
 
-/* / 576px */
 
 
-@media (min-width: 992px) {
+
+@media (min-width: 993px) {
   .header__menu {
     display: block !important;
   }
