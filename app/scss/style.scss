@@ -301,9 +301,6 @@
 
 .close-btn {
   display: none;
-  &::before {
-    font-size: 33px;
-  }
 }
 
 .dropdown-wrapper {
@@ -1686,7 +1683,7 @@
   &__menu-box {
     visibility: hidden;
     position: absolute;
-    top: 55px;
+    top: 47px;
     right: -20px;
     min-width: 183px;
     background-color: #fff;
@@ -1704,7 +1701,7 @@
       border-bottom: 28px solid #fff;
       border-left: 16px solid transparent;
       border-right: 16px solid transparent;
-      top: -25px;
+      top: -20px;
       right: 7px;
     }
   }

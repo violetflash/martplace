@@ -11,8 +11,6 @@
           &__column {
             margin-bottom: 20px;
             padding: 10px;
-            //max-width: 100%;
-            //width: 100%;
 
             &:first-child {
               padding: 10px;
@@ -54,13 +52,6 @@
       &::after {
         width: calc(100% - (30px * 2));
       }
-    }
-  }
-
-  .filter {
-    &__links {
-      //max-width: 100%;
-      //width: 100%;
     }
   }
 
@@ -596,7 +587,14 @@
 
     &__notify {
       margin-right: 15px;
+
+      &--message {
+        .dropdown {
+          right: -75px;
+        }
+      }
     }
+
 
     &__logo {
       margin-bottom: 10px;
@@ -829,6 +827,9 @@
 
     &__user-box {
       display: block;
+      .dropdown {
+        top: 94px !important;
+      }
     }
 
     &__user-link {
