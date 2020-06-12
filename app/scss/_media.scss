@@ -16,7 +16,7 @@
               padding: 10px;
             }
           }
-          
+
           &__column-title {
             text-align: center;
           }
@@ -305,6 +305,67 @@
       flex-wrap: wrap;
     }
   }
+
+  .sort {
+    .product {
+      flex-basis: 100%;
+      max-width: calc(50% - 30px);
+
+      &__img-box {
+        width: 100%;
+      }
+
+      &.list {
+        max-width: 100%;
+        display: block;
+
+        .product {
+          &__img-box {
+            max-width: 100%;
+            width: 100%;
+          }
+
+          &__img {
+            width: 100%;
+            border-radius: 4px 4px 0 0;
+          }
+
+          &__card {
+            min-height: unset;
+            padding: 25px;
+          }
+
+          &__tag {
+            margin-left: 0;
+          }
+
+          &__seller {
+            margin: 0 0 10px;
+          }
+
+          &__section-left {
+            padding-left: 0;
+          }
+
+
+          &__section-left,
+          &__section-right,
+          &__section-middle {
+            max-width: unset;
+            width: unset;
+            padding-right: 10px;
+          }
+
+          &__section-middle {
+            max-width: 200px;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+
+  }
 }
 
 @media (max-width: 992px) {
@@ -314,7 +375,9 @@
     &__btn {
       height: 44px;
       line-height: 44px;
+      border-radius: 23px;
     }
+
     &__notify-box {
       margin-right: 0;
     }
@@ -322,6 +385,7 @@
     &__notify--bell {
       .dropdown {
         left: -50px;
+
         &::after {
           left: 67px;
         }
@@ -334,6 +398,8 @@
       top: 80px;
       background-color: #eef1f3;
       border-left: 10px solid $blue;
+      border-bottom: 2px solid $blue;
+      border-right: 2px solid $blue;
       text-align: center;
       z-index: 2;
       max-width: 100%;
@@ -400,6 +466,7 @@
     &__item {
       align-items: center;
     }
+
     &__target,
     &__sender,
     &__view {
@@ -486,7 +553,6 @@
       display: block;
     }
   }
-
 
   .featured {
     .product {
@@ -610,6 +676,33 @@
     }
   }
 
+  .news {
+    &__inner {
+      padding: 15px;
+      padding-top: 0;
+      text-align: center;
+    }
+
+    &__title {
+      margin-bottom: 0;
+      padding: 10px 0;
+    }
+
+    &__info {
+      align-items: center;
+    }
+
+    &__comments-link {
+      padding: 15px 0;
+    }
+  }
+
+  .support {
+    &__highlight {
+      padding: 10px 0;
+    }
+  }
+
   .feedback {
     &__box {
       display: block;
@@ -668,39 +761,156 @@
     }
   }
 
-  .news {
-    &__inner {
-      padding: 15px;
-      padding-top: 0;
-      text-align: center;
-    }
-
-    &__title {
-      margin-bottom: 0;
-      padding: 10px 0;
-    }
-
-    &__info {
-      align-items: center;
-    }
-
-    &__comments-link {
-      padding: 15px 0;
-    }
-  }
-
-  .support {
-    &__highlight {
-      padding: 10px 0;
-    }
-  }
-
   .searcher {
     padding: 30px 0;
   }
 
+  .breadcrumbs {
+    &__link {
+      padding: 13px 0;
+
+      &--wide {
+        padding: 13px 2px;
+      }
+    }
+  }
+
   .filter {
     padding: 15px 0;
+
+    &__link {
+      padding: 13px 0;
+    }
+
+    &__sort {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &--active {
+        &::after {
+          top: 1px;
+          left: 14px;
+        }
+      }
+    }
+  }
+
+  .sort {
+    padding: 40px 0 30px;
+
+    &__inner {
+      display: block;
+    }
+
+    &__aside {
+      max-width: 100%;
+      margin-right: 0;
+    }
+
+    &__aside-item {
+      padding: 15px;
+    }
+
+    &__aside-title {
+      padding-bottom: 15px;
+    }
+
+    &__list {
+      padding: 0;
+    }
+
+    &__link {
+      padding: 14px 0;
+      max-width: 100%;
+      width: 100%;
+      display: block;
+      text-align: left;
+    }
+
+    &__item {
+      & + & {
+        margin: 0;
+        align-items: center;
+      }
+    }
+
+    &__quantity {
+      padding: 14px 0;
+    }
+
+    &__btn {
+      margin-top: 60px;
+    }
+
+    .product {
+      &__title {
+        margin: 0;
+        padding: 12px 0;
+      }
+
+      &__seller {
+        padding: 8px 0;
+        margin-bottom: 12px;
+      }
+
+      &__price {
+        padding: 22px 18px;
+        border-radius: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &__tag {
+        padding: 14px 0;
+      }
+
+      &.list {
+        .product {
+
+          &__title {
+            margin: 0;
+          }
+
+          &__card {
+            padding: 0 15px 15px;
+          }
+
+          &__description {
+            margin: 0;
+          }
+
+          &__comments-link {
+            padding: 14px 0;
+          }
+        }
+      }
+    }
+
+    &__pag-link {
+      height: 44px;
+      border-radius: 24px;
+    }
+
+    &__arrow {
+      height: 44px;
+      border-radius: 24px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .irs--round {
+    .irs-line {
+      width: 100%;
+    }
+
+    .irs-to {
+      left: unset !important;
+      right: 0 !important;
+    }
   }
 }
 
@@ -853,7 +1063,6 @@
     }
   }
 
-
   .footer {
     &__inner {
       justify-content: flex-start;
@@ -876,6 +1085,7 @@
     }
 
   }
+
   .filter {
 
     &__links,
@@ -1078,6 +1288,7 @@
 
     &__sort {
       width: 100%;
+
       &--active {
         &::after {
           display: none;
@@ -1086,9 +1297,74 @@
     }
   }
 
+  .sort {
+    .product {
+      max-width: 100%;
+
+      &__stats {
+        max-width: 100%;
+      }
+
+      &.list {
+        .product {
+
+          &__card {
+            padding: 0;
+          }
+
+          &__card-inner {
+            flex-direction: column;
+          }
+
+
+
+          &__price {
+            margin-bottom: 0;
+            margin-right: 20px;
+          }
+
+          &__section-middle {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            //flex-direction: column;
+            justify-content: space-between;
+            border: none;
+            max-width: 100%;
+          }
+
+          &__seller,
+          &__likes,
+          &__comments-link {
+            margin: 0;
+            padding-right: 20px;
+          }
+
+          &__section-left,
+          &__section-middle,
+          &__section-right {
+            padding: 0 15px;
+            border: none;
+          }
+
+          &__section-right {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 10px 0;
+            border-top: 1px solid #ececec;
+          }
+
+          &__section-middle {
+            padding-bottom: 15px;
+          }
+
+        }
+      }
+    }
+  }
+
 }
-
-
 
 
 @media (min-width: 993px) {

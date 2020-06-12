@@ -432,10 +432,6 @@
           </div>
         </div>
       </header>
-
-
-
-
       <main>
         <section class="searcher">
           <div class="container">
@@ -451,7 +447,7 @@
             </form>
             <div class="breadcrumbs">
               <ul class="breadcrumbs__list">
-                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Home</a></li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--wide" href="#">Home</a></li>
                 <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Category Page Grid</a></li>
               </ul>
             </div>
@@ -462,11 +458,11 @@
           <div class="container">
             <div class="filter__inner">
               <div class="filter__links">
-                <button class="filter__link filter__link--margin40" type="button" data-filter=".cat-new">New Products</button>
-                <button class="filter__link filter__link--margin40" type="button" data-filter=".cat-popular">Popular
+                <button class="filter__link" type="button" data-filter=".cat-new">New Products</button>
+                <button class="filter__link" type="button" data-filter=".cat-popular">Popular
                   Products
                 </button>
-                <button class="filter__link filter__all" type="button" data-filter="all">All Products</button>
+                <button class="filter__link filter__link--all" type="button" data-filter="all">All Products</button>
               </div>
               <div class="filter__filters">
                 <div class="filter__price-box">
@@ -500,30 +496,56 @@
                     Categories
                   </div>
                   <ul class="sort__list">
-                    <li class="sort__cat"><button class="sort__link" type="button" data-filter=".cat-wordpress">Wordpress</button><span class="sort__cat-num">35</span></li>
-                    <li class="sort__cat"><button class="sort__link" type="button" data-filter=".cat-landing">Landing Page</button><span class="sort__cat-num">45</span></li>
-                    <li class="sort__cat"><button class="sort__link" type="button" data-filter=".cat-psd">Psd Template</button><span class="sort__cat-num">13</span></li>
-                    <li class="sort__cat"><button class="sort__link" type="button" data-filter=".cat-plugins">Plugins</button><span class="sort__cat-num">08</span></li>
-                    <li class="sort__cat"><button class="sort__link" type="button" data-filter=".cat-html">HTML Template</button><span class="sort__cat-num">34</span></li>
-                    <li class="sort__cat"><button class="sort__link" type="button" data-filter=".cat-components">Components</button><span class="sort__cat-num">78</span></li>
-                    <li class="sort__cat"><button class="sort__link" type="button" data-filter=".cat-joomla">Joomla Template</button><span class="sort__cat-num">26</span></li>
+                    <li class="sort__item">
+                      <button class="sort__link" type="button" data-filter=".cat-wordpress">Wordpress</button>
+                      <span class="sort__quantity">35</span></li>
+                    <li class="sort__item">
+                      <button class="sort__link" type="button" data-filter=".cat-landing">Landing Page</button>
+                      <span class="sort__quantity">45</span></li>
+                    <li class="sort__item">
+                      <button class="sort__link" type="button" data-filter=".cat-psd">Psd Template</button>
+                      <span class="sort__quantity">13</span></li>
+                    <li class="sort__item">
+                      <button class="sort__link" type="button" data-filter=".cat-plugins">Plugins</button>
+                      <span class="sort__quantity">08</span></li>
+                    <li class="sort__item">
+                      <button class="sort__link" type="button" data-filter=".cat-html">HTML Template</button>
+                      <span class="sort__quantity">34</span></li>
+                    <li class="sort__item">
+                      <button class="sort__link" type="button" data-filter=".cat-components">Components</button>
+                      <span class="sort__quantity">78</span></li>
+                    <li class="sort__item">
+                      <button class="sort__link" type="button" data-filter=".cat-joomla">Joomla Template</button>
+                      <span class="sort__quantity">26</span></li>
                   </ul>
                 </div>
                 <div class="sort__aside-item">
                   <div class="sort__aside-title">
                     Filter Products
                   </div>
-                  <form class="sort__form">
-                    <ul class="sort__filter-list">
-                      <li class="sort__filter-item"><button class="sort__filter-link" type="button">Trending Products</button></li>
-                      <li class="sort__filter-item"><button class="sort__filter-link" type="button">Popular Products</button></li>
-                      <li class="sort__filter-item"><button class="sort__filter-link" type="button">New Products</button></li>
-                      <li class="sort__filter-item"><button class="sort__filter-link" type="button">Best Seller</button></li>
-                      <li class="sort__filter-item"><button class="sort__filter-link" type="button">Best Rating</button></li>
-                      <li class="sort__filter-item"><button class="sort__filter-link" type="button">Low Price</button></li>
-                      <li class="sort__filter-item"><button class="sort__filter-link" type="button">High Price</button></li>
-                    </ul>
-                  </form>
+                  <ul class="sort__list sort__list--filter">
+                    <li class="sort__item">
+                      <button class="sort__link" type="button">Trending Products</button>
+                    </li>
+                    <li class="sort__item">
+                      <button class="sort__link" type="button">Popular Products</button>
+                    </li>
+                    <li class="sort__item">
+                      <button class="sort__link" type="button">New Products</button>
+                    </li>
+                    <li class="sort__item">
+                      <button class="sort__link" type="button">Best Seller</button>
+                    </li>
+                    <li class="sort__item">
+                      <button class="sort__link" type="button">Best Rating</button>
+                    </li>
+                    <li class="sort__item">
+                      <button class="sort__link" type="button">Low Price</button>
+                    </li>
+                    <li class="sort__item">
+                      <button class="sort__link" type="button">High Price</button>
+                    </li>
+                  </ul>
                 </div>
                 <div class="sort__aside-item  sort__aside-item--bottom40">
                   <div class="sort__aside-title">
@@ -531,7 +553,9 @@
                   </div>
                   <form class="sort__form">
                     <input class="js-range-slider" type="text" value=""/>
-                    <button class="sort__btn" type="button">Search Update</button>
+                    <div class="sort__btn-wrapper">
+                      <button class="sort__btn" type="button">Search Update</button>
+                    </div>
                   </form>
                 </div>
               </aside>
@@ -544,7 +568,7 @@
                         <a class="product__btn" href="#">More Info</a>
                         <a class="product__btn" href="#">Live Demo</a>
                       </div>
-                      <img class="product__img" src="images/featured-product-3.jpg" alt="some text">
+                      <img class="product__img" src="images/featured-product-3.jpg" alt="product photo">
                     </div>
                     <div class="product__card">
                       <div class="product__card-inner">
@@ -556,12 +580,12 @@
                             Nunc placerat mi id nisi inter dum mollis. Praesent phare...
                           </p>
                           <a class="product__tag product__hidden" href="#">
-                            <span class="product__tag-icon icon-html5"></span>
+                            <img class="product__tag-icon" src="images/icons/html5.svg" alt="html icon">
                             <span class="product__tag-name">HTML</span>
                           </a>
                           <a class="product__seller product__visible" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-1.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Theme-Valley</span>
                           </a>
                           <div class="product__box product__visible">
@@ -598,7 +622,7 @@
                       <div class="product__stats product__visible">
                         <a class="product__price" href="#">$10</a>
                         <a class="product__tag" href="#">
-                          <span class="product__tag-icon icon-html5"></span>
+                          <img class="product__tag-icon" src="images/icons/html5.svg" alt="html icon">
                           <span class="product__tag-name">HTML</span>
                         </a>
                       </div>
@@ -610,7 +634,7 @@
                         <a class="product__btn" href="#">More Info</a>
                         <a class="product__btn" href="#">Live Demo</a>
                       </div>
-                      <img class="product__img" src="images/featured-product-1.jpg" alt="some text">
+                      <img class="product__img" src="images/featured-product-1.jpg" alt="product photo">
                     </div>
                     <div class="product__card">
                       <div class="product__card-inner">
@@ -622,12 +646,12 @@
                             Nunc placerat mi id nisi inter dum mollis. Praesent phare...
                           </p>
                           <a class="product__tag product__hidden" href="#">
-                            <span class="product__tag-icon icon-psd"></span>
+                            <img class="product__tag-icon" src="images/icons/psd.svg" alt="psd icon">
                             <span class="product__tag-name">PSD</span>
                           </a>
                           <a class="product__seller product__visible" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-2.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Artcorner</span>
                           </a>
                           <div class="product__box product__visible">
@@ -640,7 +664,7 @@
                         <div class="product__section-middle product__hidden">
                           <a class="product__seller" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-2.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Artcorner</span>
                           </a>
                           <div class="product__likes lnr lnr-heart">
@@ -664,7 +688,7 @@
                       <div class="product__stats product__visible">
                         <a class="product__price" href="#">$20</a>
                         <a class="product__tag" href="#">
-                          <span class="product__tag-icon icon-psd"></span>
+                          <img class="product__tag-icon" src="images/icons/psd.svg" alt="psd icon">
                           <span class="product__tag-name">PSD</span>
                         </a>
                       </div>
@@ -676,7 +700,7 @@
                         <a class="product__btn" href="#">More Info</a>
                         <a class="product__btn" href="#">Live Demo</a>
                       </div>
-                      <img class="product__img" src="images/featured-product-2.jpg" alt="some text">
+                      <img class="product__img" src="images/featured-product-2.jpg" alt="product photo">
                     </div>
                     <div class="product__card">
                       <div class="product__card-inner">
@@ -688,12 +712,12 @@
                             Nunc placerat mi id nisi inter dum mollis. Praesent phare...
                           </p>
                           <a class="product__tag product__hidden" href="#">
-                            <span class="product__tag-icon icon-wordpress"></span>
+                            <img class="product__tag-icon" src="images/icons/wordpress.svg" alt="wordpress icon">
                             <span class="product__tag-name">Wordpress</span>
                           </a>
                           <a class="product__seller product__visible" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-3.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Theme-Lab</span>
                           </a>
                           <div class="product__box product__visible">
@@ -706,7 +730,7 @@
                         <div class="product__section-middle product__hidden">
                           <a class="product__seller" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-3.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Theme-Lab</span>
                           </a>
                           <div class="product__likes lnr lnr-heart">
@@ -730,7 +754,7 @@
                       <div class="product__stats product__visible">
                         <a class="product__price" href="#">$10-$300</a>
                         <a class="product__tag" href="#">
-                          <span class="product__tag-icon icon-wordpress"></span>
+                          <img class="product__tag-icon" src="images/icons/wordpress.svg" alt="wordpress icon">
                           <span class="product__tag-name">Wordpress</span>
                         </a>
                       </div>
@@ -742,7 +766,7 @@
                         <a class="product__btn" href="#">More Info</a>
                         <a class="product__btn" href="#">Live Demo</a>
                       </div>
-                      <img class="product__img" src="images/featured-product-3.jpg" alt="some text">
+                      <img class="product__img" src="images/featured-product-3.jpg" alt="product photo">
                     </div>
                     <div class="product__card">
                       <div class="product__card-inner">
@@ -754,12 +778,12 @@
                             Nunc placerat mi id nisi inter dum mollis. Praesent phare...
                           </p>
                           <a class="product__tag product__hidden" href="#">
-                            <span class="product__tag-icon icon-html5"></span>
+                            <img class="product__tag-icon" src="images/icons/html5.svg" alt="html icon">
                             <span class="product__tag-name">HTML</span>
                           </a>
                           <a class="product__seller product__visible" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-1.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Theme-Valley</span>
                           </a>
                           <div class="product__box product__visible">
@@ -772,7 +796,7 @@
                         <div class="product__section-middle product__hidden">
                           <a class="product__seller" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-1.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Theme-Valley</span>
                           </a>
                           <div class="product__likes lnr lnr-heart">
@@ -796,7 +820,7 @@
                       <div class="product__stats product__visible">
                         <a class="product__price" href="#">$10</a>
                         <a class="product__tag" href="#">
-                          <span class="product__tag-icon icon-html5"></span>
+                          <img class="product__tag-icon" src="images/icons/html5.svg" alt="html icon">
                           <span class="product__tag-name">HTML</span>
                         </a>
                       </div>
@@ -808,7 +832,7 @@
                         <a class="product__btn" href="#">More Info</a>
                         <a class="product__btn" href="#">Live Demo</a>
                       </div>
-                      <img class="product__img" src="images/featured-product-1.jpg" alt="some text">
+                      <img class="product__img" src="images/featured-product-1.jpg" alt="product photo">
                     </div>
                     <div class="product__card">
                       <div class="product__card-inner">
@@ -820,12 +844,12 @@
                             Nunc placerat mi id nisi inter dum mollis. Praesent phare...
                           </p>
                           <a class="product__tag product__hidden" href="#">
-                            <span class="product__tag-icon icon-psd"></span>
+                            <img class="product__tag-icon" src="images/icons/psd.svg" alt="psd icon">
                             <span class="product__tag-name">PSD</span>
                           </a>
                           <a class="product__seller product__visible" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-2.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Artcorner</span>
                           </a>
                           <div class="product__box product__visible">
@@ -838,7 +862,7 @@
                         <div class="product__section-middle product__hidden">
                           <a class="product__seller" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-2.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Artcorner</span>
                           </a>
                           <div class="product__likes lnr lnr-heart">
@@ -862,7 +886,7 @@
                       <div class="product__stats product__visible">
                         <a class="product__price" href="#">$20</a>
                         <a class="product__tag" href="#">
-                          <span class="product__tag-icon icon-psd"></span>
+                          <img class="product__tag-icon" src="images/icons/psd.svg" alt="psd icon">
                           <span class="product__tag-name">PSD</span>
                         </a>
                       </div>
@@ -874,7 +898,7 @@
                         <a class="product__btn" href="#">More Info</a>
                         <a class="product__btn" href="#">Live Demo</a>
                       </div>
-                      <img class="product__img" src="images/featured-product-2.jpg" alt="some text">
+                      <img class="product__img" src="images/featured-product-2.jpg" alt="product photo">
                     </div>
                     <div class="product__card">
                       <div class="product__card-inner">
@@ -886,12 +910,12 @@
                             Nunc placerat mi id nisi inter dum mollis. Praesent phare...
                           </p>
                           <a class="product__tag product__hidden" href="#">
-                            <span class="product__tag-icon icon-wordpress"></span>
+                            <img class="product__tag-icon" src="images/icons/wordpress.svg" alt="wordpress icon">
                             <span class="product__tag-name">Wordpress</span>
                           </a>
                           <a class="product__seller product__visible" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-3.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Theme-Lab</span>
                           </a>
                           <div class="product__box product__visible">
@@ -904,7 +928,7 @@
                         <div class="product__section-middle product__hidden">
                           <a class="product__seller" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-3.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Theme-Lab</span>
                           </a>
                           <div class="product__likes lnr lnr-heart">
@@ -928,7 +952,7 @@
                       <div class="product__stats product__visible">
                         <a class="product__price" href="#">$10-$300</a>
                         <a class="product__tag" href="#">
-                          <span class="product__tag-icon icon-wordpress"></span>
+                          <img class="product__tag-icon" src="images/icons/wordpress.svg" alt="wordpress icon">
                           <span class="product__tag-name">Wordpress</span>
                         </a>
                       </div>
@@ -940,7 +964,7 @@
                         <a class="product__btn" href="#">More Info</a>
                         <a class="product__btn" href="#">Live Demo</a>
                       </div>
-                      <img class="product__img" src="images/featured-product-3.jpg" alt="some text">
+                      <img class="product__img" src="images/featured-product-3.jpg" alt="product photo">
                     </div>
                     <div class="product__card">
                       <div class="product__card-inner">
@@ -952,12 +976,12 @@
                             Nunc placerat mi id nisi inter dum mollis. Praesent phare...
                           </p>
                           <a class="product__tag product__hidden" href="#">
-                            <span class="product__tag-icon icon-html5"></span>
+                            <img class="product__tag-icon" src="images/icons/html5.svg" alt="html icon">
                             <span class="product__tag-name">HTML</span>
                           </a>
                           <a class="product__seller product__visible" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-1.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Theme-Valley</span>
                           </a>
                           <div class="product__box product__visible">
@@ -970,7 +994,7 @@
                         <div class="product__section-middle product__hidden">
                           <a class="product__seller" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-1.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Theme-Valley</span>
                           </a>
                           <div class="product__likes lnr lnr-heart">
@@ -994,7 +1018,7 @@
                       <div class="product__stats product__visible">
                         <a class="product__price" href="#">$10</a>
                         <a class="product__tag" href="#">
-                          <span class="product__tag-icon icon-html5"></span>
+                          <img class="product__tag-icon" src="images/icons/html5.svg" alt="html icon">
                           <span class="product__tag-name">HTML</span>
                         </a>
                       </div>
@@ -1006,7 +1030,7 @@
                         <a class="product__btn" href="#">More Info</a>
                         <a class="product__btn" href="#">Live Demo</a>
                       </div>
-                      <img class="product__img" src="images/featured-product-1.jpg" alt="some text">
+                      <img class="product__img" src="images/featured-product-1.jpg" alt="product photo">
                     </div>
                     <div class="product__card">
                       <div class="product__card-inner">
@@ -1018,12 +1042,12 @@
                             Nunc placerat mi id nisi inter dum mollis. Praesent phare...
                           </p>
                           <a class="product__tag product__hidden" href="#">
-                            <span class="product__tag-icon icon-psd"></span>
+                            <img class="product__tag-icon" src="images/icons/psd.svg" alt="psd icon">
                             <span class="product__tag-name">PSD</span>
                           </a>
                           <a class="product__seller product__visible" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-2.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Artcorner</span>
                           </a>
                           <div class="product__box product__visible">
@@ -1036,7 +1060,7 @@
                         <div class="product__section-middle product__hidden">
                           <a class="product__seller" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-2.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Artcorner</span>
                           </a>
                           <div class="product__likes lnr lnr-heart">
@@ -1060,7 +1084,7 @@
                       <div class="product__stats product__visible">
                         <a class="product__price" href="#">$20</a>
                         <a class="product__tag" href="#">
-                          <span class="product__tag-icon icon-psd"></span>
+                          <img class="product__tag-icon" src="images/icons/psd.svg" alt="psd icon">
                           <span class="product__tag-name">PSD</span>
                         </a>
                       </div>
@@ -1072,7 +1096,7 @@
                         <a class="product__btn" href="#">More Info</a>
                         <a class="product__btn" href="#">Live Demo</a>
                       </div>
-                      <img class="product__img" src="images/featured-product-2.jpg" alt="some text">
+                      <img class="product__img" src="images/featured-product-2.jpg" alt="product photo">
                     </div>
                     <div class="product__card">
                       <div class="product__card-inner">
@@ -1084,12 +1108,12 @@
                             Nunc placerat mi id nisi inter dum mollis. Praesent phare...
                           </p>
                           <a class="product__tag product__hidden" href="#">
-                            <span class="product__tag-icon icon-wordpress"></span>
+                            <img class="product__tag-icon" src="images/icons/wordpress.svg" alt="wordpress icon">
                             <span class="product__tag-name">Wordpress</span>
                           </a>
                           <a class="product__seller product__visible" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-3.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Theme-Lab</span>
                           </a>
                           <div class="product__box product__visible">
@@ -1102,7 +1126,7 @@
                         <div class="product__section-middle product__hidden">
                           <a class="product__seller" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-3.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Theme-Lab</span>
                           </a>
                           <div class="product__likes lnr lnr-heart">
@@ -1126,7 +1150,7 @@
                       <div class="product__stats product__visible">
                         <a class="product__price" href="#">$10-$300</a>
                         <a class="product__tag" href="#">
-                          <span class="product__tag-icon icon-wordpress"></span>
+                          <img class="product__tag-icon" src="images/icons/wordpress.svg" alt="wordpress icon">
                           <span class="product__tag-name">Wordpress</span>
                         </a>
                       </div>
@@ -1138,7 +1162,7 @@
                         <a class="product__btn" href="#">More Info</a>
                         <a class="product__btn" href="#">Live Demo</a>
                       </div>
-                      <img class="product__img" src="images/featured-product-3.jpg" alt="some text">
+                      <img class="product__img" src="images/featured-product-3.jpg" alt="product photo">
                     </div>
                     <div class="product__card">
                       <div class="product__card-inner">
@@ -1150,12 +1174,12 @@
                             Nunc placerat mi id nisi inter dum mollis. Praesent phare...
                           </p>
                           <a class="product__tag product__hidden" href="#">
-                            <span class="product__tag-icon icon-html5"></span>
+                            <img class="product__tag-icon" src="images/icons/html5.svg" alt="html icon">
                             <span class="product__tag-name">HTML</span>
                           </a>
                           <a class="product__seller product__visible" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-1.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Theme-Valley</span>
                           </a>
                           <div class="product__box product__visible">
@@ -1168,7 +1192,7 @@
                         <div class="product__section-middle product__hidden">
                           <a class="product__seller" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-1.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Theme-Valley</span>
                           </a>
                           <div class="product__likes lnr lnr-heart">
@@ -1192,7 +1216,7 @@
                       <div class="product__stats product__visible">
                         <a class="product__price" href="#">$10</a>
                         <a class="product__tag" href="#">
-                          <span class="product__tag-icon icon-html5"></span>
+                          <img class="product__tag-icon" src="images/icons/html5.svg" alt="html icon">
                           <span class="product__tag-name">HTML</span>
                         </a>
                       </div>
@@ -1204,7 +1228,7 @@
                         <a class="product__btn" href="#">More Info</a>
                         <a class="product__btn" href="#">Live Demo</a>
                       </div>
-                      <img class="product__img" src="images/featured-product-1.jpg" alt="some text">
+                      <img class="product__img" src="images/featured-product-1.jpg" alt="product photo">
                     </div>
                     <div class="product__card">
                       <div class="product__card-inner">
@@ -1216,12 +1240,12 @@
                             Nunc placerat mi id nisi inter dum mollis. Praesent phare...
                           </p>
                           <a class="product__tag product__hidden" href="#">
-                            <span class="product__tag-icon icon-psd"></span>
+                            <img class="product__tag-icon" src="images/icons/psd.svg" alt="psd icon">
                             <span class="product__tag-name">PSD</span>
                           </a>
                           <a class="product__seller product__visible" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-2.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Artcorner</span>
                           </a>
                           <div class="product__box product__visible">
@@ -1234,7 +1258,7 @@
                         <div class="product__section-middle product__hidden">
                           <a class="product__seller" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-2.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Artcorner</span>
                           </a>
                           <div class="product__likes lnr lnr-heart">
@@ -1258,7 +1282,7 @@
                       <div class="product__stats product__visible">
                         <a class="product__price" href="#">$20</a>
                         <a class="product__tag" href="#">
-                          <span class="product__tag-icon icon-psd"></span>
+                          <img class="product__tag-icon" src="images/icons/psd.svg" alt="psd icon">
                           <span class="product__tag-name">PSD</span>
                         </a>
                       </div>
@@ -1270,7 +1294,7 @@
                         <a class="product__btn" href="#">More Info</a>
                         <a class="product__btn" href="#">Live Demo</a>
                       </div>
-                      <img class="product__img" src="images/featured-product-2.jpg" alt="some text">
+                      <img class="product__img" src="images/featured-product-2.jpg" alt="product photo">
                     </div>
                     <div class="product__card">
                       <div class="product__card-inner">
@@ -1282,12 +1306,12 @@
                             Nunc placerat mi id nisi inter dum mollis. Praesent phare...
                           </p>
                           <a class="product__tag product__hidden" href="#">
-                            <span class="product__tag-icon icon-wordpress"></span>
+                            <img class="product__tag-icon" src="images/icons/wordpress.svg" alt="wordpress icon">
                             <span class="product__tag-name">Wordpress</span>
                           </a>
                           <a class="product__seller product__visible" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-3.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Theme-Lab</span>
                           </a>
                           <div class="product__box product__visible">
@@ -1300,7 +1324,7 @@
                         <div class="product__section-middle product__hidden">
                           <a class="product__seller" href="#">
                             <img class="product__seller-img" src="images/seller-avatar-3.jpg"
-                                 alt="some text">
+                                 alt="seller avatar">
                             <span class="product__name">Theme-Lab</span>
                           </a>
                           <div class="product__likes lnr lnr-heart">
@@ -1324,7 +1348,7 @@
                       <div class="product__stats product__visible">
                         <a class="product__price" href="#">$10-$300</a>
                         <a class="product__tag" href="#">
-                          <span class="product__tag-icon icon-wordpress"></span>
+                          <img class="product__tag-icon" src="images/icons/wordpress.svg" alt="wordpress icon">
                           <span class="product__tag-name">Wordpress</span>
                         </a>
                       </div>

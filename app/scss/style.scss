@@ -68,7 +68,7 @@
     left: 9px;
     border-radius: 11px;
     transition: all .3s;
-    
+
     &--active {
       display: block;
     }
@@ -130,7 +130,7 @@
     position: relative;
 
   }
-  
+
   &__mobile-menu {
     display: none;
     font-size: 44px;
@@ -139,6 +139,7 @@
 
   &__menu {
     display: none;
+
     &--off {
       display: none;
     }
@@ -147,6 +148,7 @@
   &__notify-box {
     margin-right: 48px;
   }
+
   &__notify {
     display: inline-block;
     line-height: 100px;
@@ -168,6 +170,7 @@
     &--bell {
       .dropdown {
         left: -14px;
+
         &::after {
           left: 30px;
           right: unset;
@@ -178,12 +181,14 @@
     &--message {
       .dropdown {
         right: -15px;
+
         &::after {
           right: 32px;
         }
 
         &__sender {
           padding-right: 30px;
+
           &:hover {
             text-decoration: none;
           }
@@ -206,6 +211,7 @@
       .dropdown {
         width: 400px;
         right: -30px;
+
         &::after {
           right: 45px;
         }
@@ -244,6 +250,7 @@
 
       &__link {
         padding-left: 10px;
+
         &::before {
           display: none;
         }
@@ -263,6 +270,7 @@
     line-height: 80px;
     cursor: pointer;
     padding-right: 15px;
+
     & + & {
       padding-left: 15px;
     }
@@ -477,7 +485,7 @@
       background-color: #eef1f3;
     }
 
-    &--new {     /* маркировка сообщения как "новое" */
+    &--new { /* маркировка сообщения как "новое" */
       .dropdown__time {
         color: $blue;
       }
@@ -489,7 +497,7 @@
       }
     }
 
-    &--reply {    /* маркировка сообщения как "ответ" */
+    &--reply { /* маркировка сообщения как "ответ" */
       .dropdown__sender {
         &::after {
           display: block;
@@ -760,6 +768,7 @@
     &:hover {
       background-color: $blue;
       border-radius: 2px;
+
       .header__column-link {
         color: $white;
       }
@@ -1033,6 +1042,7 @@
       box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
     }
   }
+
   &__image {
     width: 112px;
     height: 113px;
@@ -1062,6 +1072,7 @@
     color: $text;
   }
 }
+
 /* ----- BENEFITS END ----- */
 
 
@@ -1112,6 +1123,7 @@
     .product {
       &__img-box {
         height: auto;
+
         &:hover {
           .product__links {
             height: 230px;
@@ -1200,6 +1212,7 @@
         border-radius: 4px 4px 0 0;
         width: 262px;
         height: 160px;
+
         &:hover {
           .product__links {
             height: 160px;
@@ -1248,7 +1261,6 @@
 
       &__tag-name {
         max-width: 140px;
-        margin-left: 0;
       }
 
       &__description {
@@ -1401,6 +1413,7 @@
     font-size: 15px;
     max-width: 195px;
     margin-left: 9px;
+
     &:hover {
       text-decoration: underline;
     }
@@ -1611,6 +1624,7 @@
         margin-left: 10px;
         color: #6f7d8d;
       }
+
       &__stars {
         display: inline-block;
       }
@@ -1621,6 +1635,7 @@
     }
   }
 }
+
 /* ----- FEATURED END ----- */
 
 /* ----- NEWEST START ----- */
@@ -1663,7 +1678,7 @@
     font-size: 16px;
     color: #747b86;
     background-color: transparent;
-    border:none;
+    border: none;
     cursor: pointer;
     position: relative;
     @include focus;
@@ -1815,6 +1830,7 @@
     max-width: 361px;
   }
 }
+
 /* ----- FEED END ----- */
 
 /* ----- STATS START ----- */
@@ -1834,9 +1850,11 @@
     &--blue {
       color: $blue;
     }
+
     &--green {
       color: $green;
     }
+
     &--red {
       color: $red;
     }
@@ -1857,6 +1875,7 @@
     color: #fff;
   }
 }
+
 /* ----- STATS END ----- */
 
 /* ----- ADVANTAGES START ----- */
@@ -1951,6 +1970,7 @@
     color: $blue;
   }
 }
+
 /* ----- ADVANTAGES END ----- */
 
 /* ----- SELL&BUY START ----- */
@@ -2014,6 +2034,7 @@
     }
   }
 }
+
 /* ----- SELL-BUY END ----- */
 
 /* ----- FEEDBACK START ----- */
@@ -2050,6 +2071,7 @@
     align-items: center;
     margin-bottom: 30px;
     z-index: 1;
+
     &::after {
       position: absolute;
       content: "\e83f";
@@ -2149,6 +2171,7 @@
     }
   }
 }
+
 /* ----- FEEDBACK END ----- */
 
 /* ----- NEWS START ----- */
@@ -2254,6 +2277,7 @@
     }
   }
 }
+
 /* ----- NEWS END ----- */
 
 /* ----- SUPPORT START ----- */
@@ -2284,7 +2308,6 @@
   }
 
 
-
   &__image {
     margin-bottom: 32px;
   }
@@ -2297,14 +2320,17 @@
 
   &__highlight {
     color: $blue;
+
     &--violet {
       color: $violet;
     }
+
     &:hover {
       text-decoration: underline;
     }
   }
 }
+
 /* ----- SUPPORT END ----- */
 
 
@@ -2336,6 +2362,7 @@
     }
   }
 }
+
 /* ----- JOIN END ----- */
 
 
@@ -2432,9 +2459,11 @@
 
     &--address {
       line-height: 26px;
+
       address {
         font-style: inherit;
       }
+
       &::before {
         content: "\e833";
         top: 25%;
@@ -2443,9 +2472,9 @@
   }
 
 
-
   &__item {
     line-height: 28px;
+
     & + & {
       margin-top: 5px;
     }
@@ -2454,7 +2483,7 @@
   &__copyright {
     background-color: #192027;
   }
-  
+
   &__copyright-text {
     text-align: center;
     font-size: 15px;
@@ -2475,8 +2504,10 @@
 .social {
   padding: 0;
   margin: 0;
+
   &__item {
     display: inline-block;
+
     & + & {
       margin-left: 13px;
     }
@@ -2495,7 +2526,7 @@
     }
 
     &--facebook {
-      background-position:  -57px -5px;
+      background-position: -57px -5px;
     }
 
     &--twitter {
@@ -2515,14 +2546,14 @@
     }
 
     &--dribble {
-      background-position:  -5px -5px;
+      background-position: -5px -5px;
     }
   }
 
 }
+
 /* ---------- FOOTER END ---------- */
 /* -------- INDEX.HTML END -------- */
-
 
 
 /* ----- CATEGORIES.HTML START ----- */
@@ -2546,6 +2577,7 @@
   }
 
 }
+
 /* ---------- SEARCHER END ---------- */
 
 
@@ -2568,14 +2600,14 @@
     color: $text;
     cursor: pointer;
     @include focus;
+    margin-right: 40px;
 
     &:hover {
       color: $blue;
     }
 
-    &--margin40 {
-      margin-right: 40px;
-
+    &--all {
+      margin-right: 0;
     }
   }
 
@@ -2602,17 +2634,20 @@
     & + & {
       margin-left: 15px;
     }
+
     &--active {
       position: relative;
       color: $blue;
+
       &::after {
         position: absolute;
         content: '';
-        width: 22px;
-        height: 2px;
-        background-color: $blue;
-        bottom: -7px;
-        left: 0;
+        border-bottom: 8px solid transparent;
+        border-top: 8px solid $blue;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -11px;
+        left: 3px;
       }
     }
   }
@@ -2649,6 +2684,7 @@
     }
   }
 }
+
 /* ---------- FILTER END ---------- */
 
 
@@ -2698,37 +2734,45 @@
     }
   }
 
-  &__list,
-  &__filter-list {
+  &__list {
     margin: 0;
     padding: 25px 0 0;
     list-style: none;
+
+    &--filter {
+      .sort__item {
+        display: block;
+
+        &::before {
+          content: '';
+          width: 10px;
+          height: 10px;
+          border: 1px solid #747b86;
+          border-radius: 50%;
+        }
+      }
+    }
   }
 
-  &__cat,
-  &__filter-item {
+  &__item {
+    display: flex;
+    justify-content: space-between;
     padding-left: 20px;
     position: relative;
+
     & + & {
       margin-top: 19px;
     }
 
     &::before {
       position: absolute;
+      content: "\e876";
       font-family: 'Linearicons-Free';
       font-size: 10px;
       color: #747b86;
       left: 0;
       top: 50%;
       transform: translateY(-50%);
-    }
-  }
-
-  &__cat {
-    display: flex;
-    justify-content: space-between;
-    &::before {
-      content: "\e876";
     }
   }
 
@@ -2745,31 +2789,12 @@
     }
   }
 
-  &__filter-item {
-    &::before {
-      content: '';
-      width: 10px;
-      height: 10px;
-      border: 1px solid #747b86;
-      border-radius: 50%;
-    }
-  }
-
-  &__filter-link {
-    background-color: transparent;
-    border: none;
-    color: #555555;
-    font-size: 15px;
-    cursor: pointer;
-    @include focus;
-
-    &:hover {
-      color: $blue;
-    }
+  &__btn-wrapper {
+    text-align: center;
   }
 
   &__btn {
-    width: 170px;
+    padding: 0 33px;
     height: 44px;
     border-radius: 22px;
     border: none;
@@ -2779,7 +2804,7 @@
     font-size: 15px;
     cursor: pointer;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
-    margin: 80px  16px 0;
+    margin-top: 80px;
     @include focus;
 
     &:hover {
@@ -2789,7 +2814,7 @@
 
   &__content {
     width: 100%;
-    text-align: right;
+    text-align: right; /* уносим вправо пагинацию снизу страницы */
   }
 
   &__content-box {
@@ -2814,7 +2839,7 @@
       margin-left: 5px;
     }
 
-    &:first-child{
+    &:first-child {
       margin-right: 15px;
     }
 
@@ -2913,11 +2938,6 @@
 }
 
 /* ---------- SORT END ---------- */
-
-
-
-
-
 
 
 @import "media";
