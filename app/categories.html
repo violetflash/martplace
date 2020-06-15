@@ -84,7 +84,9 @@
                               <span class="dropdown__action">Purchased</span>
                               <a class="dropdown__target" href="#">Bryson-Responsive Template </a>
                             </div>
-                            <div class="dropdown__time">6 hours ago</div>
+                            <div class="dropdown__time">
+                              <time datetime="2020-06-09T18:18">6 hours ago</time>
+                            </div>
                           </div>
                         </div>
                         <div class="dropdown__icon dropdown__icon--red lnr lnr-cart"></div>
@@ -154,7 +156,7 @@
                           <div class="dropdown__event-box">
                             <div class="dropdown__event">
                               <div class="dropdown__sender">EchoTheme</div>
-                              <div class="dropdown__time">Jul 16</div>
+                              <div class="dropdown__time"><time datetime="2020-06-09T18:18">Jul 16</time></div>
                             </div>
                             <div class="dropdown__text">Hello John Smith! Nunc placerat id...</div>
                           </div>
@@ -273,7 +275,7 @@
         </div>
         <div class="container">
           <div class="header__bottom">
-            <div class="header__mobile-menu lnr lnr-menu"></div>
+            <button class="header__mobile-menu lnr lnr-menu"></button>
             <nav class="header__menu">
               <ul class="header__list">
                 <li class="header__item dropdown-wrapper">
@@ -423,11 +425,8 @@
               </ul>
             </nav>
             <form class="search-form">
-              <label for="search-input">
-                <input class="search-form__input" id="search-input" type="search" placeholder="Search product here...">
-              </label>
-              <button type="submit"
-                      class="search-form__btn"><span class="search-form__icon lnr lnr-magnifier"></span></button>
+              <input class="search-form__input" type="search" placeholder="Search product here...">
+              <button type="submit" class="search-form__btn lnr lnr-magnifier"></button>
             </form>
           </div>
         </div>
@@ -479,8 +478,8 @@
                   </select>
                 </div>
                 <div class="filter__btn-box">
-                  <div class="filter__sort filter__grid icon-filter-grid filter__sort--active"></div>
-                  <div class="filter__sort filter__list icon-filter-list"></div>
+                  <button class="filter__sort filter__grid icon-filter-grid filter__sort--active"></button>
+                  <button class="filter__sort filter__list icon-filter-list"></button>
                 </div>
               </div>
             </div>

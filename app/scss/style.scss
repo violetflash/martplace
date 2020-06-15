@@ -133,8 +133,11 @@
 
   &__mobile-menu {
     display: none;
+    background-color: transparent;
+    border: none;
     font-size: 44px;
     color: #000;
+    @include focus;
   }
 
   &__menu {
