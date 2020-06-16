@@ -74,6 +74,16 @@ $(function () {
         ]
     });
 
+    $('.sort__list--filter .sort__link').on('click', function () {
+        $('.sort__list--filter .sort__link').removeClass('sort__link--active');
+        $(this).toggleClass('sort__link--active');
+        $('.sort__item').removeClass('sort__item--active');
+        $(this).parent().addClass('sort__item--active')
+    });
+
+
+
+
     $('.filter__list').on('click', function () {
         $('.filter__list').addClass('filter__sort--active');
         $('.filter__grid').removeClass('filter__sort--active');
