@@ -2770,6 +2770,12 @@
           }
         }
       }
+      .sort__Link {
+        &:focus {
+          background-color: transparent;
+          color: #555;
+        }
+      }
     }
   }
 
@@ -2812,10 +2818,10 @@
       color: $blue;
     }
 
-    &:focus {
-      background-color: $blue;
-      color: #fff;
-    }
+    //&:focus {
+    //  background-color: $blue;
+    //  color: #fff;
+    //}
   }
 
   &__btn-wrapper {
