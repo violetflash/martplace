@@ -56,12 +56,13 @@ gulp.task('js', function () {
         .pipe(browserSync.reload({stream: true}))
 });
 
-
 gulp.task('browser-sync', function () {
     browserSync.init({
         server: {
             baseDir: "app/"
-        }
+        },
+        injectChanges: false,
+        port: 8080
     });
 });
 
