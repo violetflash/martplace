@@ -124,5 +124,7 @@ $(function () {
         $('.header__menu').slideToggle()
     })
 
+    $('.login__check').styler();
+
 });
 

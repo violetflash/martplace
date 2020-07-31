@@ -2971,8 +2971,156 @@
   }
 
 }
-
 /* ---------- SORT END ---------- */
+
+
+/* ---------- LOGIN START ---------- */
+.login {
+  padding-bottom: 120px;
+  background-color: #eff1f5;
+  .breadcrumbs-box {
+    height: 180px;
+    background-color: #6c6c6c;
+    background-image: linear-gradient(to left, #0d3ef2 0%, #4c1f9c 100%);
+    opacity: 0.9;
+    margin-bottom: 70px;
+  }
+
+  .breadcrumbs {
+    padding-top: 58px;
+  }
+
+  .breadcrumbs-title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 26px;
+  }
+
+  &__box {
+    max-width: 555px;
+    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+
+  &__title-box {
+    text-align: center;
+    padding: 0 15px 25px;
+    border-bottom: 1px solid #e8ebf0;
+  }
+
+  &__title {
+    color: #000;
+    font-size: 26px;
+    margin-bottom: 26px;
+  }
+
+  &__subtitle {
+    color: #555;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  &__form {
+    padding: 30px 50px 0;
+  }
+  
+  &__label {
+    display: block;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  &__input {
+    max-width: 455px;
+    width: 100%;
+    border: none;
+    background-color: #f4f5f8;
+    padding: 18px 20px;
+    margin-bottom: 30px;
+    &::placeholder {
+      color: #898f96;
+      font-size: 16px;
+    }
+  }
+
+  //checkbox style
+  &__check {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+
+  .jq-checkbox.checked .jq-checkbox__div {
+    width: 9px;
+    height: 6px;
+    margin: 5px 0 0 5px;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    -webkit-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+  }
+  .jq-checkbox.checked {
+    vertical-align: -4px;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    border: none;
+    background: $blue;
+    box-shadow: none;
+    cursor: pointer;
+  }
+  //checkbox style end
+
+  &__check-label {
+    color: #555555;
+    font-size: 16px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+
+  &__btn {
+    display: block;
+    background-color: $blue;
+    padding: 16px 58px;
+    border-radius: 25px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    border: none;
+    color: #fff;
+    margin-top: 33px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    @include focus;
+    &:hover {
+      background-color: $violet;
+    }
+  }
+
+  &__lost-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__lost {
+    display: inline-block;
+    color: #898f96;
+    font-size: 16px;
+  }
+
+  &__link {
+    color: $blue;
+    @include focus;
+    &:hover {
+      color: $violet;
+    }
+  }
+}
+/* ---------- LOGIN END ---------- */
 
 
 @import "media";
