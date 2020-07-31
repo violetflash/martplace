@@ -1109,9 +1109,10 @@
     }
   }
 
-  .login {
+  .login,
+  .register {
     &__form {
-      padding: 15px 15px 0;
+      padding: 0 15px;
     }
     &__btn {
       max-width: 100%;

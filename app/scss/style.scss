@@ -2975,7 +2975,8 @@
 
 
 /* ---------- LOGIN START ---------- */
-.login {
+.login,
+.register {
   padding-bottom: 120px;
   background-color: #eff1f5;
   .breadcrumbs-box {
@@ -3021,11 +3022,13 @@
   &__subtitle {
     color: #555;
     font-size: 16px;
+    max-width: 430px;
+    margin: 0 auto;
     line-height: 28px;
   }
 
   &__form {
-    padding: 30px 50px 0;
+    padding: 0 50px;
   }
   
   &__label {
@@ -3034,6 +3037,7 @@
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 15px;
+    margin-top: 30px;
   }
 
   &__input {
@@ -3042,7 +3046,6 @@
     border: none;
     background-color: #f4f5f8;
     padding: 18px 20px;
-    margin-bottom: 30px;
     @include focus;
     &::placeholder {
       color: #898f96;
