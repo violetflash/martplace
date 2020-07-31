@@ -1108,6 +1108,24 @@
       width: 100%;
     }
   }
+
+  .login {
+    &__form {
+      padding: 15px 15px 0;
+    }
+    &__btn {
+      max-width: 100%;
+      width: 100%;
+    }
+    &__lost-box {
+      display: block;
+    }
+    &__lost {
+      &+& {
+        margin-top: 20px;
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
