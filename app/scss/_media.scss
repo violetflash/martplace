@@ -366,6 +366,23 @@
 
 
   }
+
+  .pricing {
+    padding: 50px 0;
+    &__box {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    &__item {
+      margin-bottom: 30px;
+      max-width: unset;
+      flex-basis: calc(50% - 60px);
+    }
+
+    &__tip {
+      //width: 100%;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -1109,8 +1126,7 @@
     }
   }
 
-  .login,
-  .register {
+  .gateway {
     &__form {
       padding: 0 15px;
     }
@@ -1125,6 +1141,22 @@
       &+& {
         margin-top: 20px;
       }
+    }
+  }
+
+  .terms {
+    padding: 40px 0 40px;
+    &__text,
+    &__title {
+      padding: 15px 15px 15px 25px;
+    }
+  }
+
+  .pricing {
+
+    &__item {
+      margin-bottom: 30px;
+      flex-basis: 80%;
     }
   }
 }
@@ -1380,6 +1412,15 @@
 
         }
       }
+    }
+  }
+
+  .pricing {
+
+    &__item {
+      margin-bottom: 30px;
+      flex-basis: 100%;
+      padding: 15px 20px;
     }
   }
 

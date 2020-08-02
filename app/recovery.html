@@ -439,31 +439,26 @@
             <section class="breadcrumbs">
               <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Home</a></li>
-                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Login</a></li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Recovery</a></li>
               </ul>
-            <div class="breadcrumbs__title">Login</div>
+            <div class="breadcrumbs__title">Recover your password</div>
             </section>
           </div>
         </section>
-        <section class="gateway">
+        <section class="gateway gateway--recovery">
           <div class="container">
             <div class="gateway__box">
               <div class="gateway__title-box">
-                <div class="gateway__title">Welcome Back</div>
-                <div class="gateway__subtitle">You can sign in with your username</div>
+                <p class="gateway__subtitle">Please enter the email address for your account. A verification
+                  code will be sent to you. Once you have received the
+                  verification code, you will be able to choose a new password
+                  for your account.</p>
               </div>
               <form class="gateway__form">
-                <label class="gateway__label" for="login-name">Username</label>
-                <input class="gateway__input" type="text" id="login-name" placeholder="Enter your username..." required>
-                <label class="gateway__label" for="login-password">Password</label>
-                <input class="gateway__input gateway__input--login" type="password" id="login-password" placeholder="Enter your password..." required>
-                <input class="gateway__check" type="checkbox" id="login-check">
-                <label class="gateway__check-label" for="login-check">Remember me</label>
-                <button class="gateway__btn" type="submit">Login Now</button>
-                <div class="gateway__lost-box">
-                  <div class="gateway__lost">Lost your <a class="gateway__link" href="#">username</a> or <a class="gateway__link" href="#">password?</a></div>
-                  <div class="gateway__lost">Don't have an <a class="gateway__link" href="#">account?</a></div>
-                </div>
+
+                <label class="gateway__label" for="login-address">Email Address</label>
+                <input class="gateway__input" type="email" id="login-address" placeholder="Enter your email address" required>
+                <button class="gateway__btn" type="submit">Submit Now</button>
               </form>
             </div>
           </div>

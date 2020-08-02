@@ -85,6 +85,12 @@ body {
     &:last-child {
       .breadcrumbs__link {
         color: #bfcad7;
+        cursor: default;
+        &:hover {
+          &::before {
+            display: none;
+          }
+        }
       }
     }
   }

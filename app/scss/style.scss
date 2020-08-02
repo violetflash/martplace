@@ -2973,30 +2973,27 @@
 }
 /* ---------- SORT END ---------- */
 
-
-/* ---------- LOGIN START ---------- */
-.login,
-.register {
-  padding-bottom: 120px;
-  background-color: #eff1f5;
-  .breadcrumbs-box {
-    height: 180px;
-    background-color: #6c6c6c;
-    background-image: linear-gradient(to left, #0d3ef2 0%, #4c1f9c 100%);
-    opacity: 0.9;
-    margin-bottom: 70px;
-  }
-
+.breadcrumbs-box {
+  height: 180px;
+  background-color: #6c6c6c;
+  background-image: linear-gradient(to left, #0d3ef2 0%, #4c1f9c 100%);
+  opacity: 0.9;
   .breadcrumbs {
     padding-top: 58px;
+    &__title {
+      color: #fff;
+      font-size: 30px;
+      font-weight: 500;
+      margin-top: 26px;
+    }
   }
+}
 
-  .breadcrumbs-title {
-    color: #fff;
-    font-size: 30px;
-    font-weight: 500;
-    margin-top: 26px;
-  }
+
+/* ---------- LOGIN, REGISTER, RECOVERY, PAGE404 START ---------- */
+.gateway {
+  padding: 73px 0 120px;
+  background-color: #eff1f5;
 
   &__box {
     max-width: 555px;
@@ -3051,6 +3048,10 @@
       color: #898f96;
       font-size: 16px;
     }
+
+    &--login {
+      margin-bottom: 30px;
+    }
   }
 
   //checkbox style
@@ -3058,12 +3059,13 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
+
   }
 
   .jq-checkbox.checked .jq-checkbox__div {
-    width: 10px;
+    width: 9px;
     height: 7px;
-    margin: 5px 0 0 5px;
+    margin: 4px 0 0 5px;
     border-bottom: 3px solid #fff;
     border-left: 3px solid #fff;
     transform: rotate(-50deg);
@@ -3077,15 +3079,11 @@
     width: 20px;
     height: 20px;
     margin: 0;
-    border: none;
     background: $blue;
     box-shadow: none;
     cursor: pointer;
   }
 
-  .jq-checkbox.focused {
-    border: none;
-  }
   //checkbox style end
 
   &__check-label {
@@ -3129,8 +3127,345 @@
       color: $violet;
     }
   }
+
+  &__image {
+    height: 447px;
+    max-width: 393px;
+    margin: 0 auto 51px;
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &--404 {
+    background-color: #fff;
+    text-align: center;
+    padding: 80px 0 60px;
+    .gateway {
+      &__btn {
+        display: inline-block;
+      }
+    }
+  }
+
+  &--recovery {
+    .gateway {
+      &__subtitle {
+        text-align: left;
+        max-width: 460px;
+      }
+      &__btn {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
-/* ---------- LOGIN END ---------- */
+/* ---------- LOGIN, REGISTER, RECOVERY, PAGE404 END ---------- */
+
+/* ---------- TERMS START ---------- */
+.terms {
+  background-color: #eff1f5;
+  padding: 63px 0 120px;
+  &__box {
+    padding-top: 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+  }
+  &__title {
+    color: #000;
+    font-size: 24px;
+    padding: 0 30px 30px;
+    border-bottom: 1px solid #e8ebf0;
+  }
+
+  &__text {
+    color: #555;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 30px 40px 60px 30px;
+  }
+}
+/* ---------- TERMS END ---------- */
+
+/* ---------- ABOUT START ---------- */
+.about {
+  &__top {
+    background-color: #441c7c;
+    background-image: linear-gradient(to left, #0d3ef2 0%, #4c1f9c 100%);
+    opacity: 0.9;
+    text-align: center;
+    padding: 90px 0 30px;
+  }
+
+  &__top-title {
+    color: #f3f3f8;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  &__highlighted {
+    display: block;
+    font-weight: 300;
+    padding-top: 20px;
+    margin-bottom: 75px;
+  }
+  
+  &__inner {
+    background-color: #fff;
+    &:nth-child(odd) {
+      background-color: #eff1f5;
+      .about__item {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  &__item {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__image {
+    width: 458px;
+    height: 353px;
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__title {
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 46px;
+  }
+
+  &__text {
+    color: #555;
+    font-size: 16px;
+    line-height: 30px;
+    max-width: 450px;
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    display: inline-block;
+    padding: 16px 36px;
+    background-color: $blue;
+    color: #fff;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    @include focus;
+    &:hover {
+      color: $blue;
+      background-color: #fff;
+    }
+  }
+}
+/* ---------- ABOUT END ---------- */
+
+/* ---------- PRICING START ---------- */
+.pricing {
+  padding: 120px 0;
+  background-color: #eff1f5;
+  text-align: center;
+
+  &__title {
+    color: #000;
+    font-size: 36px;
+    margin-bottom: 29px;
+  }
+
+  &__highlight {
+    color: $blue;
+  }
+
+  &__subtitle {
+    color: #555;
+    font-size: 16px;
+    line-height: 30px;
+    max-width: 680px;
+    margin: 0 auto 60px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    padding: 30px;
+    max-width: 360px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+    border-radius: 0 0 4px 4px;
+    background-color: #ffffff;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 3px;
+      border-radius: 3px 3px 0 0;
+      border-top: 3px solid #ff6a6c;
+      left: 0;
+      top: 0;
+    }
+
+    &--blue {
+      &.pricing__item {
+        &::before {
+          border-color: $blue;
+        }
+      }
+      .pricing__btn {
+        background-color: $blue;
+      }
+
+      .pricing__tip {
+        background-color: $blue;
+        &::after {
+          border-top: 16px solid $blue;
+        }
+      }
+    }
+
+    &--yellow {
+      &.pricing__item {
+        &::before {
+          border-color: #feb71d;
+        }
+      }
+      .pricing__btn {
+        background-color: #feb71d;
+      }
+
+      .pricing__tip {
+        background-color: #feb71d;
+        &::after {
+          border-top: 16px solid #feb71d;
+        }
+      }
+    }
+  }
+
+  &__name {
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #e8ebf0;
+  }
+
+  &__price {
+    margin-top: 30px;
+    margin-bottom: 48px;
+    color: #000;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    line-height: 0.7;
+  }
+
+  &__dollar {
+    font-size: 18px;
+  }
+
+  &__month {
+    font-size: 16px;
+    color: #555;
+    align-self: flex-end;
+  }
+
+  &__list {
+    padding: 0;
+  }
+  
+  &__detail {
+    text-align: left;
+    list-style: none;
+    padding-left: 25px;
+    line-height: 36px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      border-radius: 50%;
+      width: 7px;
+      height: 7px;
+      background-color: #c5cad4;
+      left: 0;
+      top: 15px;
+    }
+    &.tip {
+      &::after {
+        position: absolute;
+        font-family: 'Linearicons-Free';
+        content: "\e87d";
+        font-size: 18px;
+        color: #555;
+        padding-left: 9px;
+        cursor: pointer;
+      }
+      &:hover {
+        .pricing__tip {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__tip {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    right: -30px;
+    top: -60px;
+
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 4px 0 0 4px;
+    background-color: #ff6a6c;
+    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+    @include focus;
+    &::after {
+      position: absolute;
+      content: '';
+      border-top: 16px solid #ff6a6c;
+      border-right: 23px solid transparent;
+      top: 56px;
+      right: 0;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    color: #fff;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 18px;
+    width: 100%;
+    background-color: #ff6a6c;
+    margin-top: 40px;
+  }
+}
+/* ---------- PRICING END ---------- */
+
+
 
 
 @import "media";

@@ -434,47 +434,44 @@
 
       <main>
 
-        <div class="register">
-          <div class="breadcrumbs-box">
-            <div class="container">
-              <section class="breadcrumbs">
-                <ul class="breadcrumbs__list">
-                  <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Home</a></li>
-                  <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Register</a></li>
-                </ul>
-              </section>
-              <div class="breadcrumbs-title">Registration</div>
-            </div>
+        <section class="breadcrumbs-box">
+          <div class="container">
+            <section class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Home</a></li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Register</a></li>
+              </ul>
+            <div class="breadcrumbs__title">Registration</div>
+            </section>
           </div>
-          <div class="register__inner">
-            <div class="container">
-              <div class="register__box">
-                <div class="register__title-box">
-                  <div class="register__title">Create Your Account</div>
-                  <div class="register__subtitle">Please fill the following fields with appropriate information
-                    to register a new MartPlace account.</div>
-                </div>
-                <form class="register__form">
-                  <label class="register__label" for="login-name">Your Name</label>
-                  <input class="register__input" type="text" id="login-name" placeholder="Enter your name...">
-                  <label class="register__label" for="login-address">Email Address</label>
-                  <input class="register__input" type="text" id="login-address" placeholder="Enter your email address">
-                  <label class="register__label" for="login-username">Username</label>
-                  <input class="register__input" type="text" id="login-username" placeholder="Enter your username...">
-                  <label class="register__label" for="login-password">Password</label>
-                  <input class="register__input" type="text" id="login-password" placeholder="Enter your password...">
-                  <label class="register__label" for="login-password2">Confirm Password</label>
-                  <input class="register__input" type="text" id="login-password2" placeholder="Enter your password...">
-
-                  <button class="register__btn" type="submit">Register Now</button>
-                  <div class="register__lost-box">
-                    <div class="register__lost">Already have an account?<a class="register__link" href="#">&nbsp;Login</a></div>
-                  </div>
-                </form>
+        </section>
+        <section class="gateway">
+          <div class="container">
+            <div class="gateway__box">
+              <div class="gateway__title-box">
+                <div class="gateway__title">Create Your Account</div>
+                <div class="gateway__subtitle">Please fill the following fields with appropriate information
+                  to register a new MartPlace account.</div>
               </div>
+              <form class="gateway__form">
+                <label class="gateway__label" for="login-name">Your Name</label>
+                <input class="gateway__input" type="text" id="login-name" placeholder="Enter your name..." required>
+                <label class="gateway__label" for="login-address">Email Address</label>
+                <input class="gateway__input" type="email" id="login-address" placeholder="Enter your email address" required>
+                <label class="gateway__label" for="login-username">Username</label>
+                <input class="gateway__input" type="text" id="login-username" placeholder="Enter your username..." required>
+                <label class="gateway__label" for="login-password">Password</label>
+                <input class="gateway__input" type="password" id="login-password" placeholder="Enter your password..." required>
+                <label class="gateway__label" for="login-password2">Confirm Password</label>
+                <input class="gateway__input" type="text" id="login-password2" placeholder="Enter your password..." required>
+                <button class="gateway__btn" type="submit">Register Now</button>
+                <div class="gateway__lost-box">
+                  <div class="gateway__lost">Already have an account?<a class="gateway__link" href="#">&nbsp;Login</a></div>
+                </div>
+              </form>
             </div>
           </div>
-        </div>
+        </section>
 
       </main>
     </div>
