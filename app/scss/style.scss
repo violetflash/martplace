@@ -3866,6 +3866,46 @@
       text-decoration: underline;
     }
   }
+
+  .sort {
+    &__aside-item {
+      padding: 0;
+    }
+
+    &__aside-title {
+      padding: 25px;
+      color: #000;
+      font-size: 20px;
+      line-height: 1.2;
+      &::after {
+        display: none;
+      }
+    }
+
+    &__list {
+      padding: 30px 35px 42px 25px;
+    }
+  }
+
+  &__tag-box {
+    padding: 30px 24px 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__tag {
+    padding: 6px 14px;
+    border-radius: 15px;
+    background-color: rgba(6, 116, 236, .07);
+    color: $blue;
+    margin-bottom: 12px;
+    margin-right: 10px;
+    &:hover {
+      background-color: #0674ec;
+      color: #fff;
+    }
+  }
+
 }
 /* ---------- BLOG END ---------- */
 
