@@ -2860,12 +2860,13 @@
     margin-bottom: 40px;
     margin-left: -30px;
   }
+}
 
-  &__pagination {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+.pagination {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
 
   &__page {
     display: inline-block;
@@ -3628,6 +3629,245 @@
   }
 }
 /* ---------- CONTACTS END ---------- */
+
+/* ---------- BLOG START ---------- */
+.blog {
+  background-color: #eff1f5;
+  &__inner {
+    padding: 70px 0 120px;
+    display: flex;
+  }
+
+  &__content {
+    max-width: 750px;
+    margin-right: 30px;
+  }
+
+  &__item {
+    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    background-color: #fff;
+    margin-bottom: 41px;
+  }
+
+  &__image {
+    display: block;
+    width: 750px;
+    height: 430px;
+    overflow: hidden;
+  }
+
+  &__img {
+    border-radius: 4px 4px 0 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__padding-box {
+    padding: 0 35px 30px 30px;
+    & + & {
+      border-top: 1px solid #ececec;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    color: $blue;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 40px 0 23px;
+    @include focus;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__info-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__author,
+  &__date,
+  &__comments,
+  &__views {
+    font-size: 15px;
+    color: #898f96;
+    padding-left: 28px;
+    position: relative;
+
+    &+ & {
+      margin-left: 30px;
+    }
+    &::before {
+      position: absolute;
+      font-family: 'Linearicons-Free';
+      content: "\e82a";
+      color: #898f96;
+      font-size: 15px;
+      left: 0;
+    }
+  }
+
+  &__date {
+    &::before {
+      content: "\e864";
+    }
+  }
+
+  &__comments {
+    @include focus;
+    &:hover {
+      text-decoration: underline;
+    }
+    &::before {
+      content: "\e83f";
+    }
+  }
+
+  &__views {
+    &::before {
+      content: "\e81b";
+    }
+  }
+
+
+  &__highlight {
+    color: $blue;
+    @include focus;
+    &:hover {
+      color: $violet;
+      text-decoration: underline;
+    }
+  }
+
+  &__text {
+    color: #555;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 30px 0;
+  }
+
+  &__link {
+    display: inline-block;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 22px;
+    background-color: #0674ec;
+    padding: 13px 26px;
+    color: #fff;
+    @include focus;
+    &:hover {
+      background-color: $violet;
+    }
+  }
+
+  .pagination {
+    margin-top: 60px;
+  }
+
+  &__aside {
+    max-width: 360px;
+  }
+
+  &__aside-item {
+    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 30px 0 40px;
+    margin-bottom: 30px;
+
+    &--tabs {
+      padding-bottom: 24px;
+    }
+  }
+
+  &__aside-title {
+    color: #000;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    padding: 0 24px 30px;
+    border-bottom: 1px solid #e8ebf0;
+  }
+
+  .search-form {
+    margin: 30px auto 0;
+    max-width: 310px;
+  }
+
+  &__tabs {
+    padding: 0 44px 25px 25px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e8ebf0;
+  }
+
+  &__tab {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #000000;
+    cursor: pointer;
+
+    &.active {
+      color: $blue;
+    }
+  }
+
+  &__tab-content {
+  }
+
+  &__tab-item {
+    padding: 0 29px 0 25px;
+    display: none;
+
+    &.active-tab {
+      display: block;
+    }
+  }
+
+  &__post {
+    display: flex;
+    //align-items: center;
+    padding: 20px 0;
+    & + & {
+      border-top: 1px solid #e8ebf0 ;
+
+    }
+  }
+
+  &__post-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 15px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+
+  &__post-title {
+    display: inline-block;
+    margin-top: -4px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 17px;
+    @include focus;
+    &:hover {
+      color: $blue;
+      text-decoration: underline;
+    }
+  }
+}
+/* ---------- BLOG END ---------- */
 
 
 

@@ -126,5 +126,14 @@ $(function () {
 
     $('.gateway__check').styler();
 
+    $('.blog__posts .blog__tab').on('click', function(event) {
+        var id = $(this).attr('data-id');
+        $('.blog__posts').find('.blog__tab-item').removeClass('active-tab').hide();
+        $('.blog__posts .blog__tabs').find('.blog__tab').removeClass('active');
+        $(this).addClass('active');
+        $('#'+id).addClass('active-tab').fadeIn();
+        return false;
+    });
+
 });
 
