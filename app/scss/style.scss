@@ -3787,6 +3787,7 @@
       height: 270px;
       margin: 0;
       padding: 0;
+      overflow: hidden;
     }
   }
 
@@ -3898,7 +3899,7 @@
   }
 
   &__tag-box {
-    padding: 30px 24px 40px;
+    padding: 30px 24px 0;
     display: flex;
     flex-wrap: wrap;
   }
@@ -3919,8 +3920,6 @@
   &__banner {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
   }
 
 }
